@@ -1,0 +1,181 @@
+
+.ui-widget-overlay {
+    opacity: .8;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #202e33;
+     width: 100%; 
+    height: 100%;
+}
+
+.ui-widget-overlay {
+    opacity: .7;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: auto !important;
+    height: auto !important;
+    background-color: #202e33;
+    z-index: 500
+}
+
+.ui-dialog, .oPopup {
+    -webkit-box-shadow: 0 0 0 7px rgba(0, 0, 0, .13);
+    -moz-box-shadow: 0 0 0 7px rgba(0, 0, 0, .13);
+    box-shadow: 0 0 0 7px rgba(0, 0, 0, .13);
+    -webkit-border-radius: 11px 11px 10px 10px;
+    -moz-border-radius: 11px 11px 10px 10px;
+    -ms-border-radius: 11px 11px 10px 10px;
+    -o-border-radius: 11px 11px 10px 10px;
+    border-radius: 11px 11px 10px 10px;
+    border: 1px solid #DDD;
+    border-color: rgba(0, 0, 0, .13);
+    position: absolute;
+    background-color: #fff;
+    z-index: 1000
+}
+.success-box{
+    -webkit-box-shadow: 0 0 0 7px rgba(0, 0, 0, .13);
+    -moz-box-shadow: 0 0 0 7px rgba(0, 0, 0, .13);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .13);
+}
+
+.ui-dialog-titlebar {
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -ms-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: rgba(234, 202, 213, 0.5);
+    padding: 15px 25px 13px;
+    color: #ca5f5f;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.ui-dialog-titlebar-close {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 18px;
+    height: 19px;
+    float: right
+}
+
+.ui-button .ui-button-text {
+    display: block;
+    line-height: normal
+}
+
+.ui-button-text-only .ui-button-text {
+    padding: .4em 1em
+}
+
+.ui-button-icon-only .ui-button-text, .ui-button-icons-only .ui-button-text {
+    display: none
+}
+
+.ui-dialog-content {
+    position: relative;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 16px;
+    color: indianred;
+    letter-spacing: 0.5px
+    
+}
+
+.dialogbtn {
+    width: 150px; 
+    height: 30px;
+    margin: 25px auto 15px; 
+    font-size: 16px; 
+    font-family: 'Comfortaa', cursive;
+    background-color: darkcyan;
+    color: white;
+    letter-spacing: normal;
+    line-height: 2;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px
+}
+
+.dialog-btn {
+    margin: 20px auto;
+    width: 150px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 90%;
+    border: 1px solid pink;
+    border-radius: 3px;
+    padding: 2px;
+    cursor: pointer
+}
+.dialog-btn:hover {
+    background-color: indianred;
+    color: white;
+    border-radius: 4px;
+}
+.titlebar1 {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: rgba(234, 202, 213, 0.5);
+    padding: 15px 25px 13px;
+    color: #ca5f5f;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+
+.content1 {
+    padding: 20px 20px 0;
+    text-align: center;
+    font-size: 15px;
+    color: indianred;
+    letter-spacing: 0.5px
+}
+.dialog-btn-success {
+    margin: 20px auto;
+    width: 150px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 90%;
+    border: 1px solid #3c763d70;
+    border-radius: 3px;
+    padding: 2px;
+    cursor: pointer
+}
+.dialog-btn-success:hover {
+    background-color: rgba(60, 118, 61, 0.2);
+    border-color: rgba(60, 118, 61, 0.1);
+    font-weight: 700;
+    color: rgba(60, 118, 61, 0.54);
+    border-radius: 4px;
+}
+
+.titlebar2 {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: normal;
+    background-color: rgba(60, 118, 61, 0.24);
+    padding: 15px 25px 13px;
+    color: rgba(60, 118, 61, 0.74);
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+
+.content2 {
+    padding: 20px 30px 0;
+    text-align: center;
+    font-size: 15px;
+    color: rgba(60, 118, 61, 0.8);
+    letter-spacing: normal
+}

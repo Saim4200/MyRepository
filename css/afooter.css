@@ -1,0 +1,86 @@
+
+.footer {
+    background: #32393f;
+    color: #e3e5e6
+}
+
+.footer .footer_1 {
+    padding-left: 32px;
+    padding-right: 32px
+}
+
+.footer .footer_inner {
+    width: 100%;
+    padding: 40px;
+    max-width: 1280px;
+    height: 220px
+}
+
+.footer .menu {
+    float:left;
+    width:25%;
+    padding-right:36px;
+    -ms-flex-order:2;
+    order:2
+}
+.footer .menu h5 {
+    font-size:15px;
+    color:#fff;
+    margin-bottom:14px
+}
+
+.footer .menu .menu-items {
+    line-height: 1.7
+}
+.footer .menu .menu-items a {
+    font-size: 70%;
+    display:block;
+    float:left;
+    clear:both;
+    color:#e3e5e6;
+    cursor:pointer;
+    text-decoration:none;
+    font-family: 'Roboto' sans-serif;
+}
+.footer .menu .menu-items a:hover {
+    text-decoration: underline
+}
+.footer p {
+    color: inherit;
+    font-size: 14px;
+    padding: 0;
+    letter-spacing: normal;
+    font-family: 'Roboto', sans-serif
+}
+
+
+
+.footer .icon {
+    display: inline-block; 
+    margin-right: 12px; 
+    font-size:15px;
+    color:white;
+    line-height: 1.5
+}
+
+.footer .footer_2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: inherit;
+    font-size: 12px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    font-weight: 100;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+.footer .copyright{
+    color: inherit;
+}
+.terms {
+    text-decoration: none;
+    color: white;
+    font-size: 11px;
+    cursor: pointer;    
+    

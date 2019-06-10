@@ -1,0 +1,805 @@
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../css/profilegrid.css">
+    <link rel="stylesheet" type="text/css" href="../../css/resnavi.css">
+    <link rel="stylesheet" type="text/css" href="../../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../../css/navi.css">
+    <link rel="stylesheet" type="text/css" href="../../css/profile.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=PT+Serif|Roboto" rel="stylesheet">
+</head>
+
+<body>
+
+
+<section class="container">
+            
+    <div class="row">
+    <div class="container-profile clearfix">
+               <ion-icon name="arrow-back" onclick="goBack()"></ion-icon>
+                <div class="deco-line"></div>
+    <div class="col span-2-of-2" style="margin: 10px 5%; ">
+    <div class="col span-1-of-7">
+    <div class="container-picture">
+        <img src="../../css/img/PersonPlaceholder.png" class="picture-box">
+        <div class='pic-box'>
+        <form action="update.php?setupdate=1" method="post" enctype="multipart/form-data" id="form">
+            <input type='file' name='picsubmit'>
+            <input type="submit" name="pic-submit" value=''>
+        </form>
+        </div>
+    </div>
+    </div>
+                
+    <div class="container-set">
+        <div class="col span-2-of-7">
+            <div class="name">SAIM AHMED</div>
+                  <div class="id">ID: 254577</div>
+        </div>
+              
+                <div class="col span-2-of-7"></div>
+                
+                <div class="col span-2-of-7"></div>
+    </div>
+    <div class="container-res">
+        <div class="box">
+            <div class="box">
+            <div class="name"></div>
+                </div>
+    
+                </div>
+                    <div class="box">
+                    <div class="col span-1-of-2"> 
+                    <div class="icon"></div>
+                        </div>
+                   
+                        <div class="col span-1-of-2"><a href="../notification/notification.php"><ion-icon name="notifications-outline"></ion-icon></a></div>
+                    </div>
+    </div>
+    </div>
+    <div class="col span-2-of-2">
+    <div class="container-view">
+        <div class="col span-1-of-4 color" style="margin-top:4%;">
+              <div class="filter" id="filter">
+                <div class="container">
+                    <div class="sidebar">
+                      <button class="tablinks active" onclick="openContent(event, 'payment-details')">About</button>
+                      <button class="tablinks" onclick="openContent(event, 'history')">Preferences</button>
+                           <button class="tablinks" onclick="openContent(event, 'history')">Documents</button>
+                         <button class="tablinks" onclick="openContent(event, 'history')">Tuitions</button>
+                        <button class="tablinks" onclick="openContent(event, 'history')">Payments</button>
+                        <button class="tablinks" onclick="openContent(event, 'history')">Ratings</button>
+                        <button class="tablinks" onclick="openContent(event, 'history')">Reviews</button>
+                    </div>
+                </div>
+             </div>       
+        </div>
+                    
+        <div class="col span-3-of-4">
+            
+            <form action="update.php?setupdate=1" method="post" enctype="multipart/form-data" id="form">
+                <div class="tabcontent" id="about">
+                <div class="title">about</div>
+                <div class="sub-title">contact information</div>    
+                <div class="box">
+                    <table class="table">
+                    <tr>
+                        <td>Address</td>
+                        <td>
+                            <div id="adata" style="display:block">
+                            </div>
+                        </td>
+                        <td style="display:flex;">
+                          <ion-icon name="create" onclick="areplace();return false" id="aedit" style="display:block;"></ion-icon>
+                          <div class="close" id="acancel"  onclick="areturned();return false" ></div>
+                         <input type="submit" id="asubmit" name="subaddress" value=""> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>area</td>
+                        <td>
+                            <div id="areadata" style="display:block">
+                            </div>
+                            <select name="area" id="arealist" style="display:none;">
+                             
+                            </select>
+                        </td>
+                        <td style="display:flex;">
+                          <ion-icon name="create" onclick="areareplace();return false" id="areaedit" style="display:block;"></ion-icon>
+                          <div class="close" id="areacancel"  onclick="areareturned();return false" ></div>
+                          <input type="submit" id="areasubmit" name="subarea" value=""> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>phone</td>
+                        <td>
+                            <div id="pdata" style="display:block">
+                            </div>
+                            <form>
+                                
+                            </form>
+                        </td>
+                        <td style="display:flex;">
+                            <ion-icon name="create" onclick="preplace();return false" id="pedit" style="display:block;"></ion-icon>
+                            <div class="close" id="pcancel"  onclick="preturned();return false" style="display:none;"></div>
+                            <input type="submit" id="psubmit" name="subpnum" value=""> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>whatsapp</td>
+                        <td>
+                            <div id="wdata" style="display:block">
+                            </div>
+                            <form>
+                            
+                            </form>
+                        </td>
+                        <td style="display:flex;">
+                          <ion-icon name="create" onclick="wreplace();return false" id="wedit" style="display:block;"></ion-icon>
+                          <div class="close" id="wcancel"  onclick="wreturned();return false" style="display:none;"></div>
+                            <input type="submit" id="wsubmit" name="subwnum" value=""> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>email</td>
+                        <td>
+                            <div id="edata" style="display:block">
+                                <?php echo $fetchemail['email']; ?></div></td>
+                        <td></td>
+                    </tr>
+                    </table>
+                </div>
+                
+                <div class="sub-title">Basic Information</div>
+
+                <div class="box">
+                    <table class="table">
+                    <tr>
+                        <td>gender</td>
+                        <td><div id="gendata" style="display:block">
+                        
+                        </div>
+                        <select name="gender" id="genform" style="display:none;">
+                         
+                        </select>
+                        </td>
+                        <td style="display:flex;">
+                          <ion-icon name="create" onclick="genreplace();return false" id="genedit" style="display:block;"></ion-icon>
+                          <div class="close" id="gencancel"  onclick="genreturned();return false" style="display:none;"></div>
+                            <input type="submit" id="gensubmit" name="subgender" value=""> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CNIC</td>
+                        <td>
+                            <div id="cnicdata" style="display:block">
+                            </div>
+                        </td>
+                        <td></td>
+                    </tr>
+                    </table>
+                    <table class="table1">
+                    <tr>
+                        <td style="color: #9c9b98;">password</td>
+                        <td>
+
+                         <div class="col span-1-of-3">
+                         <input type="password" name="oldpass" placeholder="enter old password"  style="display:none" id="opassform">
+                         </div>
+                         <div class="col span-1-of-3">
+                            
+                            <input type="password" id="passform" name="pass" placeholder="enter new password" style="display:none">
+                            </div>
+                            
+                            <div class="col span-1-of-3">
+                            <input type="password" id="cpassform" name="cpass" placeholder="re enter password" style="display:none">
+                            </div>
+                        </td>
+                        <td style="display:flex;">
+                          <ion-icon name="create" onclick="passreplace();return false" id="passedit" style="display:block;"></ion-icon>
+                          <div class="close" id="passcancel"  onclick="passreturned();return false" style="display:none;"></div>
+                          <input type="submit" id="passsubmit" name="subpass" value=""> 
+                        </td>
+                       
+                     </tr>
+                    </table>
+                        
+                  <div class="res-box">
+                    <div class="col span-1-of-3">
+                        <div class="td-title">profile-pic</div>
+                        </div>
+                    <div class="col span-1-of-3"><div class="td-title">
+                        <input type="file" name="res-picsubmit" id='pictureform'  style="display:none;"><ion-icon name="create" onclick="picturereplace();return false" id="pictureedit" style="display:block;"></ion-icon></div>
+                        </div>
+                    <div class="col span-1-of-3"><div class="td-title">
+                         
+                                
+                          <div class="close" id="picturecancel"  onclick="picturereturned();return false" style="display:none;"></div>
+                            
+                          <input type="submit" id="picturesubmit" name="res-pic-submit" value="">
+                        </div></div>
+                    
+                    
+                    </div>
+                </div>
+                
+ 
+                <div class="sub-title">Education</div>
+                 
+                <div class="box">
+                <table class="table">
+                    <tr>
+                    <td>institute</td>
+                    <td>
+                        <div id="instdata" style="display:block">
+                            </div>
+                    </td>
+                    <td style="display:flex;">
+                      <ion-icon name="create" onclick="instreplace();return false" id="instedit" style="display:block;"></ion-icon>
+                      <div class="close" id="instcancel"  onclick="instreturned();return false" style="display:none;"></div>
+                      <input type="submit" id="instsubmit" name="submitinst" value="">
+                    </td>
+                    </tr>
+                      <tr>
+                        <td>qualification</td>
+                        <td>
+                            <div id="qdata" style="display:block">
+                            </div>
+                            
+                        <select name="qualification" id="qform" style="display:none;">
+                         
+      
+                      
+                         </select>
+                            
+                                </td>
+                            <td style="display:flex;">
+                            
+                            
+                          <ion-icon name="create" onclick="qreplace();return false" id="qedit" style="display:block;"></ion-icon>
+                                
+                          <div class="close" id="qcancel"  onclick="qreturned();return false" style="display:none;"></div>
+                            
+                          <input type="submit" id="qsubmit" name="subquali" value="">
+                            
+                            </td>
+                      </tr>
+                      <tr>
+                        <td>intergroup</td>
+                        <td>
+                            <div id="intdata" style="display:block">
+                            </div>
+                           
+                             <select name="inter" id="intform" style="display:none;">
+                             
+                        
+                            </select>
+                            </td>
+                            <td style="display:flex;">
+                              <ion-icon name="create" onclick="intreplace();return false" id="intedit" style="display:block;"></ion-icon>
+                              <div class="close" id="intcancel"  onclick="intreturned();return false" style="display:none;"></div>
+                              <input type="submit" id="intsubmit" name="submitint" value="">
+                            </td>
+                       
+                      </tr>
+                        
+                    </table>
+                    
+                </div>
+        
+                </div>
+             <div class="tabcontent" id="preferences">
+                <div class="title">Preferences</div>
+                <div class="sub-title">subjects</div>
+                <div class="box"> 
+                    <table class="table">
+                    <?php 
+                        $sub1name=''; 
+                        if ($tsubjects['sub1']!=0){
+                        $checksub=mysqli_fetch_array(mysqli_query($dbConnected,"SELECT subjectname from subjects where sid='".$tsubjects['sub1']."'")); 
+                        $sub1name=  $checksub['subjectname'];
+                        }
+                        ?>
+                        <tr>
+                            <td>Subject 1</td>
+                            <td>
+                            <div id="sub1data" style="display:block">
+                            <?php echo $sub1name; ?></div>
+                            <select name="sub1" id="sub1form" style="display:none;">
+                                 <?php
+                                    while($fetchsubject=mysqli_fetch_array($subjects))
+                                    {
+                                    echo '<option value='.$fetchsubject['sid'].'> '.$fetchsubject['subjectname'].'</option> ';
+                                    }
+                                ?>
+                             </select>
+                            </td>
+                            <td style="display:flex;">
+                              <ion-icon name="create" onclick="sub1replace();return false" id="sub1edit" style="display:block;"></ion-icon>
+                              <div class="close" id="sub1cancel"  onclick="sub1returned();return false" style="display:none;"></div>
+                              <input type="submit" id="sub1submit" name="submitsub1" value="">
+                            </td>
+                        </tr>
+                    <?php 
+                        $sub2name=''; 
+                        if ($tsubjects['sub2']!=0){
+                        $checksub=mysqli_fetch_array(mysqli_query($dbConnected,"SELECT subjectname from subjects where sid='".$tsubjects['sub2']."'")); 
+                        $sub2name=  $checksub['subjectname'];
+                        }
+                        ?>
+                        <tr>
+                            <td>Subject 2</td>
+                            <td>
+                            <div id="sub2data" style="display:block">
+                            <?php echo $sub2name; ?></div>
+                            <select name="sub2" id="sub2form" style="display:none;">
+                                 <?php
+                                    $subjects=mysqli_query($dbConnected,"select * from subjects");
+                                   while($fetchsubject=mysqli_fetch_array($subjects))
+                                    {
+                                    echo '<option value='.$fetchsubject['sid'].'> '.$fetchsubject['subjectname'].'</option> ';
+                                    }
+                                ?>
+                             </select>
+                            </td>
+                            <td style="display:flex;">
+                              <ion-icon name="create" onclick="sub2replace();return false" id="sub2edit" style="display:block;"></ion-icon>
+                              <div class="close" id="sub2cancel"  onclick="sub2returned();return false" style="display:none;"></div>
+                              <input type="submit" id="sub2submit" name="submitsub2" value="">
+                            </td>
+                        </tr>
+                    <?php 
+                        $sub3name=''; 
+                        if ($tsubjects['sub3']!=0){
+                        $checksub=mysqli_fetch_array(mysqli_query($dbConnected,"SELECT subjectname from subjects where sid='".$tsubjects['sub3']."'")); 
+                        $sub3name=  $checksub['subjectname'];
+                        }
+                        ?>
+                        <tr>
+                            <td>Subject 3</td>
+                            <td>
+                            <div id="sub3data" style="display:block">
+                            <?php echo $sub3name; ?></div>
+                            <select name="sub3" id="sub3form" style="display:none;">
+                                 <?php
+                                    $subjects=mysqli_query($dbConnected,"select * from subjects");
+                                    while($fetchsubject=mysqli_fetch_array($subjects))
+                                    {
+                                    echo '<option value='.$fetchsubject['sid'].'> '.$fetchsubject['subjectname'].'</option> ';
+                                    }
+                                ?>
+                             </select>
+                            </td>
+                            <td style="display:flex;">
+                              <ion-icon name="create" onclick="sub3replace();return false" id="sub3edit" style="display:block;"></ion-icon>
+                              <div class="close" id="sub3cancel"  onclick="sub3returned();return false" style="display:none;"></div>
+                              <input type="submit" id="sub3submit" name="submitsub3" value="">
+                            </td>
+                        </tr>
+                    <?php 
+                        $sub4name=''; 
+                        if ($tsubjects['sub4']!=0){
+                        $checksub=mysqli_fetch_array(mysqli_query($dbConnected,"SELECT subjectname from subjects where sid='".$tsubjects['sub4']."'")); 
+                        $sub4name=  $checksub['subjectname'];
+                        }
+                        ?>
+                        <tr>
+                            <td>Subject 4</td>
+                            <td>
+                            <div id="sub4data" style="display:block">
+                            <?php echo $sub4name; ?></div>
+                            <select name="sub4" id="sub4form" style="display:none;">
+                                 <?php
+                                    $subjects=mysqli_query($dbConnected,"select * from subjects");
+                                    while($fetchsubject=mysqli_fetch_array($subjects))
+                                    {
+                                    echo '<option value='.$fetchsubject['sid'].'> '.$fetchsubject['subjectname'].'</option> ';
+                                    }
+                                ?>
+                             </select>
+                            </td>
+                            <td style="display:flex;">
+                              <ion-icon name="create" onclick="sub4replace();return false" id="sub4edit" style="display:block;"></ion-icon>
+                              <div class="close" id="sub4cancel"  onclick="sub4returned();return false" style="display:none;"></div>
+                              <input type="submit" id="sub4submit" name="submitsub4" value="">
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+                
+                <div class="sub-title">Target Areas</div>
+                <div class="box" >
+                    <table class="table">
+                        <?php 
+                        $checkvarea=mysqli_fetch_array(mysqli_query($dbConnected,"
+                        select * from teacherareas
+                        inner join area on teacherareas.varea1=area.id
+                        where teacherareas.id='".$_SESSION['id']."'"));
+                       // if(empty($checkvarea['id'])) 
+                        ?>
+                        <tr>
+                            <td>Area1</td>
+                            <td>
+                            <div id="va1data" style="display:block">
+                            <?php echo $checkvarea['areaname']; ?></div>
+                            <select name="varea1" id="va1form" style="display:none;">
+                                 <?php $class=mysqli_query($dbConnected,"select * from area");
+                                    while($fetchclass=mysqli_fetch_array($class))
+                                    {
+                                    echo '<option value='.$fetchclass['id'].'> '.$fetchclass['areaname'].'</option> ';
+                                    }
+              
+                                ?>
+                                </select>
+                            
+                            </td>
+                            <td style="display:flex;">
+                              <ion-icon name="create" onclick="va1replace();return false" id="va1edit" style="display:block;"></ion-icon>
+                              <div class="close" id="va1cancel"  onclick="va1returned();return false" style="display:none;"></div>
+                              <input type="submit" id="va1submit" name="va1" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                                <?php 
+                        $checkvarea=mysqli_fetch_array(mysqli_query($dbConnected,"
+                        select * from teacherareas
+                        inner join area on teacherareas.varea2=area.id
+                        where teacherareas.id='".$_SESSION['id']."'"));
+                       // if(empty($checkvarea['id'])) 
+                            ?>
+                            <td>Area2</td>
+                            <td>
+                            <div id="va2data" style="display:block">
+                            <?php echo $checkvarea['areaname']; ?></div>
+                            
+                                <select name="varea2" id="va2form" style="display:none;">
+                         <?php $class=mysqli_query($dbConnected,"select * from area");
+                            while($fetchclass=mysqli_fetch_array($class))
+                            {
+                            echo '<option value='.$fetchclass['id'].'> '.$fetchclass['areaname'].'</option> ';
+                            }
+      
+                        ?>
+                                </select>
+                            
+                            </td>
+                            <td style="display:flex;">
+                            
+                            
+                          <ion-icon name="create" onclick="va2replace();return false" id="va2edit" style="display:block;"></ion-icon>
+                                
+                          <div class="close" id="va2cancel"  onclick="va2returned();return false" style="display:none;"></div>
+                            
+                          <input type="submit" id="va2submit" name="va2" value="">
+                            
+                            </td>
+                        </tr>
+                        <tr>
+                                <?php 
+                        $checkvarea=mysqli_fetch_array(mysqli_query($dbConnected,"
+                        select * from teacherareas
+                        inner join area on teacherareas.varea3=area.id
+                        where teacherareas.id='".$_SESSION['id']."'"));
+                       // if(empty($checkvarea['id'])) 
+                            ?>
+                            <td>Area3</td>
+                            <td>
+                            <div id="va3data" style="display:block">
+                            <?php echo $checkvarea['areaname']; ?></div>
+                            
+                                <select name="varea3" id="va3form" style="display:none;">
+                         <?php $class=mysqli_query($dbConnected,"select * from area");
+                            while($fetchclass=mysqli_fetch_array($class))
+                            {
+                            echo '<option value='.$fetchclass['id'].'> '.$fetchclass['areaname'].'</option> ';
+                            }
+      
+                        ?>
+                                </select>
+                            
+                                </td>
+                             <td style="display:flex;">
+                            
+                            
+                          <ion-icon name="create" onclick="va3replace();return false" id="va3edit" style="display:block;"></ion-icon>
+                                
+                          <div class="close" id="va3cancel"  onclick="va3returned();return false" style="display:none;"></div>
+                            
+                          <input type="submit" id="va3submit" name="va3" value="">
+                            
+                            </td>
+                        </tr>
+                        <tr>
+                                <?php 
+                        $checkvarea=mysqli_fetch_array(mysqli_query($dbConnected,"
+                        select * from teacherareas
+                        inner join area on teacherareas.varea4=area.id
+                        where teacherareas.id='".$_SESSION['id']."'"));
+                       // if(empty($checkvarea['id'])) 
+                            ?>
+                            <td>Area4</td>
+                            <td>
+                            <div id="va4data" style="display:block">
+                            <?php echo $checkvarea['areaname']; ?></div>
+                            
+                                <select name="varea4" id="va4form" style="display:none;">
+                         <?php $class=mysqli_query($dbConnected,"select * from area");
+                            while($fetchclass=mysqli_fetch_array($class))
+                            {
+                            echo '<option value='.$fetchclass['id'].'> '.$fetchclass['areaname'].'</option> ';
+                            }
+      
+                        ?>
+                                </select>
+                            
+                                </td>
+                             <td style="display:flex;">
+                            
+                            
+                          <ion-icon name="create" onclick="va4replace();return false" id="va4edit" style="display:block;"></ion-icon>
+                                
+                          <div class="close" id="va4cancel"  onclick="va4returned();return false" style="display:none;"></div>
+                            
+                          <input type="submit" id="va4submit" name="va4" value="">
+                            
+                            </td>
+                        </tr>
+                        <tr>
+                                <?php 
+                        $checkvarea=mysqli_fetch_array(mysqli_query($dbConnected,"
+                        select * from teacherareas
+                        inner join area on teacherareas.varea5=area.id
+                        where teacherareas.id='".$_SESSION['id']."'"));
+                       // if(empty($checkvarea['id'])) 
+                            ?>
+                            <td>Area5</td>
+                            <td>
+                            <div id="va5data" style="display:block">
+                            <?php echo $checkvarea['areaname']; ?></div>
+                            
+                                <select name="varea5" id="va5form" style="display:none;">
+                         <?php $class=mysqli_query($dbConnected,"select * from area");
+                            while($fetchclass=mysqli_fetch_array($class))
+                            {
+                            echo '<option value='.$fetchclass['id'].'> '.$fetchclass['areaname'].'</option> ';
+                            }
+      
+                        ?>
+                                </select>
+                            
+                                </td>
+                             <td style="display:flex;">
+                            
+                            
+                          <ion-icon name="create" onclick="va5replace();return false" id="va5edit" style="display:block;"></ion-icon>
+                                
+                          <div class="close" id="va5cancel"  onclick="va5returned();return false" style="display:none;"></div>
+                            
+                          <input type="submit" id="va5submit" name="va5" value="">
+                            
+                            </td>
+                        </tr>
+                        <tr>
+                                <?php 
+                        $checkvarea=mysqli_fetch_array(mysqli_query($dbConnected,"
+                        select * from teacherareas
+                        inner join area on teacherareas.varea6=area.id
+                        where teacherareas.id='".$_SESSION['id']."'"));
+                       // if(empty($checkvarea['id'])) 
+                            ?>
+                            <td>Area6</td>
+                            <td>
+                            <div id="va6data" style="display:block">
+                            <?php echo $checkvarea['areaname']; ?></div>
+                            
+                                <select name="varea6" id="va6form" style="display:none;">
+                         <?php $class=mysqli_query($dbConnected,"select * from area");
+                            while($fetchclass=mysqli_fetch_array($class))
+                            {
+                            echo '<option value='.$fetchclass['id'].'> '.$fetchclass['areaname'].'</option> ';
+                            }
+      
+                        ?>
+                                </select>
+                            
+                                </td>
+                             <td style="display:flex;">
+                            
+                            
+                          <ion-icon name="create" onclick="va6replace();return false" id="va6edit" style="display:block;"></ion-icon>
+                                
+                          <div class="close" id="va6cancel"  onclick="va6returned();return false" style="display:none;"></div>
+                            
+                          <input type="submit" id="va6submit" name="va6" value="">
+                            
+                            </td>
+                        </tr>
+                        </table>
+                    </div>
+            </div>
+            </form>            
+ 
+         
+
+    <div class="tabcontent" id="documents">
+                <div class="title">Documents</div>
+                <div class="sub-title">CNIC Front Picture</div>         
+    <div class="container-cnic-picture">
+        <div id="resultCnicImage">
+       <img src='../../css/img/cniccard.jpg' class='cnic-picture-box'>
+        </div>
+        <div class = "cnic-pic-change">
+            <div class="col span-1-of-2 ">
+                    <form action="" method="post" enctype="multipart/form-data" id="cnicpicform">
+					<input type="file" name="cnicpicsubmit" id="file-2" class="inputfile inputfile-2" />
+					<label for="file-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> <span>Choose a file&hellip;</span></label>
+                    </form>
+            </div>
+            <div class="col span-1-of-2 "><input type='button' id="upload-file-2" name='cnic-pic-submit' value='Upload'></div>
+        </div>
+
+    </div>
+
+    <div class="sub-title">Degree/Diploma/Certificate</div>         
+
+    <div class="container-cnic-picture">
+        <div id="resultDegreeImage">
+        <img src='../../css/img/cniccard.jpg' class='cnic-picture-box'>
+        </div>
+        <div class = "cnic-pic-change">
+            <div class="col span-1-of-2 ">
+                    <form action="" method="post" enctype="multipart/form-data" id="degreepicform">
+					<input type="file" name="degreepicsubmit" id="file-1" class="inputfile inputfile-2" />
+					<label for="file-1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> <span>Choose a file&hellip;</span></label>
+                    </form>
+            </div>
+            <div class="col span-1-of-2 "><input type='button' id="upload-file-1" name='degree-pic-submit' value='Upload'></div>
+        </div>
+
+    </div>
+
+        </div>
+                
+     <div class="tabcontent" id="ratings">
+                <div class="title">Ratings</div>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="description">4.1 average based on 254 reviews.</span>
+                <hr style="border:3px solid #f1f1f1; width: 85%">
+
+                <div class="col span-2-of-2 top">
+                <div class="col span-2-of-2 row">
+                <div class="col span-1-of-10 side">5 star</div>
+                  <div class="col span-8-of-10 middle">
+                    <div class="bar-container">
+                      <div class="bar-5"></div>
+                    </div>
+                  </div>
+                  <div class="col span-1-of-10 right">150</div>
+                  </div>
+                <div class="col span-2-of-2 row">
+                <div class="col span-1-of-10 side">4 star</div>
+                  <div class="col span-8-of-10 middle">
+                    <div class="bar-container">
+                      <div class="bar-4"></div>
+                    </div>
+                  </div>
+                  <div class="col span-1-of-10 right">150</div>
+                  </div>
+                    <div class="col span-2-of-2 row">
+                <div class="col span-1-of-10 side">3 star</div>
+                  <div class="col span-8-of-10 middle">
+                    <div class="bar-container">
+                      <div class="bar-3"></div>
+                    </div>
+                  </div>
+                  <div class="col span-1-of-10 right">150</div>
+                  </div>
+                    <div class="col span-2-of-2 row">
+                <div class="col span-1-of-10 side">2 star</div>
+                  <div class="col span-8-of-10 middle">
+                    <div class="bar-container">
+                      <div class="bar-2"></div>
+                    </div>
+                  </div>
+                  <div class="col span-1-of-10 right">150</div>
+                  </div>
+                    <div class="col span-2-of-2 row">
+                <div class="col span-1-of-10 side">1 star</div>
+                  <div class="col span-8-of-10 middle">
+                    <div class="bar-container">
+                      <div class="bar-1"></div>
+                    </div>
+                  </div>
+                  <div class="col span-1-of-10 right">150</div>
+                  </div>
+                </div>
+            </div>
+            <div class="tabcontent" id="tests">
+                <div class="title">Tests</div>
+                <div class="box" >
+                    <table>
+                    <thead>
+                    <tr>
+                        <th colspan="2">Subject Name</th>                     
+                        <th>Score<p>(out of 5)</p></th>
+                        <th>Completion Time</th>
+                        <th colspan="2">Remarks</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><a href="/ab/tests/exam/18260867">Mathematics</a></td>
+                        <td><span> (Intermediate)</span></td>
+                        <td>1.7</td>
+                        <td>19 mins</td>
+                        <td><span style="color: #ff4e50;">Not Cleared</span>
+                            </td><td><a href="" id="retake">[Retake Test]</a> 
+                        </td>
+                        </tr>
+                     <tr>
+                        <td><a href="/ab/tests/exam/18260867">Physics</a></td>
+                         <td><span> (Basic)</span></td>
+                         <td>3.7</td>
+                        <td>22 mins</td>
+                        <td><span style="color: green">Cleared</span></td><td><a href="" id="retake">[View Details]</a> 
+                        </td>
+                        </tr>
+                    <tr>
+                        <td><a href="/ab/tests/exam/18260867">English</a></td>
+                         <td><span> (Advanced)</span></td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td><span>In Progress</span></td><td><a href="" id="retake">[Resume Test]</a> 
+                        </td>
+                        </tr>
+                    <tr>
+                        <td><a href="/ab/tests/exam/18260867">Urdu</a></td>
+                         <td><span> (Intermediate)</span></td>
+                        <td>2.7</td>
+                        <td>19 mins</td>
+                        <td><span style="color: #02896a;">Needs Improvement</span></td><td><a href="" id="retake">[Retake Test]</a>
+                        </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="sub-title" style="font-weight: bolder">Next-Level Tests </div>
+                <div class="box" >
+                    <table class="table2">
+                    <tbody>
+                    <tr>
+                        <td>Mathematics</td>
+                        <td><span> (Intermediate)</span></td>
+                        <td> Mainly includes algebra, analytical geometry, calculus and statistics.</td>
+                        <td><a href="" id="retake">[ Start Test ]</a> 
+                        </td>
+                        </tr>
+                     <tr>
+                        <td>Physics</td>
+                        <td><span> (Advanced)</span></td>
+                        <td> Mainly comprised of physical laws, concepts, theories and postulates of modern physics.</td>
+                        <td><a href="" id="retake" class="action">[ Start Test ]</a> 
+                        </td>
+                        </tr>
+                     
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>             
+</section>
+</body>

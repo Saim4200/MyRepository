@@ -1,0 +1,382 @@
+
+html,
+body {
+    color: black;
+    font-family:'PT Serif', serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    will-change: background;
+    overflow-x: hidden;
+    background:linear-gradient(rgba(255,255,255, 0.95), rgba(255,255,255, 0.75)),url(img/admin.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+th {
+    font-size: 150%;
+    text-align: left;
+    vertical-align: bottom;
+    line-height: 2;
+    height: 80px;
+}
+
+
+.table {
+    width: 85%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 10px;
+    font-size: 100%;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow-x: auto;
+    opacity: 0.8;
+    position: relative;
+    display: block;
+    padding:0;
+    background-color: white;
+    font-size: 80%;
+    font-weight: 100;
+     -webkit-box-shadow: 0 1px 10px rgba(85, 85, 85, 0.6);
+            box-shadow: 0 1px 10px rgba(85, 85, 85, 0.3);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    vertical-align: middle;
+    border-radius: 8px;
+
+}
+
+.loading-row {
+    height: 300px;
+}
+
+.loading-div {
+    position: absolute;
+    top: 47%;
+    left: 47%;
+    display:none;
+}
+
+.QuestionHeader {
+    height:  35px;
+    vertical-align: bottom;
+    font-family: monospace;
+    font-size: 90%;
+    font-weight: 100;
+    line-height: 2;
+    color: rgb(128, 134, 139);
+    display: none;
+}
+#time{
+    color: darkcyan;
+}
+.QuestionBody {
+    vertical-align: middle;
+    color: #019875;
+    font-size: 100%;
+    height: 80px;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    word-spacing: 2px;
+    
+}
+    
+
+.time-container {
+    font-family: monospace;
+    font-size: 90%;
+    font-weight: 700;
+    text-align: right;
+}
+
+#title {
+    color: #019875;
+    font-family: 'Comfortaa', cursive;
+    font-size: 150%;
+    border-bottom: 1px solid rgba(230, 227, 227, 0.62);
+}
+
+
+
+tbody {
+        border-left: 20px solid white;
+    border-right: 20px solid white;
+}
+
+.options {
+    letter-spacing: normal;
+    word-spacing: 2px;
+    font-size: 90%;
+    line-height: normal;
+    padding: 0 20px;
+    overflow-x: auto;
+}
+.options table {
+    text-align: left;
+    vertical-align: middle;
+    width: 97%
+}
+.options table tbody{  
+    border-right: 0;
+    border-left: 0;
+}
+.options table td {
+    width:100%;
+    cursor: pointer;
+}
+.options table tr {
+    height: 40px;
+    cursor: pointer;
+    background-color: aliceblue;
+    border-top: 10px solid white;
+}
+.options table tr:hover {
+    background-color: rgba(1, 152, 117, 0.15);
+    color: white;
+}
+.options table td label {
+    color: darkcyan;
+    letter-spacing: 0.5px
+}
+.options table td:hover label {
+    color: white;
+}
+.options table td input {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.inputButtonSmall {
+    width: 100px; 
+    height: 35px;
+    margin-top: 25px;
+    font-size: 16px; 
+    font-family: 'Comfortaa', cursive;
+    background-color: darkcyan;
+    color: white;
+    letter-spacing: 1px;
+    line-height: normal;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px
+}
+input[type='button']:disabled{
+    background-color: #dddddd;
+}
+
+.options table td input[type="radio"]:checked,
+.options table td input[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.options table td input[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    color: #666;
+    cursor: pointer;
+    min-height: 25px;
+    width: 90%;
+}
+.options table td input[type="radio"]:checked + label {
+   position: relative;
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    color: darkcyan;
+    background-color: rgba(1, 152, 117, 0.15);
+    cursor: pointer;
+    min-height: 25px;
+    width: 90%;
+}
+.options table td input[type="radio"]:checked + label:before,
+input[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+.options table td input[type="radio"]:checked + label:after,
+input[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: darkcyan;
+    position: absolute;
+    top: 16px;
+    left: 24px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.options table td input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.options table td input[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.option {
+    min-height: auto;
+}
+
+
+
+.scorecard {
+    font-family: 'Roboto';
+    font-size: 16px;
+    height: 150px
+}
+.scorecard table{
+    width: 90%;
+    margin: 10px 0 40px;
+}
+.scorecard table tr{
+    width: 90%;
+    height: 40px;
+    vertical-align: middle;
+    
+}
+.scorecard table td{
+    vertical-align: bottom;  
+     padding-left: 50px;
+}
+.scorecard table td:first-of-type{
+   font-size: 90%;
+    width: 30%;
+    letter-spacing: 0.8px;
+    padding-left: 15px;
+    color: #202e33;
+   
+}
+.scorecard table tr:first-of-type td:first-of-type{
+     padding-left: 0;
+    height: 20px;
+}
+.scorecard table td:last-of-type{
+      font-family: 'PT Serif';
+    width: auto;
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+    font-size: 105%
+    
+}
+.scorecard span{
+    font-size: 95%; 
+    color: rgba(77, 77, 77, 0.76); 
+    word-break: normal; 
+    letter-spacing: 0
+    
+}
+
+
+.scorecard a {
+    color: darkcyan;
+    font-size: 85%;
+    font-weight: 600;
+}
+
+
+
+#introduction {
+    font-family: 'Roboto';
+    font-size: 16px;
+    height: 150px
+}
+#introduction table{
+    width: 100%;
+    margin: 10px 0 40px;
+}
+#introduction table tr{
+    width: 90%;
+    height: 40px;
+    vertical-align: middle;
+    
+}
+#introduction table td{
+    vertical-align: bottom;  
+     padding-left: 30px;
+}
+#introduction table td:first-of-type{
+   font-size: 95%;
+    width: 30%;
+    letter-spacing: 0.8px;
+    padding-left: 20px;
+    color: #202e33;
+   
+}
+#introduction table tr:first-of-type td:first-of-type{
+     padding-left: 0;
+    vertical-align: middle;
+}
+#introduction table td:last-of-type{
+      font-family: 'PT Serif';
+    width: auto;
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+    font-size: 105%
+    
+}
+#introduction span{
+    font-size: 95%; 
+    color: rgba(77, 77, 77, 0.76); 
+    word-break: normal; 
+    letter-spacing: 0px
+    
+}
+
+
+#introduction a {
+    color: darkcyan;
+    font-size: 85%;
+    font-weight: 600;
+}
+
+#start-test {
+    width: 130px; 
+    height: 35px;
+    margin-top: 25px;
+    font-size: 16px; 
+    font-family: 'Roboto', cursive;
+    color: darkcyan;
+    background-color: white;
+    letter-spacing: 1px;
+    line-height: normal;
+    text-decoration: none;
+    border: 1px solid darkcyan;
+    border-radius: 3px;
+    box-shadow: 0px 0px 8px 3px #ddd;
+}
+#start-test:hover {
+     color: white;
+    background-color: darkcyan;
+    box-shadow: none;
+}

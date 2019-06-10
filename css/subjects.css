@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor:default;
+}
+
+@-ms-viewport{
+  width: device-width;
+}
+
+html,
+body {
+    background-color: #fafafa;
+    color: black;
+    font-family:"Raleway", 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    will-change: background;
+   
+}
+
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+/* ----------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------- */
+
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 40px 0;
+    margin: 2.5% auto;
+    overflow: hidden;
+    
+    
+}
+.container{
+    text-align: center;
+}
+.main-nav {
+   
+    opacity: 0.96;
+    position:fixed;
+    width: 100%;
+    background-color: white;
+    list-style:none;
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-size: 85%;
+    padding-right: 2%;
+    z-index: 999;
+    
+    
+    }
+
+.main-nav li {
+    
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: 1.5%;
+    margin-bottom: 1%;
+    float: right;
+    
+    
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    
+    padding: 8px 0;
+    color:black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    transition: 0.5s;
+    
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    color: #019875;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.main-nav li:last-child{
+    float: left;
+}
+
+
+.logo {
+    height: 40px;
+    width: auto;
+    float: left;
+    margin-top: -20%;
+}
+
+.logo-black { 
+    display: none;
+    height: 40px;
+    width: auto;
+    float: left;
+    margin-top: -10%;
+}
+.select {
+    margin-left: 5%;
+    width: 90%;
+    text-transform: capitalize;
+    text-align: center;    
+}
+.border{
+    margin-left: 5%;
+    width: 90%;
+    padding: 20px 40px;
+    border-bottom: 0.5px solid #555;
+}
+.select a{
+    color: #555;
+    text-decoration: none;
+    cursor: pointer;
+}
+.select a:hover{
+    color: #019875;
+}
+.select li{
+    font-weight: 300;
+    display: inline-block;
+    float: left;
+    margin: 10px 40px;
+    cursor: pointer;
+    
+}
+
+.select li:hover{
+    color: #019875;
+}
+
+
+.add{
+    opacity: 0.96;
+    top: 61px;
+    position: fixed;
+    padding: 0.8%;
+    width: 100%;
+    background-color: #2e4f6a ;
+}
+input[type='text']{
+   
+    border: none;
+    box-shadow: inset 0 0 1px #555;
+    border-radius: 2px;
+    padding: 0.3% 15% 0.3% 1% ;
+    margin-left:55%;
+}
+
+input[type='submit']{
+    color: white;
+    padding: 0.3% 2%;
+    border: none;
+    background-color: #2F9599;
+    box-shadow: 0 0 15px rgba(54, 54, 54, 0.79);
+    transition: 0.4s;
+    border-radius: 2px;
+}
+input[type='submit']:hover{
+    box-shadow: none;
+    background-color: #355C7D;
+    
+}
+.table{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-collapse: collapse;
+    letter-spacing: 1px;
+}
+.table input[type='submit']{
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: white;
+    padding:4%;
+    border: none;
+    background-color: #2F9599;
+    box-shadow: 0 0 15px rgba(54, 54, 54, 0.79);
+    transition: 0.4s;
+    border-radius: 2px;
+    font-size: 90%;
+}
+.table input[type='submit']:hover{
+    box-shadow: none;
+    background-color: #355C7D;
+    
+}
+.table td, .table th {
+    font-weight: 300;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.table td{
+    font-weight: 300;
+    color: rgba(60, 60, 60, 0.87);
+    text-transform: uppercase;
+    
+    
+}
+.table tr:nth-child(even){background-color: #f2f2f2;}
+
+.table tr:hover {background-color: #ddd;}
+
+.table th {
+    text-transform: capitalize;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #C06C84;
+    color: white;
+}

@@ -1,0 +1,161 @@
+<?php 
+$q = array();
+$q[0]="Let \( f(t) = \frac{\sin(x)}{x - 54} \), then the value of f¹⁰⁰(54) is given by | Undefined |  100 |  10 |  0";
+$q[1]="Let \( f(x) = x^9 \dot \mathrm{e}^{x} \) then the ninth derivative of f(x) at x = 0 is given by | 9! |  9! e⁹ |  10! |  21!";
+$q[2]="The curvature of a function f(x) is zero. Which of the following functions could be f(x): | ax + b |  ax2 + bx + c |  sin(x) |  cos(x)";
+$q[3]=" What is the saddle point? | Point where function has maximum value |  Point where function has minimum value |  Point where function has zero value |  Point where function neither have maximum value nor minimum value";
+$q[4]="The drawback of Lagrange’s Method of Maxima and Minima is | Maxima or Minima is not fixed |  Nature of stationary point cannot be known |  Accuracy is not good |  Nature of stationary point is known but cannot give maxima or minima";
+$q[5]="Find the points on the plane x + y + z = 9 which are closest to origin. | (3,3,3) |  (2,1,3) |  (2,2,2) |  (3,4,1)";
+$q[6]=" If f(t) = sinh(at), then its Laplace transform is | \(\mathrm{e}^{at}\) |  \(\frac{s}{s^2-a^2}\) |  \(\frac{a}{s^2-a^2}\) |  Exists only if ‘t’ is complex";
+$q[7]="If \( f(t) = \mathrm{e}^{at} \dot \sin(bt) \), then its Laplace transform is given by | \(\frac{s^2-a^2}{{s-a}^2}\) |  \(\frac{b}{{s + a}^2 + b^2}\) |  \(\frac{b}{{s - a}^2 + b^2}\) |  Indeterminate";
+$q[8]="If L { f(t) } = F(s), then L { kf(t) } = | F(s) |  kF(s) |  Does not exist |  F(s⁄k)";
+$q[9]="Transfer function may be defined as | Ratio of out to input |  Ratio of laplace transform of output to input |  Ratio of laplace transform of output to input with zero initial conditions |  None of the above";
+$q[10]="Find the poles of transfer function which is defined by input: x(t) = 5sin(t) - u(t) and output: y(t) = cos(t) - u(t). |  4.79, 0.208 |  5.73, 0.31 |  5.89, 0.208 |  5.49, 0.308";
+$q[11]="Transfer function may be defined as |  Ratio of out to input |  Ratio of laplace transform of output to input |  Ratio of laplace transform of output to input with zero initial conditions |  None of the above";
+$q[12]="If A and B are two mutually exclusive events with P(~A) = 5⁄6 and P(B) = 1⁄3 then P(A /~B) is equal to |  1⁄4 |  1⁄2 |  0, since mutually exclusive |  5⁄18";
+$q[13]="If A and B are two events such that P(A) = 0.2, P(B) = 0.6 and P(A/B) = 0.2 then the value of P(A /~B) is |  0.2 |  0.5 |  0.8 |  1⁄3";
+$q[14]="A and B are two events such that P(A) = 0.4 and P(A ∩ B) = 0.2 Then P(A ∩ B) is equal to |  0.4 |  0.2 |  0.6 |  0.8";
+$q[15]="Let A and B be two events such that the occurrence of A implies occurrence of B, but not vice-versa, then the correct relation between P(A) and P(B) is |  P(A) < P(B) |  P(B) ≥ P(A) |  P(A) = P(B) |  P(A) ≥ P(B)";
+$q[16]="If A is a subset of B then, |  P(A) is greater than P(B) |  P(~A) is greater than or equal to P(~B) |  P(B) is equal to P(A) |  P(B) is equal to P(~B)";
+$q[17]="If P(B⁄A) = P(B), then P(A and B) = |  P(B) |  P(A) |  P(B)P(A) |  P(A) + P(B)";
+$q[18]="Two unbiased coins are tossed. What is the probability of getting at most one head? | 1⁄2 | 1⁄3 | 1⁄6 | 3⁄4";
+$q[19]="If A and B are two events such that P(A) > 0 and P(B) is not a sure event, then | P(~A /~B) = |  1 – P(A /B) |  P(~A)/P(~B) |  Not Defined";
+$q[20]="For two events A and B, if P(B) = 0.5 and P(A ∪ B) = 0.5, then P (A|B) = |  0.5 |  0 |  0.25 |  1";
+$q[21]="A fair coin is tossed thrice, what is the probability of getting all 3 same outcomes? |  3⁄4 |  1⁄4 |  1⁄2 |  1⁄6";
+$q[22]="Mutually Exclusive events |  contain all sample points |  contain all common sample points |  does not contain any sample point |  does not contain any common sample point";
+$q[23]="A table with all possible value of a random variable and its corresponding probabilities is called |  Probability Mass Function |  Probability Density Function |  Cumulative distribution function |  Probability Distribution";
+$q[24]="A variable that can assume any value between two given points is called |  Continuous random variable |  Discrete random variable |  Irregular random variable |  Uncertain random variable";
+$q[25]="If a variable can certain integer values between two given points is called |  Continuous random variable |  Discrete random variable |  Irregular random variable |  Uncertain random variable";
+$q[26]="The expected value of a discrete random variable ‘x’ is given by |  P(x) |  ∑ P(x) |  ∑ x P(x) |  1";
+$q[27]="Out of the following values, which one is not possible in probability ? |  P(x) = 1 |  ∑ x P(x) = 3 |  P(x) = 0.5 |  P(x) = – 0.5";
+$q[28]="The variable that assigns a real number value to an event in a sample space is called |  Random variable |  Defined variable |  Uncertain variable |  Static variable";
+$q[29]="In a discrete probability distribution, the sum of all probabilities is always |  0 |  Infinite |  1 |  Undefined";
+$q[30]="The expected value of a random variable is its |  Mean |  Standard Deviation |  Mean Deviation |  Variance";
+$q[31]="The covariance of two independent random variable is |  1 |  0 |  – 1 |  Undefined";
+$q[32]="In random experiment, observations of random variable are classified as |  Events |  Composition |  Trials |  Functions";
+$q[33]="In a Binomial Distribution, if ‘n’ is the number of trials and ‘p’ is the probability of success, then the mean value is given by |  np |  n |  p |  np(1-p)";
+$q[34]="In a Binomial Distribution, if p, q and n are probability of success, failure and number of trials respectively then variance is given by |  np |  npq |  np2q |  npq2";
+$q[35]="It is suitable to use Binomial Distribution only for |  Large values of ‘n’ |  Fractional values of ‘n’ |  Small values of ‘n’ |  Any value of ‘n’";
+$q[36]="For larger values of ‘n’, Binomial Distribution |  loses its discreteness |  tends to Poisson Distribution |  stays as it is |  gives oscillatory values";
+$q[37]="Binomial Distribution is a |  Continuous distribution |  Discrete distribution |  Irregular distribution |  Not a Probability distribution";
+$q[38]="If ‘m’ is the mean of a Poisson Distribution, then variance is given by |  m² |  m1⁄2 |  m |  m⁄2";
+$q[39]="If ‘m’ is the mean of Poisson Distribution, the P(0) is given by |  \(\mathrm{e}^{-m}\) |  \(\mathrm{e}^{m}\) |  \(\mathrm{e}\) |  \({m}^{-e}\)";
+$q[40]="The shape of the Normal Curve is |  Bell Shaped |  Flat |  Circular |  Spiked";
+$q[41]="Normal Distribution is symmetric is about |  Variance |  Mean |  Standard deviation |  Covariance";
+$q[42]="For a standard normal variate, the value of mean is |  ∞ |  1 |  0 |  not defined";
+$q[43]="The standard normal curve is symmetric about the value |  0.5 |  1 |  ∞ |  0";
+$q[44]="Normal Distribution is also known as |  Cauchy’s Distribution |  Laplacian Distribution |  Gaussian Distribution |  Lagrangian Distribution";
+$q[45]="In Normal distribution, the highest value of ordinate occurs at |  Mean |  Variance |  Extremes |  Same value occurs at all points";
+$q[46]="The shape of the normal curve depends on its |  Mean deviation |  Standard deviation |  Quartile deviation |  Correlation";
+$q[47]="The value of constant ‘e’ appearing in normal distribution is |  2.5185 |  2.7836 |  2.1783 |  2.7183";
+$q[48]="In Standard normal distribution, the value of median is |  1 |  0 |  2 |  Not fixed";
+$q[49]="A circular piece of cardboard with a diameter of 1 m will be made into a conical hat 40 cm high by cutting a sector off and joining the edges to form a cone. Determine the angle subtended by the sector removed. | 144o | 148o | 152o | 154o | ";
+$q[50]="What is the area in sq.m of the zone of a spherical segment having a volume of 1470.265 cu.m if the diameter of the sphere is 30 m? | 465.5 m² | 565.5 m² | 665.5 m² | 656.5 m² | ";
+$q[51]="If the edge of a cube is increased by 30%, by how much is the surface area increased? | 30% | 33% | 60% | 69% | ";
+$q[52]="Each side of a cube is increased by 1%. By what percent is the volume of the cube increased? | 1.21% | 2.8% | 3.03% | 3.5% | ";
+$q[53]="Given a sphere of a diameter, d. What is the percentage increase in its diameter when the surface area increases by 21%? | 5% | 10% | 21% | 33% | ";
+$q[54]="How many times does the volume of a sphere increases if the radius is doubled? | 4 times | 2 times | 6 times | 8 times | ";
+$q[55]="A regular triangular pyramid has an altitude of 9 m and a volume of 187.06 cu. m. What is the base edge in meters? | 12 | 13 | 14 | 15 | ";
+$q[56]="The central angle of a spherical wedge is 1 radian. Find its volume if its radius is 1 unit. | 43499 | 43467 | 43528 | 43501 | ";
+$q[57]="A regular octahedron has an edge 2m. Find its volume (in m3). | 3.77 | 1.88 | 3.22 | 2.44 | ";
+$q[58]="If the edge of a cube is doubled, which of the following is incorrect? | The lateral area will be quadrupled | The volume is increased 8 times | The diagonal is doubled | The weight is doubled |";
+$q[59]="Each side of a cube is increased by 1%. By what percent is the volume of the cube increased? | 23.4% | 33.1% | 30% | 34.56% |";
+$q[60]="If the edge of a cube is increased by 30%, by how much is the surface area increased? | 67 | 69 | 63 | 65 |";
+$q[61]="Find the total surface area of a cube of side 6 cm. | 214 sq. cm. | 216 sq. cm. | 226 sq. cm. | 236 sq. cm. |";
+$q[62]="The space diagonal of a cube is 4√3 m. Find its volume. | 16 cubic meters | 48 cubic meters | 64 cubic meters | 86 cubic meters |";
+$q[63]="The volume of a regular tetrahedron of side 5 cm is: | 13.72 cu. cm | 14.73 cu.cm | 15.63 cu. cm | 17.82 cu. cm |";
+$q[64]="A conical vessel has a height of 24 cm. and a base diameter of 12 cm. It holds water to a depth of 18 cm. above its vertex. Find the volume of its content in cc. | 387.4 | 381.7 | 383.5 | 385.2 |";
+$q[65]="The volume of a right circular cone is 36π. If its altitude is 3, find its radius. | 3 | 4 | 5 | 6 |";
+$q[66]="What is the surface area of a sphere whose volume is 36 cu. m? | 52.7 m² | 48.7 m² | 46.6 m² | 54.6 m² |";
+$q[67]="The surface area of the sphere is \(4πr^2\). Find the percentage increase in its diameter when the surface area increases by 21%. | 0.05 | 0.1 | 0.15 | 0.2 |";
+$q[68]="How much will the surface area of a sphere be increased if its radius is increased by 5%? | 0.25 | 0.155 | 0.125 | 0.1025 |";
+$q[69]="Find the volume of a spherical sector of altitude 3 cm. and radius 5 cm. | 75π cu. cm. | 100π cu. cm. | 50π cu. cm. | 25π cu. cm. |";
+$q[70]="The area in the second quadrant of the circle \(x^2 + y^2 = 36\)  is revolved about the line y + 10 = 0. What is the volume generated? | 2218.6 | 2228.8 | 2233.4 | 2208.5 | ";
+$q[71]="A square hole 2” x 2” is cut through a 6-inch diameter long (wood) along its diameter and perpendicular to its axis. Find the volume of wood that was removed. | 27.32 cu. in. | 23.54 cu. in. | 21.78 cu. in. | 34.62 cu. in. | ";
+
+
+$a = array();
+$a[0]="d";
+$a[1]="c";
+$a[2]="a";
+$a[3]="c";
+$a[4]="b";
+$a[5]="a";
+$a[6]="b";
+$a[7]="a";
+$a[8]="b";
+$a[9]="d";
+$a[10]="d";
+$a[11]="a";
+$a[12]="a";
+$a[13]="b";
+$a[14]="c";
+$a[15]="c";
+$a[16]="a";
+$a[17]="b";
+$a[18]="a";
+$a[19]="b";
+$a[20]="a";
+$a[21]="b";
+$a[22]="c";
+$a[23]="a";
+$a[24]="b";
+$a[25]="c";
+$a[26]="c";
+$a[27]="a";
+$a[28]="c";
+$a[29]="a";
+$a[30]="c";
+$a[31]="b";
+$a[32]="c";
+$a[33]="b";
+$a[34]="b";
+$a[35]="b";
+$a[36]="c";
+$a[37]="a";
+$a[38]="c";
+$a[39]="d";
+$a[40]="d";
+$a[41]="d";
+$a[42]="b";
+$a[43]="b";
+$a[44]="d";
+$a[45]="d";
+$a[46]="b";
+$a[47]="d";
+$a[48]="a";
+$a[49]="a";
+$a[50]="b";
+$a[51]="d";
+$a[52]="c";
+$a[53]="b";
+$a[54]="d";
+$a[55]="a";
+$a[56]="a";
+$a[57]="a";
+$a[58]="d";
+$a[59]="b";
+$a[60]="b";
+$a[61]="b";
+$a[62]="c";
+$a[63]="b";
+$a[64]="b";
+$a[65]="d";
+$a[66]="a";
+$a[67]="b";
+$a[68]="d";
+$a[69]="c";
+$a[70]="b";
+$a[71]="b";
+
+
+?>
+
+
+
+
+
+
+
+
+

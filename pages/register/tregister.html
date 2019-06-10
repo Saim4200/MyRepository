@@ -1,0 +1,1239 @@
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../css/profilegrid.css">
+    <link rel="stylesheet" type="text/css" href="../../css/resnavi.css">
+    <link rel="stylesheet" type="text/css" href="../../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../../css/navi.css">
+    <link rel="stylesheet" type="text/css" href="../../css/register.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=PT+Serif|Roboto" rel="stylesheet">
+    
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script> 
+    <script src="../../js/register.js"></script> 
+</head>
+
+<body>
+    
+<div class="container">
+	<div class="row form-group">
+        <div class="col-xs-12">
+            <ul class="nav nav-pills nav-justified thumbnail setup-panel">
+                <li class="active"><a href="#step-1">
+                    <h4 class="list-group-item-heading">Step 1</h4>
+                    <p class="list-group-item-text">Add Personal Data</p>
+                </a></li>
+                <li class="disabled"><a href="#step-2">
+                    <h4 class="list-group-item-heading">Step 2</h4>
+                    <p class="list-group-item-text">Upload Documents</p>
+                </a></li>
+                <li class="disabled"><a href="#step-3">
+                    <h4 class="list-group-item-heading">Step 3</h4>
+                    <p class="list-group-item-text">Create Account</p>
+                </a></li>
+            </ul>
+        </div>
+	</div>
+    <div class="row setup-content" id="step-1">
+        <div class="col-xs-12">
+            <div class="col-md-12 well text-center">
+                <div class="registration-steps" id="stepContainer"><div class="box">
+    <h3>General information</h3>
+    <table class="twoColForm">
+        <tbody><tr>
+            <td>Gender</td>
+            <td>
+                <select name="name_gender" id="id_gender" class="IW135">
+                    <option value="">Choose...</option>
+                    <option value="F">Female</option>
+                    <option value="M">Male</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>First name</td>
+            <td>
+                <div class="iMess" id="div_first_name">
+                    <input type="text" class="IWLg mb5" value="" id="id_first_name" maxlength="25">
+                </div>
+    
+            </td>
+        </tr>
+        <tr>
+            <td>Last name</td>
+            <td>
+                <div class="iMess" id="div_last_name">
+                    <input type="text" class="IWLg mb5" value="" id="id_last_name" maxlength="25">
+                </div>
+                <p>Will be shortened to the first letter.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Country</td>
+            <td>
+                <div class="iMess" id="div_country">
+                    <select name="" id="id_country" class="IWXMd mb5" data-qa-id="general-country-dropdown">
+                        
+                            <option value="">Choose...</option>
+                        
+                        
+                            <option value="AF" data-alias="afghanistan">
+                                Afghanistan
+                            </option>
+                        
+                            <option value="AX" data-alias="aland-islands">
+                                Åland Islands
+                            </option>
+                        
+                            <option value="AL" data-alias="albania">
+                                Albania
+                            </option>
+                        
+                            <option value="DZ" data-alias="algeria">
+                                Algeria
+                            </option>
+                        
+                            <option value="AS" data-alias="american-samoa">
+                                American Samoa
+                            </option>
+                        
+                            <option value="AD" data-alias="andorra">
+                                Andorra
+                            </option>
+                        
+                            <option value="AO" data-alias="angola">
+                                Angola
+                            </option>
+                        
+                            <option value="AI" data-alias="anguilla">
+                                Anguilla
+                            </option>
+                        
+                            <option value="AQ" data-alias="skype">
+                                Antarctica
+                            </option>
+                        
+                            <option value="AG" data-alias="antigua-and-barbuda">
+                                Antigua and Barbuda
+                            </option>
+                        
+                            <option value="AR" data-alias="argentina">
+                                Argentina
+                            </option>
+                        
+                            <option value="AM" data-alias="armenia">
+                                Armenia
+                            </option>
+                        
+                            <option value="AW" data-alias="aruba">
+                                Aruba
+                            </option>
+                        
+                            <option value="AU" data-alias="australia">
+                                Australia
+                            </option>
+                        
+                            <option value="AT" data-alias="austria">
+                                Austria
+                            </option>
+                        
+                            <option value="AZ" data-alias="azerbaijan">
+                                Azerbaijan
+                            </option>
+                        
+                            <option value="BS" data-alias="bahamas">
+                                Bahamas
+                            </option>
+                        
+                            <option value="BH" data-alias="bahrain">
+                                Bahrain
+                            </option>
+                        
+                            <option value="BD" data-alias="bangladesh">
+                                Bangladesh
+                            </option>
+                        
+                            <option value="BB" data-alias="barbados">
+                                Barbados
+                            </option>
+                        
+                            <option value="BY" data-alias="belarus">
+                                Belarus
+                            </option>
+                        
+                            <option value="BE" data-alias="belgium">
+                                Belgium
+                            </option>
+                        
+                            <option value="BZ" data-alias="belize">
+                                Belize
+                            </option>
+                        
+                            <option value="BJ" data-alias="benin">
+                                Benin
+                            </option>
+                        
+                            <option value="BM" data-alias="bermuda">
+                                Bermuda
+                            </option>
+                        
+                            <option value="BT" data-alias="bhutan">
+                                Bhutan
+                            </option>
+                        
+                            <option value="BO" data-alias="bolivia">
+                                Bolivia
+                            </option>
+                        
+                            <option value="BQ" data-alias="bonaire-sint-eustatius-and-saba">
+                                Bonaire, Sint Eustatius and Saba
+                            </option>
+                        
+                            <option value="BA" data-alias="bosnia-and-herzegovina">
+                                Bosnia and Herzegovina
+                            </option>
+                        
+                            <option value="BW" data-alias="botswana">
+                                Botswana
+                            </option>
+                        
+                            <option value="BV" data-alias="skype">
+                                Bouvet Island
+                            </option>
+                        
+                            <option value="BR" data-alias="Brazil">
+                                Brazil
+                            </option>
+                        
+                            <option value="IO" data-alias="skype">
+                                British Indian Ocean Territory
+                            </option>
+                        
+                            <option value="BN" data-alias="brunei-darussalam">
+                                Brunei
+                            </option>
+                        
+                            <option value="BG" data-alias="bulgaria">
+                                Bulgaria
+                            </option>
+                        
+                            <option value="BF" data-alias="burkina-faso">
+                                Burkina Faso
+                            </option>
+                        
+                            <option value="BI" data-alias="burundi">
+                                Burundi
+                            </option>
+                        
+                            <option value="CV" data-alias="cabo-verde">
+                                Cabo Verde
+                            </option>
+                        
+                            <option value="KH" data-alias="cambodia">
+                                Cambodia
+                            </option>
+                        
+                            <option value="CM" data-alias="cameroon">
+                                Cameroon
+                            </option>
+                        
+                            <option value="CA" data-alias="canada">
+                                Canada
+                            </option>
+                        
+                            <option value="KY" data-alias="cayman-islands">
+                                Cayman Islands
+                            </option>
+                        
+                            <option value="CF" data-alias="central-african-republic">
+                                Central African Republic
+                            </option>
+                        
+                            <option value="TD" data-alias="chad">
+                                Chad
+                            </option>
+                        
+                            <option value="CL" data-alias="chile">
+                                Chile
+                            </option>
+                        
+                            <option value="CN" data-alias="china">
+                                China
+                            </option>
+                        
+                            <option value="CX" data-alias="skype">
+                                Christmas Island
+                            </option>
+                        
+                            <option value="CC" data-alias="cocos-keeling-islands">
+                                Cocos (Keeling) Islands
+                            </option>
+                        
+                            <option value="CO" data-alias="colombia">
+                                Colombia
+                            </option>
+                        
+                            <option value="KM" data-alias="comoros">
+                                Comoros
+                            </option>
+                        
+                            <option value="CG" data-alias="congo">
+                                Congo
+                            </option>
+                        
+                            <option value="CD" data-alias="skype">
+                                Congo (the Democratic Republic of the)
+                            </option>
+                        
+                            <option value="CK" data-alias="cook-islands">
+                                Cook Islands
+                            </option>
+                        
+                            <option value="CR" data-alias="costa-rica">
+                                Costa Rica
+                            </option>
+                        
+                            <option value="CI" data-alias="cote-divoire">
+                                Côte d'Ivoire
+                            </option>
+                        
+                            <option value="HR" data-alias="croatia">
+                                Croatia
+                            </option>
+                        
+                            <option value="CW" data-alias="curacao">
+                                Curaçao
+                            </option>
+                        
+                            <option value="CY" data-alias="cyprus">
+                                Cyprus
+                            </option>
+                        
+                            <option value="CZ" data-alias="czechia">
+                                Czechia
+                            </option>
+                        
+                            <option value="DK" data-alias="denmark">
+                                Denmark
+                            </option>
+                        
+                            <option value="DJ" data-alias="djibouti">
+                                Djibouti
+                            </option>
+                        
+                            <option value="DM" data-alias="dominica">
+                                Dominica
+                            </option>
+                        
+                            <option value="DO" data-alias="dominican-republic">
+                                Dominican Republic
+                            </option>
+                        
+                            <option value="EC" data-alias="ecuador">
+                                Ecuador
+                            </option>
+                        
+                            <option value="EG" data-alias="egypt">
+                                Egypt
+                            </option>
+                        
+                            <option value="SV" data-alias="el-salvador">
+                                El Salvador
+                            </option>
+                        
+                            <option value="GQ" data-alias="equatorial-guinea">
+                                Equatorial Guinea
+                            </option>
+                        
+                            <option value="ER" data-alias="eritrea">
+                                Eritrea
+                            </option>
+                        
+                            <option value="EE" data-alias="estonia">
+                                Estonia
+                            </option>
+                        
+                            <option value="ET" data-alias="ethiopia">
+                                Ethiopia
+                            </option>
+                        
+                            <option value="FK" data-alias="falkland-islands-malvinas">
+                                Falkland Islands  [Malvinas]
+                            </option>
+                        
+                            <option value="FO" data-alias="faroe-islands">
+                                Faroe Islands
+                            </option>
+                        
+                            <option value="FJ" data-alias="fiji">
+                                Fiji
+                            </option>
+                        
+                            <option value="FI" data-alias="finland">
+                                Finland
+                            </option>
+                        
+                            <option value="FR" data-alias="france">
+                                France
+                            </option>
+                        
+                            <option value="GF" data-alias="skype">
+                                French Guiana
+                            </option>
+                        
+                            <option value="PF" data-alias="french-polynesia">
+                                French Polynesia
+                            </option>
+                        
+                            <option value="TF" data-alias="skype">
+                                French Southern Territories
+                            </option>
+                        
+                            <option value="GA" data-alias="gabon">
+                                Gabon
+                            </option>
+                        
+                            <option value="GM" data-alias="gambia">
+                                Gambia
+                            </option>
+                        
+                            <option value="GE" data-alias="georgia">
+                                Georgia
+                            </option>
+                        
+                            <option value="DE" data-alias="germany">
+                                Germany
+                            </option>
+                        
+                            <option value="GH" data-alias="ghana">
+                                Ghana
+                            </option>
+                        
+                            <option value="GI" data-alias="gibraltar">
+                                Gibraltar
+                            </option>
+                        
+                            <option value="GR" data-alias="greece">
+                                Greece
+                            </option>
+                        
+                            <option value="GL" data-alias="greenland">
+                                Greenland
+                            </option>
+                        
+                            <option value="GD" data-alias="grenada">
+                                Grenada
+                            </option>
+                        
+                            <option value="GP" data-alias="guadeloupe">
+                                Guadeloupe
+                            </option>
+                        
+                            <option value="GU" data-alias="guam">
+                                Guam
+                            </option>
+                        
+                            <option value="GT" data-alias="guatemala">
+                                Guatemala
+                            </option>
+                        
+                            <option value="GG" data-alias="guernsey">
+                                Guernsey
+                            </option>
+                        
+                            <option value="GN" data-alias="guinea">
+                                Guinea
+                            </option>
+                        
+                            <option value="GW" data-alias="guinea-bissau">
+                                Guinea-Bissau
+                            </option>
+                        
+                            <option value="GY" data-alias="guyana">
+                                Guyana
+                            </option>
+                        
+                            <option value="HT" data-alias="haiti">
+                                Haiti
+                            </option>
+                        
+                            <option value="HM" data-alias="skype">
+                                Heard Island and McDonald Islands
+                            </option>
+                        
+                            <option value="VA" data-alias="vatican">
+                                Holy See
+                            </option>
+                        
+                            <option value="HN" data-alias="honduras">
+                                Honduras
+                            </option>
+                        
+                            <option value="HK" data-alias="hong-kong">
+                                Hong Kong
+                            </option>
+                        
+                            <option value="HU" data-alias="hungary">
+                                Hungary
+                            </option>
+                        
+                            <option value="IS" data-alias="iceland">
+                                Iceland
+                            </option>
+                        
+                            <option value="IN" data-alias="India">
+                                India
+                            </option>
+                        
+                            <option value="ID" data-alias="Indonesia">
+                                Indonesia
+                            </option>
+                        
+                            <option value="IQ" data-alias="iraq">
+                                Iraq
+                            </option>
+                        
+                            <option value="IE" data-alias="Ireland">
+                                Ireland
+                            </option>
+                        
+                            <option value="IM" data-alias="isle-of-man">
+                                Isle of Man
+                            </option>
+                        
+                            <option value="IL" data-alias="israel">
+                                Israel
+                            </option>
+                        
+                            <option value="IT" data-alias="italy">
+                                Italy
+                            </option>
+                        
+                            <option value="JM" data-alias="jamaica">
+                                Jamaica
+                            </option>
+                        
+                            <option value="JP" data-alias="japan">
+                                Japan
+                            </option>
+                        
+                            <option value="JE" data-alias="skype">
+                                Jersey
+                            </option>
+                        
+                            <option value="JO" data-alias="jordan">
+                                Jordan
+                            </option>
+                        
+                            <option value="KZ" data-alias="kazakhstan">
+                                Kazakhstan
+                            </option>
+                        
+                            <option value="KE" data-alias="kenya">
+                                Kenya
+                            </option>
+                        
+                            <option value="KI" data-alias="kiribati">
+                                Kiribati
+                            </option>
+                        
+                            <option value="KW" data-alias="kuwait">
+                                Kuwait
+                            </option>
+                        
+                            <option value="KG" data-alias="kyrgyzstan">
+                                Kyrgyzstan
+                            </option>
+                        
+                            <option value="LA" data-alias="laos">
+                                Laos
+                            </option>
+                        
+                            <option value="LV" data-alias="latvia">
+                                Latvia
+                            </option>
+                        
+                            <option value="LB" data-alias="lebanon">
+                                Lebanon
+                            </option>
+                        
+                            <option value="LS" data-alias="lesotho">
+                                Lesotho
+                            </option>
+                        
+                            <option value="LR" data-alias="liberia">
+                                Liberia
+                            </option>
+                        
+                            <option value="LY" data-alias="libya">
+                                Libya
+                            </option>
+                        
+                            <option value="LI" data-alias="liechtenstein">
+                                Liechtenstein
+                            </option>
+                        
+                            <option value="LT" data-alias="lithuania">
+                                Lithuania
+                            </option>
+                        
+                            <option value="LU" data-alias="luxembourg">
+                                Luxembourg
+                            </option>
+                        
+                            <option value="MO" data-alias="macao">
+                                Macao
+                            </option>
+                        
+                            <option value="MK" data-alias="macedonia-republic-of">
+                                Macedonia
+                            </option>
+                        
+                            <option value="MG" data-alias="madagascar">
+                                Madagascar
+                            </option>
+                        
+                            <option value="MW" data-alias="malawi">
+                                Malawi
+                            </option>
+                        
+                            <option value="MY" data-alias="malaysia">
+                                Malaysia
+                            </option>
+                        
+                            <option value="MV" data-alias="maldives">
+                                Maldives
+                            </option>
+                        
+                            <option value="ML" data-alias="mali">
+                                Mali
+                            </option>
+                        
+                            <option value="MT" data-alias="malta">
+                                Malta
+                            </option>
+                        
+                            <option value="MH" data-alias="marshall-islands">
+                                Marshall Islands
+                            </option>
+                        
+                            <option value="MQ" data-alias="martinique">
+                                Martinique
+                            </option>
+                        
+                            <option value="MR" data-alias="mauritania">
+                                Mauritania
+                            </option>
+                        
+                            <option value="MU" data-alias="mauritius">
+                                Mauritius
+                            </option>
+                        
+                            <option value="YT" data-alias="mayotte">
+                                Mayotte
+                            </option>
+                        
+                            <option value="MX" data-alias="Mexico">
+                                Mexico
+                            </option>
+                        
+                            <option value="FM" data-alias="micronesia">
+                                Micronesia (Federated States of)
+                            </option>
+                        
+                            <option value="MD" data-alias="moldova-republic-of">
+                                Moldova
+                            </option>
+                        
+                            <option value="MC" data-alias="monaco">
+                                Monaco
+                            </option>
+                        
+                            <option value="MN" data-alias="mongolia">
+                                Mongolia
+                            </option>
+                        
+                            <option value="ME" data-alias="montenegro">
+                                Montenegro
+                            </option>
+                        
+                            <option value="MS" data-alias="montserrat">
+                                Montserrat
+                            </option>
+                        
+                            <option value="MA" data-alias="morocco">
+                                Morocco
+                            </option>
+                        
+                            <option value="MZ" data-alias="mozambique">
+                                Mozambique
+                            </option>
+                        
+                            <option value="NA" data-alias="namibia">
+                                Namibia
+                            </option>
+                        
+                            <option value="NR" data-alias="nauru">
+                                Nauru
+                            </option>
+                        
+                            <option value="NP" data-alias="nepal">
+                                Nepal
+                            </option>
+                        
+                            <option value="NL" data-alias="netherlands">
+                                Netherlands
+                            </option>
+                        
+                            <option value="NC" data-alias="new-caledonia">
+                                New Caledonia
+                            </option>
+                        
+                            <option value="NZ" data-alias="New-Zealand">
+                                New Zealand
+                            </option>
+                        
+                            <option value="NI" data-alias="nicaragua">
+                                Nicaragua
+                            </option>
+                        
+                            <option value="NE" data-alias="niger">
+                                Niger
+                            </option>
+                        
+                            <option value="NG" data-alias="nigeria">
+                                Nigeria
+                            </option>
+                        
+                            <option value="NU" data-alias="niue">
+                                Niue
+                            </option>
+                        
+                            <option value="NF" data-alias="norfolk-island">
+                                Norfolk Island
+                            </option>
+                        
+                            <option value="MP" data-alias="northern-mariana-islands">
+                                Northern Mariana Islands
+                            </option>
+                        
+                            <option value="NO" data-alias="norway">
+                                Norway
+                            </option>
+                        
+                            <option value="OM" data-alias="oman">
+                                Oman
+                            </option>
+                        
+                            <option value="PK" data-alias="pakistan">
+                                Pakistan
+                            </option>
+                        
+                            <option value="PW" data-alias="palau">
+                                Palau
+                            </option>
+                        
+                            <option value="PS" data-alias="palestine-state-of">
+                                Palestine, State of
+                            </option>
+                        
+                            <option value="PA" data-alias="panama">
+                                Panama
+                            </option>
+                        
+                            <option value="PG" data-alias="papua-new-guinea">
+                                Papua New Guinea
+                            </option>
+                        
+                            <option value="PY" data-alias="paraguay">
+                                Paraguay
+                            </option>
+                        
+                            <option value="PE" data-alias="peru">
+                                Peru
+                            </option>
+                        
+                            <option value="PH" data-alias="philippines">
+                                Philippines
+                            </option>
+                        
+                            <option value="PN" data-alias="pitcairn">
+                                Pitcairn
+                            </option>
+                        
+                            <option value="PL" data-alias="poland">
+                                Poland
+                            </option>
+                        
+                            <option value="PT" data-alias="portugal">
+                                Portugal
+                            </option>
+                        
+                            <option value="PR" data-alias="puerto-rico">
+                                Puerto Rico
+                            </option>
+                        
+                            <option value="QA" data-alias="qatar">
+                                Qatar
+                            </option>
+                        
+                            <option value="RE" data-alias="reunion">
+                                Réunion
+                            </option>
+                        
+                            <option value="RO" data-alias="romania">
+                                Romania
+                            </option>
+                        
+                            <option value="RU" data-alias="russia">
+                                Russia
+                            </option>
+                        
+                            <option value="RW" data-alias="rwanda">
+                                Rwanda
+                            </option>
+                        
+                            <option value="BL" data-alias="skype">
+                                Saint Barthélemy
+                            </option>
+                        
+                            <option value="SH" data-alias="skype">
+                                Saint Helena, Ascension and Tristan da Cunha
+                            </option>
+                        
+                            <option value="KN" data-alias="saint-kitts-and-nevis">
+                                Saint Kitts and Nevis
+                            </option>
+                        
+                            <option value="LC" data-alias="saint-lucia">
+                                Saint Lucia
+                            </option>
+                        
+                            <option value="MF" data-alias="skype">
+                                Saint Martin (French part)
+                            </option>
+                        
+                            <option value="PM" data-alias="saint-pierre-and-miquelon">
+                                Saint Pierre and Miquelon
+                            </option>
+                        
+                            <option value="VC" data-alias="saint-vincent-and-the-grenadines">
+                                Saint Vincent and the Grenadines
+                            </option>
+                        
+                            <option value="WS" data-alias="samoa">
+                                Samoa
+                            </option>
+                        
+                            <option value="SM" data-alias="san-marino">
+                                San Marino
+                            </option>
+                        
+                            <option value="ST" data-alias="sao-tome-and-principe">
+                                Sao Tome and Principe
+                            </option>
+                        
+                            <option value="SA" data-alias="saudi-arabia">
+                                Saudi Arabia
+                            </option>
+                        
+                            <option value="SN" data-alias="senegal">
+                                Senegal
+                            </option>
+                        
+                            <option value="RS" data-alias="serbia">
+                                Serbia
+                            </option>
+                        
+                            <option value="SC" data-alias="seychelles">
+                                Seychelles
+                            </option>
+                        
+                            <option value="SL" data-alias="sierra-leone">
+                                Sierra Leone
+                            </option>
+                        
+                            <option value="SG" data-alias="singapore">
+                                Singapore
+                            </option>
+                        
+                            <option value="SX" data-alias="skype">
+                                Sint Maarten (Dutch part)
+                            </option>
+                        
+                            <option value="SK" data-alias="slovakia">
+                                Slovakia
+                            </option>
+                        
+                            <option value="SI" data-alias="slovenia">
+                                Slovenia
+                            </option>
+                        
+                            <option value="SB" data-alias="solomon-islands">
+                                Solomon Islands
+                            </option>
+                        
+                            <option value="SO" data-alias="somalia">
+                                Somalia
+                            </option>
+                        
+                            <option value="ZA" data-alias="south-africa">
+                                South Africa
+                            </option>
+                        
+                            <option value="GS" data-alias="skype">
+                                South Georgia and the South Sandwich Islands
+                            </option>
+                        
+                            <option value="KR" data-alias="south-korea">
+                                South Korea
+                            </option>
+                        
+                            <option value="SS" data-alias="south-sudan">
+                                South Sudan
+                            </option>
+                        
+                            <option value="ES" data-alias="spain">
+                                Spain
+                            </option>
+                        
+                            <option value="LK" data-alias="sri-lanka">
+                                Sri Lanka
+                            </option>
+                        
+                            <option value="SR" data-alias="suriname">
+                                Suriname
+                            </option>
+                        
+                            <option value="SJ" data-alias="skype">
+                                Svalbard and Jan Mayen
+                            </option>
+                        
+                            <option value="SZ" data-alias="swaziland">
+                                Swaziland
+                            </option>
+                        
+                            <option value="SE" data-alias="sweden">
+                                Sweden
+                            </option>
+                        
+                            <option value="CH" data-alias="switzerland">
+                                Switzerland
+                            </option>
+                        
+                            <option value="TW" data-alias="taiwan">
+                                Taiwan
+                            </option>
+                        
+                            <option value="TJ" data-alias="tajikistan">
+                                Tajikistan
+                            </option>
+                        
+                            <option value="TZ" data-alias="tanzania">
+                                Tanzania
+                            </option>
+                        
+                            <option value="TH" data-alias="thailand">
+                                Thailand
+                            </option>
+                        
+                            <option value="TL" data-alias="timor-leste">
+                                Timor-Leste
+                            </option>
+                        
+                            <option value="TG" data-alias="togo">
+                                Togo
+                            </option>
+                        
+                            <option value="TK" data-alias="tokelau">
+                                Tokelau
+                            </option>
+                        
+                            <option value="TO" data-alias="tonga">
+                                Tonga
+                            </option>
+                        
+                            <option value="TT" data-alias="trinidad-and-tobago">
+                                Trinidad and Tobago
+                            </option>
+                        
+                            <option value="TN" data-alias="tunisia">
+                                Tunisia
+                            </option>
+                        
+                            <option value="TR" data-alias="Turkey">
+                                Turkey
+                            </option>
+                        
+                            <option value="TM" data-alias="turkmenistan">
+                                Turkmenistan
+                            </option>
+                        
+                            <option value="TC" data-alias="turks-and-caicos-islands">
+                                Turks and Caicos Islands
+                            </option>
+                        
+                            <option value="TV" data-alias="tuvalu">
+                                Tuvalu
+                            </option>
+                        
+                            <option value="UG" data-alias="uganda">
+                                Uganda
+                            </option>
+                        
+                            <option value="UA" data-alias="ukraine">
+                                Ukraine
+                            </option>
+                        
+                            <option value="AE" data-alias="united-arab-emirates">
+                                United Arab Emirates
+                            </option>
+                        
+                            <option value="GB" data-alias="uk">
+                                United Kingdom
+                            </option>
+                        
+                            <option value="UM" data-alias="us-minor-outlying-islands">
+                                United States Minor Outlying Islands
+                            </option>
+                        
+                            <option value="US" data-alias="usa">
+                                United States of America
+                            </option>
+                        
+                            <option value="UY" data-alias="uruguay">
+                                Uruguay
+                            </option>
+                        
+                            <option value="UZ" data-alias="uzbekistan">
+                                Uzbekistan
+                            </option>
+                        
+                            <option value="VU" data-alias="vanuatu">
+                                Vanuatu
+                            </option>
+                        
+                            <option value="VE" data-alias="venezuela-bolivarian-republic-of">
+                                Venezuela
+                            </option>
+                        
+                            <option value="VN" data-alias="viet-nam">
+                                Vietnam
+                            </option>
+                        
+                            <option value="VG" data-alias="skype">
+                                Virgin Islands (British)
+                            </option>
+                        
+                            <option value="VI" data-alias="skype">
+                                Virgin Islands (U.S.)
+                            </option>
+                        
+                            <option value="WF" data-alias="wallis-and-futuna">
+                                Wallis and Futuna
+                            </option>
+                        
+                            <option value="EH" data-alias="western-sahara">
+                                Western Sahara
+                            </option>
+                        
+                            <option value="YE" data-alias="yemen">
+                                Yemen
+                            </option>
+                        
+                            <option value="ZM" data-alias="zambia">
+                                Zambia
+                            </option>
+                        
+                            <option value="ZW" data-alias="zimbabwe">
+                                Zimbabwe
+                            </option>
+                        
+                    </select>
+                </div>
+                <p>Your current location</p>
+            </td>
+        </tr>
+        <tr style="display: none;" id="city_container">
+            <td>City</td>
+            <td>
+                <div class="iMess" id="div_city">
+                    <input type="text" id="id_city" class="IWXMd mb5" value="" maxlength="10">
+                </div>
+            </td>
+        </tr>
+
+        <tr class="deleteLine 0multi_languages_set languageYouSpeakRow">
+    <td class="pb0 languageYouSpeak">Languages you speak</td>
+    <td class="pb0">
+        <div class="fl mb5">
+            <div id="div_language_0multi_languages_set" class="IW185 mr10 fl block_0multi_languages_set" data-idpreffix="div_language_">
+                <select class="IW185 block_0multi_languages_set languageChoiсe" id="id_language_0multi_languages_set" data-idpreffix="id_language_" disabled="disabled">
+                    <option value="">Choose...</option>
+                    
+                        <option value="sq">Albanian</option>
+                    
+                        <option value="ar">Arabic</option>
+                    
+                        <option value="hy">Armenian</option>
+                    
+                </select>
+            </div>
+
+            <div id="div_level_0multi_languages_set" class="IW185 mr10 fl block_0multi_languages_set" data-idpreffix="div_level_">
+                <select class="IW185 block_0multi_languages_set levelChoiсe" id="id_level_0multi_languages_set" data-idpreffix="id_level_" data-qa-group="multi-languages-level-dropdown">
+                    <option value="">Choose...</option>
+                    
+                        <option value="elenentary">Beginner (A1)</option>
+                    
+                        <option value="pre">Pre-Intermediate (A2)</option>
+                    
+                        <option value="inter">Intermediate (B1)</option>
+                    
+                        <option value="upper">Upper-Intermediate (B2)</option>
+                    
+                        <option value="advanced">Advanced (C1)</option>
+                    
+                        <option value="profi">Proficient (C2)</option>
+                    
+                        <option value="native">Native</option>
+                    
+                </select>
+            </div>
+            <div class="pr fl">
+              <div class="linkRemoveField" style="display: none;">
+                  Delete
+              </div>
+            </div>
+        </div>
+        <div class="clearFix"></div>
+        <label class="b-temp-checkbox" for="id_can_teach_0multi_languages_set" style="display: none;">
+            <input class="b-temp-checkbox__input block_0multi_languages_set" type="checkbox" id="id_can_teach_0multi_languages_set" data-idpreffix="id_can_teach_" checked="checked" disabled="disabled">
+            <span class="b-temp-checkbox__label">
+                I can teach in this language
+            </span>
+        </label>
+    </td>
+</tr><tr id="tr_add_language_speak">
+            <td></td>
+            <td>
+                <div id="div_multi_languages_block">
+                    <input type="hidden" id="id_multi_languages_block">
+                </div>
+                <a id="add_language_speak" class="addLink">Add another language</a>
+            </td>
+        </tr>
+        <tr style="display: none;" id="zip_code_container">
+            <td>Zip code</td>
+            <td class="iMess" id="div_zip_code">
+                <input type="text" id="id_zip_code" style="width: 90px;" class="IWLg mb5" value="" maxlength="10">
+            </td>
+        </tr>
+        <tr>
+            <td>Originally from</td>
+            <td>
+                <select id="id_country_of_birth" class="IWXMd mb5" data-qa-id="general-country-of-birth-dropdown">
+                    <option value="">Choose...</option>
+                
+                    <option value="AF">
+                        Afghanistan
+                    </option>
+                
+                    <option value="AX">
+                        Åland Islands
+                    </option>
+                
+                    <option value="AL">
+                        Albania
+                    </option>
+                
+                    <option value="DZ">
+                        Algeria
+                    </option>
+                
+                    <option value="AS">
+                        American Samoa
+                    </option>
+                </select>
+                <p>Let students know your background</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Year of birth</td>
+            <td>
+                <div id="div_age">
+                    <select class="IWXMd mb5" id="id_age">
+                        <option value="0">Choose...</option>
+                            <option value="2001"> 2001 </option>                      
+                            <option value="2000"> 2000 </option>                    
+                            <option value="1999"> 1999 </option>
+                    </select>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Phone number</td>
+            <td>
+                <div class="inpPhone mb5">
+                    <input type="tel" data-qa-id="general-phone-number-field" class="IWXMd" id="id_phone_number" value="">
+                </div>
+                <p>Receive SMS-notifications about new messages from students. <br> Please, use international format e.g. +44093 123 4567</p>
+            </td>
+        </tr>
+        <tr id="skype_name_container">
+            <td>Skype ID</td>
+            <td>
+                <div class="iMess">
+                    <input id="id_skype_name" type="text" class="IWXMd mb5" value="" maxlength="35">
+                </div>
+                <p>Your Skype ID is needed for backup purposes only. All lessons are conducted in the Preply Space - Preply's video chat and messaging tool.</p>
+            </td>
+        </tr>
+
+        <tr id="email_container" class="hidden">
+            <td>Email</td>
+            <td>
+                <div class="iMess">
+                    <input id="id_email" type="email" class="IWLg mb5" value="" disabled="">
+                </div>
+                <p>Please contact support to change your email.</p>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <div class="b-migration-wrap">
+                    <div class="media-block__actions">
+                        <button class="btn btn--success" id="goToPhoto" data-qa-id="general-save-btn">Next</button>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </tbody></table>
+</div></div>
+                <button id="activate-step-2" class="btn btn-primary btn-lg">Save and Continue</button>
+            </div>
+        </div>
+    </div>
+    <div class="row setup-content" id="step-2">
+        <div class="col-xs-12">
+            <div class="col-md-12 well">
+                <h1 class="text-center"> STEP 2</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row setup-content" id="step-3">
+        <div class="col-xs-12">
+            <div class="col-md-12 well">
+                <h1 class="text-center"> STEP 3</h1>
+            </div>
+        </div>
+    </div>
+</div>   
+</body>

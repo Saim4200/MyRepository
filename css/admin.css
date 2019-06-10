@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor:default;
+}
+
+@-ms-viewport{
+  width: device-width;
+}
+
+html,
+body {
+    background-color: white;
+    color: black;
+    font-family:"Raleway", 'Arial', sans-serif;
+   
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    will-change: background;
+   
+}
+
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+/* ----------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------- */
+
+
+.row {
+    max-width: 90%;
+    margin: 5% 0 0 5%;
+}
+
+section {
+    padding: 80px 0;
+    overflow: hidden;
+    
+    
+}
+
+
+
+.title{
+    font-size: 250%;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Italianno', sans-serif;
+}
+
+p{
+    color: #171717;
+    text-align: justify;
+   
+    padding: 3%;
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+}
+h3{
+    text-align:center;
+    color: #3c3c3c;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/*-------------------------hero-box----------------------*/
+header{
+    
+     height: 100vh;
+    width: 100vw;
+   
+    
+    background-image:url(img/admin.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-bottom: 6%;
+}
+.hero-textbox{
+    font-size: 200%;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    
+}
+.hero-title{
+    opacity: 0.9;
+    position: relative;
+    font-family: "Mukta Malar", sans-serif;
+    
+    margin-top:15%;
+    left: 25%;
+    
+    width: 800px;
+    color: white;
+    font-size: 400%;
+    font-weight:100;
+    letter-spacing: 2px;
+    word-spacing: 8px;
+}
+.welcome-text{
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: 90%; 
+    color: rgba(255, 255, 255, 0.7); 
+    letter-spacing: 3px; 
+    word-spacing: 3px;
+}
+
+.title-box{
+    text-align: center;
+}
+
+.hero-text{
+      font-size: 90%;
+      margin-left: 10%;
+      color: white;
+      font-family: "Raleway", sans-serif;
+}
+
+.box{
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    height: 30%;
+    width: 90%;
+    transition: 0.6s;
+    font-size: 100%;
+    padding-top: 10%;
+    z-index: 1;
+    
+}
+
+.box:hover{
+    
+    
+    background-color: rgba(1, 152, 117, 0.59);
+    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.36);
+    
+}
+ion-icon{
+   
+    cursor: pointer;
+    margin: auto;
+    height:120px;
+    width: 120px;
+    transition: 0.6s;
+    z-index: 2;
+}
+
+
+
+.hover{
+    font-size: 250%;
+    transition: 0.6s;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.hover:hover{
+    transform: scale(1.5);
+}
+
+.circle{
+    z-index: 100;
+    position: absolute;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: #E84A5F;
+    margin-left: 10%;
+    margin-top:1%; 
+    font-size: 80%;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.value{
+    cursor: pointer;
+    transform: translate(-3%,60%);
+}
+
+
+.box:hover ion-icon{
+    transform: scale(1.5);
+}
+.box:hover .circle{
+   margin-top:0.1%;
+    margin-left: 10.9%;
+    transform: scale(1.5);
+}

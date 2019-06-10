@@ -1,0 +1,96 @@
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+@media only screen and (max-width: 1200px) {
+    
+    .row {padding: 0 2%;}
+    
+    body{font-size: 18px;}
+}
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+    body{font-size: 18px;}
+    section {padding: 80px 0;}
+    input{margin: 8% 2%;}
+
+}
+
+@media only screen and (max-width: 900px) {
+   
+     input{margin: 15% 2%;}
+    .form{width: 95%;}
+    p{
+    
+    font-size: 60%;
+    letter-spacing:2px;
+    line-height: 140%;
+}
+
+}
+
+@media only screen and (max-width: 824px) {
+    
+    .main-nav { display: none; }
+    ion-icon[name=menu]{display: inline-block;}   
+    
+}
+
+
+@media only screen and (max-width: 800px) {
+    
+}
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+    
+    .col .span-2-of-3{width: 100%;}
+    .col .span-1-of-3{width: 100%;}
+    footer .col { width: 100%;margin: 0 0 4% 0;}
+    .form form .col .span-1-of-9{margin-top: -1%;}
+    p{margin: auto;}
+    }
+
+@media only screen and (max-width: 670px) {
+   
+}
+@media only screen and (max-width: 600px) {
+    body{background-image: none;background-color: white;}
+    .form{width: 100%;box-shadow: none;border-radius: 0;}
+}
+
+@media only screen and (max-width: 480px) {
+    select{
+        margin: 3% auto;
+    }
+   input[type=file]{
+    margin: 5% auto;
+    padding: 0;
+    font-size: 70%;}
+    input[type=radio]{
+    margin: 5% auto;
+    padding: 0;
+    }
+   
+.form .terms p{
+    
+    font-size:70%;
+    letter-spacing:0px;
+    word-spacing:0px;
+}
+    
+}
+
+@media only screen and (max-width: 390px) {
+   
+   .form input[type=submit]{
+        font-size: 70%;
+        float: left;
+        padding: none;
+       box-shadow:none;
+    }
+    .form input[type=submit]:hover{
+    
+    background-color: rgba(49,58,115);
+    transition:0;
+    box-shadow: none;
+    
+    
+}
+}

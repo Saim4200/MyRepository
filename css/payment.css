@@ -1,0 +1,493 @@
+
+html,
+body {
+    color: black;
+  font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    will-change: background;
+    overflow-x: hidden;
+    background:linear-gradient(rgba(255,255,255, 0.95), rgba(255,255,255, 0.75)),url(img/admin.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+section {
+    padding: 40px 0;
+    margin: 2% auto;
+    overflow: hidden;
+}
+.filter{
+    display: block;
+    margin: 2% auto;
+    margin-top: 40px;
+    height: 100vh;
+    background-color:transparent;
+    opacity: 1;
+    color: #656565;
+    border-radius: 5px;
+   
+}
+
+.filter .container {
+    width: 100%;
+    margin: auto 2%;
+    text-align: left;
+    font-size: 80%;
+    border-radius: 5px;
+    opacity: 0.8;
+     background-color: transparent;
+}
+
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 180px;
+  background-color: transparent;
+  height: auto;
+  overflow: auto;
+
+}
+
+/* Sidebar links */
+.sidebar button {
+  display: block;
+    width: 95%;
+  color: black;
+padding: 8px 12px 8px 10px;
+ text-decoration: none;
+  font-size: 75%;
+  color: #818181;
+    border: none;
+  background: none;
+  margin-left: 2%;
+    margin-bottom: 5px;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+    border-radius: 2px;
+}
+
+/* Active/current link */
+.sidebar button.active {
+    background-color: darkcyan;
+    color: #f5fafa;
+}
+
+/* Links on mouse-over */
+.sidebar button:hover:not(.active) {
+    color: darkcyan;
+    background-color: #d1eaea;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar button {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar button {
+    text-align: center;
+    float: none;
+  }
+}
+#history {
+    display: none;
+}
+
+.filter .container .filter-title{
+    text-align: left;
+    padding: 5px 10px;
+    font-family: monospace;
+    font-size: 100%;
+    font-weight: 100;
+    
+}
+
+.divider-full {
+      width: 80%;
+    height: 1px;
+    margin: 2% 3% 12%;
+    display:block;
+    border:none;
+    color:white;
+    background: #dfedee;
+    background-image: linear-gradient(to right, #c8d5d6 45%, #dfedee 95%);
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #d8f3f3;
+  color: #66b9b9;
+  cursor: pointer;
+  margin: 10px 5% 0 5% ;
+    padding: 15px 2% 12px 3%;
+  width: 90%;
+  text-align: left;
+  border: none;
+    border-radius: 5px;
+  outline: none;
+    font-size: 65%
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion:hover {
+ color: #66b9b9;
+    background-color: #def0f0;
+    font-weight: 600;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    width: 90%;
+    margin: 0 5% 0 5% ;
+    padding: 0 0px;
+    background-color: #def0f0;
+    display: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 800px;
+    
+}
+.accordion:after {
+  content: '+'; /* Unicode character for "plus" sign (+) */
+  font-size: 20px;
+  color: gray;
+  float: right;
+  margin-right: 2%;
+}
+.accordion-active:after {
+  content: "-"; /* Unicode character for "minus" sign (-) */
+  font-size: 20px;
+  color: gray;
+}
+.accordion-active {
+ color: #66b9b9;
+    background-color: #d1eaea;
+    font-weight: 600;
+}
+.channel-title {
+    font-size: 60%;
+    font-weight: 600;
+    color: darkcyan;
+    text-align: left;
+    display: block;
+    margin: 30px 0 20px 5%;
+    opacity: 0.7;
+    
+}
+
+
+.channel-text1 {
+      font-size: 45%;
+    font-weight: 300;
+    color: darkcyan;
+    text-align: left;
+    display: block;
+    width: auto;
+    margin: 15px 5% 30px 5%;
+    opacity: 0.5;
+}
+
+.channel-subtitle {
+    font-size: 60%;
+    font-weight: 600;
+    color: #009688;
+    text-align: left;
+    display: block;
+        margin: 20px 0 10px 5%;
+}
+
+.channel-text2 li {
+    line-height: 1.5;
+    font-size: 120%;
+    opacity:0.9;
+    padding: 0 10px;
+    color: darkcyan;
+}
+.channel-text2 li span {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.channel-details {
+    font-weight: 300;
+    color: darkcyan;
+    text-align: left;
+    display: block;
+    margin: 15px 10% 30px 10%;
+    padding: 3px 5px 1px 5px;
+    background-color: #f1f9f9;
+    border-radius: 8px;
+    opacity: 1
+    
+}
+
+.channel-text2 {
+      font-size: 45%;
+    font-weight: 300;
+    color: darkcyan;
+    text-align: left;
+    display: block;
+    width: auto;
+    margin: 15px 5% 15px 5%;
+}
+
+.channel-text3 {
+       font-size: 52%;
+    font-weight: 300;
+    color: darkcyan;
+    text-align: left;
+    display: block;
+    width: auto;
+    margin: 20px 5% 20px 5%;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+
+.box{
+    display: block;
+    width: auto;
+        margin: 20px 15%;
+    padding: 1px 5px 1px 5px;
+    font-size: 60%;
+
+}
+.box span {
+    display: block;
+    width: 30%;
+    max-height: 45px;
+    text-align: center;
+    padding: 8px 20px;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 14px;
+    border: 1px solid rgba(127, 197, 197, 1);
+    color:  #def0f0;
+    background-color: #2b8d8e;
+    -webkit-border-radius: 8px 0 0 8px;
+   -moz-border-radius: 8px 0 0 8px;
+    border-radius: 8px 0 0 8px;
+    border-right: none;
+    font-family:monospace;
+    float: left;
+        
+}
+.box input{
+    display: block;
+    margin: 0;
+    background-color: #d8f3f3;
+    text-align: right;
+    
+}
+
+.box input[type="tel"],
+.box input[type="decimal"]{
+     max-height: 35px;
+     padding: 7px 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+   width: 50%;
+
+    background-color: #d8f3f3;
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	  -moz-box-sizing : content-box;
+	       box-sizing : content-box;
+	-webkit-border-radius: 8px;
+	   -moz-border-radius: 8px;
+	        border-radius: 8px;
+    border: 1px solid rgb(178, 178, 178);
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	   -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+}
+
+.box input:not([type="radio"]):active,
+.box input:not([type="radio"]):focus{
+	background: #f2f9f9;	
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+	   -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+	        box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+    outline: none;
+} 
+
+.box input[type="date"]{
+     max-height: 35px;
+     padding: 8px 20px;
+    font-size: 11px;
+   width: 50%;
+    border: 1px solid rgb(178, 178, 178);
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	  -moz-box-sizing : content-box;
+	       box-sizing : content-box;
+	-webkit-border-radius:8px;
+	   -moz-border-radius: 8px;
+	        border-radius: 8px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	   -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	        box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	-webkit-transition: all 0.2s linear;
+	   -moz-transition: all 0.2s linear;
+	     -o-transition: all 0.2s linear;
+	        transition: all 0.2s linear;
+}
+
+.box label input{
+    margin: 10px;
+    display: inline-block;
+}
+.box label input:checked{
+    margin: 10px;
+    display: inline-block;
+}
+::-webkit-input-placeholder  { 
+	color: rgb(190, 188, 188); 
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder{ 
+	color: rgb(190, 188, 188);
+} 
+input[type=submit]{
+    display: block;
+    font-size: 110%;
+    margin:10px 0; 
+    width: 94%;
+    text-align: center;
+    color: darkcyan;
+    padding: 6px 40px;
+    background-color:#d1eaea;
+    transition: 0.4s;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: monospace;
+    border: none
+}
+
+input[type=submit]:hover{
+    color: #2b8d8e;
+    background-color: rgba(127, 197, 197, 0.56);
+    transition:0.4s;
+     
+}
+
+
+
+#payment-ck-button {
+      display: block;
+    cursor: pointer;
+      color: #525252;
+    background-color: transparent;
+    text-align: left;
+    width: 95%;
+}
+
+#payment-ck-button:hover {
+  color: darkcyan;
+    background-color: #d7ebf3;
+}
+
+
+#payment-ck-button label span {
+    display: block;
+    width: auto;
+    max-height: 45px;
+    text-align: center;
+    padding: 8px 5px;
+    vertical-align: middle;
+    margin: 0 5px;
+    font-size: 14px;
+    border: 1px solid rgba(127, 197, 197, 1);
+    color:  #def0f0;
+    border-radius: 0;
+    background-color: transparent;
+    float: left;
+}
+ .box label{
+      max-height: 35px;
+     padding: 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: left;
+   width: auto;
+    border:none;
+     background-color: aqua;
+}
+#payment-ck-button label input {
+    display: none;
+}
+
+#payment-ck-button input:checked + span {
+    background-color: #bddfeb;
+    color: darkcyan;
+    
+}
+
+   
+
+.channels-options {
+      position: relative;  
+    display: block;
+    height: 35px;
+    text-align: left;
+
+}
+.channels-options select {
+    padding: 8.2px 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 2;
+   width: 57%;
+    font-weight: 600;
+    color: #66b9b9;
+    background-color: #f1f9f9;
+    -webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+    border-radius: 8px;
+    border: 1px solid #d1eaea;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    outline: none;
+    cursor: pointer;
+}
+.channels-options select:focus {
+    outline: none;
+}
+.channels-options select:hover {
+    background-color: #d1eaea;
+
+}
+.channels-options select option {
+    min-height: 30px;
+    padding: 5px 20px;
+
+}
+.channels-options select option:hover {
+    background-color: #d1eaea;
+
+}

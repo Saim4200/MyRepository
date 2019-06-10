@@ -1,0 +1,382 @@
+<html>
+    <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../css/grid.css">
+    <link rel="stylesheet" type="text/css" href="../../css/navi.css">
+    <link rel="stylesheet" type="text/css" href="../../css/resnavi.css">
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../../css/search.css">
+    <link rel="stylesheet" type="text/css" href="../../css/note.css">
+    <link rel="stylesheet" type="text/css" href="../../css/dialog.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Monoton" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+<body>
+    
+<section>
+    <div class="col res-box-2-of-12">
+      <form action="search.php" method="post" enctype="application/x-www-form-urlencoded">
+            <div class="filter" id="filter">
+                
+                <div class="container">
+                    <div class="col span-2-of-2">
+                    <div class="col span-1-of-2">
+                    <div class="filter-title">Filters</div>
+                    </div>
+                    <div class="col span-1-of-2">
+                        <div class="filter-title">
+                    <a href="search.php" style="color: rgba(55, 55, 55, 0.58); "><ion-icon name="refresh"></ion-icon></a></div>
+                    </div>
+                    <div class="col span-2-of-2">
+                    <div class="divider-full"></div>
+                    </div>
+                    </div>
+                   
+                    <div class="col span-2-of-2">
+                    <p class="dropdown-btn">Grade <i class="fa fa-caret-down"></i></p>
+                      <div class="dropdown-container">
+                          <div id="filter-ck-button"><label><input class="single-checkbox" id="sub" type="radio" name="sub[]" value="1" checked><span>Primary</span></label></div>
+                          <div id="filter-ck-button"><label><input class="single-checkbox" id="sub" type="checkbox" name="sub[]" value="1"><span>Primary</span></label></div>
+                          <div id="filter-ck-button"><label><input class="single-checkbox" id="sub" type="checkbox" name="sub[]" value="1"><span>Primary</span></label></div>
+                      </div>
+                    </div>
+                   
+                     <div class="col span-2-of-2">
+                    <p class="dropdown-btn">Subjects <i class="fa fa-caret-down"></i></p>
+                      <div class="dropdown-container">
+                          <div id="filter-ck-button"><label><input class="single-checkbox" id="sub" type="checkbox" name="sub[]" value="1"><span>Maths</span></label></div>
+                      </div>
+                    </div>
+                
+                     <div class="col span-2-of-2">
+                    <p class="dropdown-btn">Area <i class="fa fa-caret-down"></i></p>
+                      <div class="dropdown-container">
+                         <div id="filter-ck-button"><label><input class="single-checkbox" id="sub" type="checkbox" name="sub[]" value="1"><span>Gulshan Town</span></label></div>
+                        
+                      </div>
+                    </div>
+
+                      <div class="col span-2-of-2">
+                    <p class="dropdown-btn">Tutoring Place <i class="fa fa-caret-down"></i></p>
+                      <div class="dropdown-container">
+                         <div id="filter-ck-button"><label><input class="single-checkbox" id="sub" type="checkbox" name="sub[]" value="1"><span>At Student's Place</span></label></div>
+                        
+                      </div>
+                    </div>
+              
+                      <div class="col span-2-of-2">
+                    <p class="dropdown-btn">Gender <i class="fa fa-caret-down"></i></p>
+                      <div class="dropdown-container">
+                         <div id="filter-ck-button"><label><input id="gender" type="checkbox" name="gender[]" value="1"><span>Male</span></label></div>
+                           <div id="filter-ck-button"><label><input id="gender" type="checkbox" name="gender[]" value="2"><span>Female</span></label></div>
+                      </div>
+                    </div>
+                    <div class="inner-box" style="padding-top: 10%"> 
+                    <div class="col span-2-of-2">
+                    <input type="submit" name="filterapply" value="APPLY">
+                  
+                    </div>
+                    </div>
+                </div>
+                    
+                
+                </div>
+        </form>
+        </div>
+    
+    <div class="col res-box-7-of-12">
+            
+            <div class="col span-2-of-2">
+            <div class="search">Matched Tutors (12)
+            </div>
+            </div>
+                    <div class="col span-2-of-2" style="margin-top: 0px">
+                    <div class="divider-main"></div>
+                    </div>
+        <form action="csearch.php" enctype="application/x-www-form-urlencoded" method="post">
+
+            <div class="container" id="display">
+            <div class="box">
+                <div class="col span-2-of-12">
+                    <img src='../../css/img/tutor.png' class='pic-box'>
+                    <div class="name" id="name">Saim Ahmed</div>
+                </div>
+                
+                <div class="col span-5-of-12">
+                <div class="inner-box">
+                        <img src='../../css/img/university.png' class='icon-box'>
+                        <div id="unibox">SIR SYED UNVERSITY</div>
+                   
+                      <div class="divider"></div>
+                    
+                        <img src='../../css/img/graduation.png' class='icon-box-2'><div class="qualification-box">BACHELORS</div>
+                        
+                        <img src='../../css/img/books.png' class='icon-box-2'><div class="qualification-box">Computer Science</div>
+                       
+                </div>
+                    <div><span class="divider"></span></div>
+                <div class="inner-box" style="margin-top: 5px">
+                     <img src='../../css/img/location.png' class='icon-box-2'><div class="qualification-box">Lives in Gulshan Town</div>
+                     <img src='../../css/img/student-location.png' class='icon-box-2'><div class="qualification-box">I can go to student's place</div>
+                       </div>
+                 
+                </div>
+                
+                <div class="col span-5-of-12">
+                   <div class="inner-box">
+                  
+                       <form action="csearch.php" enctype="application/x-www-form-urlencoded" method="post">
+    
+                           <div class="col span-2-of-2">
+                               <div class="subjectslist">My Subjects</div>
+                            <div class="col span-2-of-2" style="min-height:10%;">
+                                <div id="ck-button">
+                                   <label>
+                                      <input type="checkbox" value="1" checked><span>Maths</span>
+                                   </label>
+                                </div>
+                         
+                                <div id="ck-button-disabled">
+                                    <label>
+                                        <input type="checkbox" value="2"><span>Chemistry</span>
+                                    </label>
+                                </div>
+                                <div id="ck-button-disabled">
+                                    <label>
+                                        <input type="checkbox" value="3"><span>Physics</span>
+                                    </label>
+                                </div>
+                                <div id="ck-button-disabled">
+                                    <label>
+                                        <input type="checkbox" value="4"><span>Pakistan Studies</span>
+                                    </label>
+                                </div>
+                           </div>
+                           <div class="col span-2-of-2">
+                                <input type="hidden" name="tid" value="">
+                                <input type="submit" name="send" value="send request">
+                            </div>
+                            </div>
+                          
+                        </form>
+                    </div>
+                </div>
+            </div>
+                            <div class="box">
+                <div class="col span-2-of-12">
+                    <img src='../../css/img/tutor.png' class='pic-box'>
+                    <div class="name" id="name">Saim Ahmed</div>
+                </div>
+                
+                <div class="col span-5-of-12">
+                <div class="inner-box">
+                        <img src='../../css/img/university.png' class='icon-box'>
+                        <div id="unibox">SIR SYED UNVERSITY</div>
+                   
+                      <div class="divider"></div>
+                    
+                        <img src='../../css/img/graduation.png' class='icon-box-2'><div class="qualification-box">BACHELORS</div>
+                        
+                        <img src='../../css/img/books.png' class='icon-box-2'><div class="qualification-box">Computer Science</div>
+                       
+                </div>
+                    <div><span class="divider"></span></div>
+                <div class="inner-box" style="margin-top: 5px">
+                     <img src='../../css/img/location.png' class='icon-box-2'><div class="qualification-box">Lives in Gulshan Town</div>
+                     <img src='../../css/img/student-location.png' class='icon-box-2'><div class="qualification-box">I can go to student's place</div>
+                       </div>
+                 
+                </div>
+                
+                <div class="col span-5-of-12">
+                   <div class="inner-box">
+                  
+                       <form action="csearch.php" enctype="application/x-www-form-urlencoded" method="post">
+    
+                           <div class="col span-2-of-2">
+                               <div class="subjectslist">My Subjects</div>
+                            <div class="col span-2-of-2" style="min-height:10%;">
+                                <div id="ck-button">
+                                   <label>
+                                      <input type="checkbox" value="1" checked><span>Maths</span>
+                                   </label>
+                                </div>
+                         
+                                <div id="ck-button-disabled">
+                                    <label>
+                                        <input type="checkbox" value="2"><span>Chemistry</span>
+                                    </label>
+                                </div>
+                                <div id="ck-button-disabled">
+                                    <label>
+                                        <input type="checkbox" value="3"><span>Physics</span>
+                                    </label>
+                                </div>
+                                <div id="ck-button-disabled">
+                                    <label>
+                                        <input type="checkbox" value="4"><span>Pakistan Studies</span>
+                                    </label>
+                                </div>
+                           </div>
+                           <div class="col span-2-of-2">
+                                <input type="hidden" name="tid" value="">
+                                <input type="submit" name="send" value="send request">
+                            </div>
+                            </div>
+                          
+                        </form>
+                    </div>
+                </div>
+            </div>
+                
+                            <div class="box">
+                <div class="col span-2-of-12">
+                    <img src='../../css/img/tutor.png' class='pic-box'>
+                    <div class="name" id="name">Saim Ahmed</div>
+                </div>
+                
+                <div class="col span-5-of-12">
+                <div class="inner-box">
+                        <img src='../../css/img/university.png' class='icon-box'>
+                        <div id="unibox">SIR SYED UNVERSITY</div>
+                   
+                      <div class="divider"></div>
+                    
+                        <img src='../../css/img/graduation.png' class='icon-box-2'><div class="qualification-box">BACHELORS</div>
+                        
+                        <img src='../../css/img/books.png' class='icon-box-2'><div class="qualification-box">Computer Science</div>
+                       
+                </div>
+                    <div><span class="divider"></span></div>
+                <div class="inner-box" style="margin-top: 5px">
+                     <img src='../../css/img/location.png' class='icon-box-2'><div class="qualification-box">Lives in Gulshan Town</div>
+                     <img src='../../css/img/student-location.png' class='icon-box-2'><div class="qualification-box">I can go to student's place</div>
+                       </div>
+                 
+                </div>
+                
+                <div class="col span-5-of-12">
+                   <div class="inner-box">
+                  
+                       <form action="csearch.php" enctype="application/x-www-form-urlencoded" method="post">
+    
+                           <div class="col span-2-of-2">
+                               <div class="subjectslist">My Subjects</div>
+                            <div class="col span-2-of-2" style="min-height:10%;">
+                                <div id="ck-button">
+                                   <label>
+                                      <input type="checkbox" value="1" checked><span>Maths</span>
+                                   </label>
+                                </div>
+                         
+                                <div id="ck-button-disabled">
+                                    <label>
+                                        <input type="checkbox" value="2"><span>Chemistry</span>
+                                    </label>
+                                </div>
+                                <div id="ck-button-disabled">
+                                    <label>
+                                        <input type="checkbox" value="3"><span>Physics</span>
+                                    </label>
+                                </div>
+                                <div id="ck-button-disabled">
+                                    <label>
+                                        <input type="checkbox" value="4"><span>Pakistan Studies</span>
+                                    </label>
+                                </div>
+                           </div>
+                           <div class="col span-2-of-2">
+                                <input type="hidden" name="tid" value="">
+                                <input type="submit" name="send" value="send request" onclick="">
+                            </div>
+                            </div>
+                          
+                        </form>
+                    </div>
+                </div>
+            </div>
+                
+            </div>
+            
+        </form>
+        </div>
+        
+    <div class="col res-box-3-of-12">
+    <div class="side-bar">
+        <div class="inner-box">
+            <div class="signup-box">
+                <div class="image"></div>
+                <div class="some-text">Are you a student?</div>
+                 <div class="some-text1">Register here</div>
+               <a href="../form/sform.php"><div class="button">Signup</div></a>
+            </div>
+        </div>
+        <div class="col span-2-of-2">
+            <div class="top-tutor">
+                <div class="heading">top tutors</div>
+                <div class="under-line"></div>
+                <div class="inner-box"></div>
+                <div class="inner-box"></div>
+                <div class="inner-box"></div>
+            </div>
+        </div>
+        <div class="col span-2-of-2">
+            <div class="top-tutor">
+                <div class="heading">most requested</div>
+                <div class="under-line"></div>
+                <div class="inner-box"></div>
+                <div class="inner-box"></div>
+                <div class="inner-box"></div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+</section>
+
+    <div id="dialog"  >
+        <div id="dialog-header" class="error">
+            <div id="dialog-title">ALERT</div>
+            <div id="dialog-close"  onclick="hideDialog()"><i class="fa fa-close btn-close"></i></div>       
+        </div>
+        <div id="dialog-body">
+            This is a critical error.
+ 
+            <div class="button-bar">
+                      <input type="button" class="buttonOK" value="OK" onclick="hideDialog()">
+            </div>
+            
+        </div>
+        
+       
+  
+    </div>
+    <div id="dialog-mask"></div>
+    <script src="../../js/dialog.js"></script>
+
+    <script>
+    //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+            } else {
+              dropdownContent.style.display = "block";
+            }
+          });
+        }
+    </script>
+
+
+</body>
+</html>

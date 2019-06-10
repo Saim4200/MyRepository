@@ -1,0 +1,67 @@
+
+
+<a href="notification.php?ns=new"><div class="noti-box clearfix">
+    <div class="col span-1-of-12">
+        <ion-icon name="book"></ion-icon></div>
+    <div class="col span-11-of-12">
+        <div class="noti-text"><strong>sid</strong>  wants to learn <strong> physics </strong> of <strong>intermediate</strong> </div>
+        <div class="noti-date">time </div></div>
+    </div></a>
+
+<a href="notification.php?ns=decline">
+<div class="noti-box clearfix">
+    <div class="col span-1-of-12">
+        <ion-icon name="close-circle" style="color:#D75A4A;"></ion-icon></div>
+    <div class="col span-11-of-12">
+        <div class="noti-text"><strong><?php sname($dbConnected,$req['sid']); ?></strong> <strong>denied</strong> your request </div>
+        <div class="noti-date"><?php timedate($req['ntime']) ?></div></div>
+</div>
+</a>
+
+<a href="notification.php?ns=decline">
+<div class="noti-box clearfix">
+    <div class="col span-1-of-12">
+        <ion-icon name="close-circle" style="color:#D75A4A;"></ion-icon></div>
+    <div class="col span-11-of-12">
+        <div class="noti-text"><strong><?php sname($dbConnected,$req['tid']); ?></strong> <strong>denied</strong> your your request </div>
+        <div class="noti-date"><?php timedate($req['ntime']) ?></div></div>
+</div>
+</a>
+
+<a  href="notification.php?ns=accepted">
+<div class="noti-box clearfix">
+    <div class="col span-1-of-12">
+        <ion-icon name="checkmark-circle" style="color:#4ad78b;"></ion-icon></div>
+    <div class="col span-11-of-12">
+        <div class="noti-text"><strong><?php sname($dbConnected,$req['sid']); ?></strong> <strong>accepted</strong> your proposed fees </div>
+        <div class="noti-date"><?php timedate($req['ntime']) ?></div></div>
+</div>
+</a>
+
+<a href="notification.php?ns=accepted">
+<div class="noti-box clearfix">
+    <div class="col span-1-of-12">
+        <ion-icon name="checkmark-circle" style="color:#4ad78b;"></ion-icon></div>
+    <div class="col span-11-of-12">
+        <div class="noti-text"><strong><?php sname($dbConnected,$req['tid']); ?></strong> <strong>accepted</strong> your requested fees </div>
+        <div class="noti-date"><?php timedate($req['ntime']) ?></div></div>
+</div>
+</a>
+
+<a href="notification.php?ns=waiting">
+<div class="noti-box clearfix">
+    <div class="col span-1-of-12">
+        <ion-icon name="chatbubbles"></ion-icon></div>
+    <div class="col span-11-of-12">
+        <div class="noti-text"><strong><?php sname($dbConnected,$req['sid']); ?></strong> sends a <strong>bargain</strong> request </div>
+        <div class="noti-date"><?php timedate($req['ntime']) ?></div></div>
+    </div></a>
+
+<a href="notification.php?ns=waiting">
+<div class="noti-box clearfix">
+    <div class="col span-1-of-12">
+        <ion-icon name="chatbubbles"></ion-icon></div>
+    <div class="col span-11-of-12">
+        <div class="noti-text"><strong><?php sname($dbConnected,$req['sid']); ?></strong> sends a <strong>fees</strong> request </div>
+        <div class="noti-date"><?php timedate($req['ntime']) ?></div></div>
+    </div></a>

@@ -1,0 +1,199 @@
+nav{
+    width: 98.5%;
+}
+
+.icon-nav{
+    background-color: #019875;
+    opacity: 0.93;
+    width: 100%;
+    position: fixed;
+    height: 30px;
+    z-index: 999;
+    font-size:60%;
+    
+    
+   
+   
+}
+
+.call-contact{
+    color: white;
+    
+    margin-right: 5%;
+    float:right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+    
+}
+.icons{
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    max-width: 500px;
+    padding-left: 20px;
+}
+    
+
+
+
+
+.facebook {
+    background-image: url(icons/if_facebook_circle_gray_107140.png);
+    background-size: contain; 
+    margin-right: 1vw;
+    height: 18px;
+    width:18px;
+
+}
+.facebook:hover{
+     background-image: url(icons/if_facebook_circle_gray_107140-1.png);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.twitter {
+    background-image: url(icons/if_twitter_circle_gray_107135.png);
+    background-size: contain; 
+    margin-right: 1vw;
+    height: 18px;
+    width:18px;
+}
+.twitter:hover{
+    background-image: url(icons/if_twitter_circle_gray_107135-1.png);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.linkedin {
+    background-image: url(icons/if_linkedin_circle_color_107178-1.png);
+    background-size: contain; 
+    margin-right: 1vw;
+    height: 18px;
+    width:18px;
+
+}
+.linkedin:hover{
+     background-image: url(icons/if_linkedin_circle_color_107178.png);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.main-nav {
+    
+    
+    list-style: none;
+    margin-top: 48px;
+    margin-bottom: 10px;
+    font-size: 70%;
+    float: right;
+    width: 100%;
+    letter-spacing:2px;
+   
+    }
+
+.main-nav li {
+    
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 10px;
+    float: right;
+    
+    
+    
+}
+.logo {
+    height: 30px;
+    width: auto;
+    float: left;
+    margin-top: -20%;
+}
+
+.logo-black { 
+    display: none;
+    height: 30px;
+    width: auto;
+    float: left;
+    margin-top: -10%;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+    
+    padding: 6px 0;
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    color: #019875;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+         cursor: pointer;
+
+}
+
+.main-nav li:last-child{
+    float: left;
+}
+
+
+
+/* Sticky navi */
+.sticky {
+    
+    position: fixed;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    background-color:rgba(50, 184, 136, 0.98);
+    z-index: 9999;
+     -webkit-animation-name: reveal;
+             animation-name: reveal;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+}
+@-webkit-keyframes reveal {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes reveal {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.sticky .main-nav { margin-top: 18px;}
+
+
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 12px 0;
+    color: white;
+}
+.sticky .main-nav li a:hover{
+     color: #019875;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.sticky .logo { display: none; }
+.sticky .logo-black { display: block; }
+
+
+.proimg{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-top: -20%;
+         cursor: pointer;
+
+}

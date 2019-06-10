@@ -1,0 +1,1 @@
+[11-Jan-2019 17:44:25 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home4/tutorsh1/public_html/pages/queries/demo.php:1) in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 3

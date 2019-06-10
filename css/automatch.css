@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor:default;
+}
+
+@-ms-viewport{
+  width: device-width;
+}
+
+html,
+body {
+    position: relative;
+    background-color: white;
+    color: black;
+    font-family:"Raleway", 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    will-change: background;
+   
+}
+
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+/* ----------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------- */
+
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+    overflow: hidden;
+    }
+.container{
+    margin: 3% auto;
+    width: 100%;
+    padding: 30px 0;
+}
+/*--------------------------student design-------------------------*/
+.auto-box{
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 100%;
+    background: linear-gradient(to right,white 25%,#3c3c3c 0%);
+    border: 1px solid #3c3c3c;
+    color: #AAAAAA;
+    font-size: 80%;
+    font-weight: 100;
+    box-shadow: 0 6px 10px rgba(85, 85, 85, 0.6);
+    transition: 0.4s;
+    overflow: hidden;
+    margin: 14% auto 1%;
+
+}
+
+.auto-box:hover{
+    
+  box-shadow: rgba(62, 62, 62, 0.8) 0px 15px 20px;
+  transform: translate3d(0px, -1px, 0px);
+}
+.cus-box{
+    display: block;
+    width: 100%;
+    margin: 3% auto;
+    text-align: center;
+}
+
+.cus-box-1-of-2{
+    display: block;
+    width: 50%;
+    margin: 3% auto;
+}
+
+.cus-box input{
+    display: block;
+    margin: auto;
+    border: none;
+    border-bottom: 1px solid #595959;
+    width: 80%;
+}
+.cus-box select{
+    display: block;
+    margin: auto;
+    border: none;
+    border-bottom: 1px solid #595959;
+    background-color: #3c3c3c; 
+    
+}
+.auto-box input[type=submit]{
+    display: block;
+    background-image: url(icons/search.png);
+    background-size: contain; 
+    background-repeat: no-repeat;
+    padding: 30px;
+    cursor: pointer;
+    margin: 10% auto;
+    color: black;
+    transition: 0.4s;
+}
+.auto-box input[type=submit]:hover {
+    transform:scale(1.2);
+}
+
+/*--------------------------teacher design-------------------------*/
+.box{
+    position: relative;
+    margin: 0 auto 1%;
+    width: 95%;
+    background-color: #ffffff;  
+    box-shadow: 0 6px 10px rgba(85, 85, 85, 0.6);
+    background: linear-gradient(to right,rgba(1, 152, 117, 0.8) 49%,white 0%),url(img/steve-johnson-1123556-unsplash.jpg);background-size: cover;
+    overflow: hidden;
+    transition: 0.4s;
+    word-break: normal;
+}
+
+.box:hover{
+    
+    box-shadow: rgba(1, 152, 117, 0.44) 0px 15px 20px;
+  transform: translate3d(0px, -1px, 0px);
+}
+
+.res-card{
+    display: none;
+    position: relative;
+    margin: 0 auto 1%;
+    width: 92%;
+    background-color: #ffffff;  
+    background: linear-gradient(to bottom,rgba(1, 152, 117, 0.8) 45%,white 0%),url(img/steve-johnson-1123556-unsplash.jpg);background-size: cover;
+    overflow: hidden;
+    transition: 0.4s;
+    word-break: normal;
+}
+
+.name{
+    text-transform: capitalize;
+    word-break: normal;
+    font-size: 70%;
+    color: white;
+    margin-left:10px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.res-name{
+    text-transform: capitalize;
+    word-break: normal;
+    font-size: 70%;
+    color: white;
+    text-align: left;
+    letter-spacing: 1px;
+    margin: 2% 8%;
+    
+    
+}
+
+.pic-box{
+    margin: 10% 20%;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+}
+.s-pic-box{
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 100%;
+    background-color: white;
+}
+.res-pic-box{
+    margin: 2% 8%;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+}
+
+.inner-box{
+    overflow: hidden;
+    font-size: 60%;
+    font-weight: 100;
+    text-align: left;
+    width: 100%;
+    
+    
+}
+.res-inner-box{
+    overflow: hidden;
+    font-size: 60%;
+    font-weight: 100;
+    text-align: left;
+    width: 100%;
+    margin-left: -25%;
+    
+    
+}
+.inner-box-1-of-2{
+   width: 50%;
+    
+    
+}
+.inner-box-2-of-2{
+    width: 100%;
+}
+
+.uni-box{
+    width: 100%;
+    padding: 2% 0;
+    color: white;
+    font-size: 120%;
+}
+.res-uni-box{
+    width: 100%;
+    padding: 2% 0;
+    color: white;
+    font-size: 120%;
+    text-align: left;
+}
+/*------------------icon-----------------------*/
+.icon{
+    margin: 5%;
+    background-image: url(img/graduation.png);
+    background-size: contain;
+    height:40px; 
+    width:40px; 
+}
+.taught{
+    margin: 5% 0;
+    font-size: 250%;
+    color: #019875;
+}
+/*----------------table--------------*/
+.table{
+    margin-top: 4%;
+    letter-spacing: 1px;
+    border:none;
+    text-align: left;
+    width: 100%;
+    font-size: 90%;
+    color: white;
+    word-break: normal;
+}
+.table td, .table th {
+    width: 20%;
+    padding: 6px;
+    text-transform: capitalize;
+    text-align: left;
+}
+/*------------------------icon------------------------*/
+input{
+    background-color: transparent;
+    border: none;
+    color: #AAAAAA;
+}
+.inner-box .circle{
+    position: relative;
+  
+    background-color: #4ab19d;
+    height: 40px;
+    width: 40px;
+    margin: 20% 20%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.inner-box .bargain-box input[type=submit]{
+    opacity: 1;
+    margin: 5% 25%;
+    width: 60%;
+    border: 1px solid #019875;
+    color:#019875;
+    font-size: 120%;
+    letter-spacing: 1px;
+    padding: 4%;
+    transition: 0.4s;
+    text-transform: capitalize;   
+}
+.inner-box .bargain-box input[type=submit]:hover{
+    background-color: #019875;
+    color: white;
+}
+
+.inner-box .bargain-box{
+    margin: 5% auto;
+    width: 100%;
+   
+}
+
+.inner-box .bargain-box input[type=tel],
+.inner-box .bargain-box input[type=date],
+.inner-box .bargain-box input[type=time]
+{
+    color: #AAAAAA;
+    border-bottom: 1px solid #AAAAAA;
+    height: 40px;
+    width: 80%;
+}
+
+.inner-box .bargain-box select{
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #AAAAAA;
+    font-size: 90%;
+    letter-spacing: 1px;
+    height: 37px;
+    text-align: left;
+    text-transform: capitalize;
+    color: #AAAAAA;
+}

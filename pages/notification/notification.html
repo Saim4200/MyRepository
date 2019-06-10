@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../css/grid.css">
+    <link rel="stylesheet" type="text/css" href="../../css/navi.css">
+    <link rel="stylesheet" type="text/css" href="../../css/resnavi.css">
+    <link rel="stylesheet" type="text/css" href="../../css/headsup.css">
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../../css/notification.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+
+    </head>
+<body>
+    <header>
+        <div id="no"></div>
+    </header>
+    <section>
+    <div class="col span-2-of-2">
+    <div class="col span-3-of-12">
+        <div class="filter" id="filter">
+        <div class="container">
+            <div class="col span-2-of-2">
+                <div class="filter-title">Notifications </div>
+            </div>
+            <div class="col span-2-of-2">
+                <div class="divider-full"></div>
+            </div>
+            
+            <a href="notification.php"> 
+                <div class="box" active="true">
+                 <div class="col span-4-of-4">All</div>
+                </div></a>
+             <a href="notification.php?ns=new">
+            <div class="box">
+                <div class="col span-4-of-5">
+               New Requests
+                </div>
+                <div class="col span-1-of-5">
+                <div class="count" id="countnew">12</div></div>
+            </div>
+            </a>
+            <a href="notification.php?ns=waiting">
+            <div class="box">
+                 <div class="col span-4-of-5">
+                Waiting Requests
+                </div>
+                 <div class="col span-1-of-5">
+                <div class="count" id="countwaiting">41</div></div>
+                </div></a>
+             <a href="notification.php?ns=accepted">
+            <div class="box">
+                <div class="col span-4-of-5">
+               Accepted Requests</div>
+                  <div class="col span-1-of-5">
+                <div class="count" id="countaccepted">52</div></div>
+            </div></a>
+          <a href="notification.php?ns=decline">   
+              <div class="box">
+                <div class="col span-4-of-5">
+               Declined Requests</div>
+                 <div class="col span-1-of-5">
+                <div class="count" id="countdecline">24</div></div>
+            </div></a>
+            
+            
+            </div>
+        </div>
+        <div class="res-filter ">
+        <div class="container clearfix">
+            
+       
+        <div class="col filter-box-1-of-4"><input type="submit" name="all" value=""></div>
+        <div class="col filter-box-1-of-4"><input type="submit" name="new" value=""></div>
+        <div class="col filter-box-1-of-4"><input type="submit" name="waiting" value=""></div>
+        <div class="col filter-box-1-of-4"><input type="submit" name="accepted" value=""></div>
+        <div class="col filter-box-1-of-4"><input type="submit" name="decline" value=""></div>
+        
+        
+        </div>
+        </div>
+    </div>
+    <div class="col span-9-of-12">
+        <div class="container">
+            <div class="col span-2-of-2">
+            <div class="title">All Notifications
+            </div>
+            </div>
+ 
+             <div class="col span-2-of-2">     
+                    <div class="noti-box clearfix">
+                            <div class="col span-1-of-12">
+                                <img src="../../css/img/student.png" alt="" class="icon-notification">
+                            </div>
+                            <div class="col span-10-of-12">
+                                <div class="noti-text"><p>New Tuition Request for Physics of Intermediate class in Gulshan town . Student wants. Do you want to accept this request? </p></div>
+                                        <div class="actions"><div class="buttons"><input type="button" id="accept" name="accept" value="ACCEPT"> | <input type="button" id="reject" name="reject" value="REJECT"></div>
+                                         <div class="inputfield"><input type="text" name="demand-fee" placeholder="Enter demand fee"><input type="button" id="submit-demand" name="submit-demand" value="SUBMIT"></div></div>
+                            </div>
+                            <div class="col span-1-of-12">
+                                <div class="noti-date">May 01</div>
+                            </div>
+                        </div>
+                  </div>
+        </div>
+    </div>
+    </div>
+    </section>
+       
+</body>
+
+</html>

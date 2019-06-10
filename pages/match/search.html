@@ -1,0 +1,133 @@
+<?php
+//error_reporting(0);
+include '../database/tutordb.php';
+if(isset($_SESSION['id'])){include '../queries/checksession.php';}
+if(isset($_POST['manual'])){
+$sub=$_POST['sub'];
+if(!empty($sub[0])){$sub1=$sub[0];}else{$sub1="";}
+if(!empty($sub[1])){$sub2=$sub[1];}else{$sub2="";}
+if(!empty($sub[2])){$sub3=$sub[2];}else{$sub3="";}
+if(!empty($sub[3])){$sub4=$sub[3];}else{$sub4="";}
+$location=mysqli_real_escape_string($dbConnected,$_POST['tplace']);
+$quali=mysqli_real_escape_string($dbConnected,$_POST['quali']);
+$grade=mysqli_real_escape_string($dbConnected,$_POST['grade']);
+$area=mysqli_real_escape_string($dbConnected,$_POST['area']);
+require '../queries/search.php';
+$search=1;
+}
+elseif(isset($_POST['filter-submit'])){
+$sub1=mysqli_real_escape_string($dbConnected,$_POST['sub1']);
+$sub2=mysqli_real_escape_string($dbConnected,$_POST['sub2']);
+$sub3=mysqli_real_escape_string($dbConnected,$_POST['sub3']);
+$sub4=mysqli_real_escape_string($dbConnected,$_POST['sub4']);
+$area=mysqli_real_escape_string($dbConnected,$_POST['area']);
+$location=mysqli_real_escape_string($dbConnected,$_POST['tplace']);
+$grade=mysqli_real_escape_string($dbConnected,$_POST['grade']);
+require '../queries/search.php';
+    $search=1;
+}
+elseif(isset($_POST['res-filter-submit'])){require '../queries/search.php';$search=1;}
+
+else{
+    $tsearch=mysqli_query($dbConnected,
+    "select * from data 
+    inner join teacherinfoprofessional on data.id=teacherinfoprofessional.id
+    inner join teachersubjects on data.id=teachersubjects.id
+    where (data.active=1 and data.accepted=1)
+    ");
+    $search=0;
+}
+?>
+
+<html>
+    <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../css/grid.css">
+    <link rel="stylesheet" type="text/css" href="../../css/navi.css">
+    <link rel="stylesheet" type="text/css" href="../../css/resnavi.css">
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../../css/search.css">
+    <link rel="stylesheet" type="text/css" href="../../css/note.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Monoton" rel="stylesheet">
+    </head>
+<body>
+    <header>
+    <?php
+        if(isset($_SESSION['id'])){include '../templates/navi2.php';}
+        else{include '../templates/navi.php';}
+        ?>
+    </header>
+    <section>
+    <div class="col res-box-2-of-12">
+    <?php include 'filter.php'; ?>
+        </div>
+        <div class="col res-box-7-of-12">
+             
+            <?php
+            if(isset($_SESSION['id'])){
+                
+           include '../queries/checkinstitute.php';
+                if(mysqli_num_rows($checktsession)>0){
+            if(empty($checkinstitute['institute']) || ($checkareas==true)){
+                ?>
+            <div class="note">please fill out all the require information by going in your <a href="../profile/profile.php?setprofile=1">profile</a></div>
+            
+            <?php } }}?>
+           
+            <div class="col span-2-of-2">
+                
+            <div class="search">
+        <input type="text" name="searchinput" id="search" placeholder="Enter name of tutor or name of institute">
+            </div>
+            </div>
+           
+        
+            
+    <form action="csearch.php" enctype="application/x-www-form-urlencoded" method="post">
+
+ <?php   if($search==1){include 'condition.php';} elseif($search==0) {include 'all.php';} ?>
+            </form>
+        </div>
+        <div class="col res-box-3-of-12">
+        <?php include 'sidebar.php'; ?>
+        
+        </div>
+    
+    </section>
+    <?php
+    include '../templates/newfooter.php';
+    include '../templates/script.php';
+   
+    ?>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(window).scroll(function () {   
+
+         if($(window).scrollTop() > 200) {
+            $('#filter').css('position','fixed');
+            $('#filter').css('top','53'); 
+         }
+
+         else if ($(window).scrollTop() <= 200) {
+            $('#filter').css('position','');
+            $('#filter').css('top','');
+         }  
+            if ($('#filter').offset().top + $("#filter").height() > $("#contact").offset().top) {
+                $('#filter').css('top',-($("#filter").offset().top + $("#filter").height() - $("#contact").offset().top));
+            }
+        });
+        });
+        </script>
+        <script>
+                function myAlert() {
+                  alert("TUTORS ARE NOT ALLOWED TO SEND REQUEST");
+                }
+</script>
+    
+    <script type="text/javascript" src="searchscript.js"></script>
+    </body>
+</html>

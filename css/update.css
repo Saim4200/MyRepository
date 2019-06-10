@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor:default;
+}
+
+html,
+body {
+    /*background-image: url(img/contact-1.jpg);
+    background-size: cover;
+    background-attachment: fixed;*/
+    background-color:rgba(223,225,237);
+    color: black;
+    font-family:'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    will-change: background;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+nav{
+    padding: 1% 0;
+    margin-bottom: 1%;
+    background-color: white;
+}
+
+.main-nav {
+    
+    float: right;
+    list-style: none;
+    margin:1% 5% 1% 0%;
+    font-size: 85%;
+    }
+
+.main-nav li {
+    
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 10px;
+    
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    
+    padding: 8px 0;
+    color:black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    transition: 0.5s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    color: #019875;
+    transition: 0.5s;
+}
+
+
+/* Mobile navi */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon ion-icon {
+    font-size: 200%;
+    color: #fff;
+}
+
+
+.go-back{
+    position: absolute;
+    float: left;
+    margin: 5%;
+    padding: 1% 3%;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 10px;
+   
+}
+
+.form{
+    
+    padding: 1.4%;
+    font-size: 80%;
+    
+    
+}
+.title{
+    
+    padding: 3%;
+    font-size: 80%;
+    
+    
+}
+
+
+
+
+
+a{
+    text-decoration: none;
+    color: #019875;
+     cursor: pointer;
+}
+
+.terms{
+   margin: 4% auto;
+    max-width: 50%;
+}
+.box1{
+     background-color:rgba(49,58,115);
+    padding: 4%;
+   
+}
+.box2{
+    background-color:white;
+    padding: 2%;
+    margin-left: -5%;
+    line-height: 150%;
+    text-align: justify;
+}

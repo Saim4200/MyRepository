@@ -1,0 +1,22 @@
+[25-Nov-2018 18:42:59 UTC] PHP Warning:  include(..\database\tutordb.php): failed to open stream: No such file or directory in /home4/tutorsh1/public_html/pages/ad/cadlogin.php on line 3
+[25-Nov-2018 18:42:59 UTC] PHP Warning:  include(..\database\tutordb.php): failed to open stream: No such file or directory in /home4/tutorsh1/public_html/pages/ad/cadlogin.php on line 3
+[25-Nov-2018 18:42:59 UTC] PHP Warning:  include(): Failed opening '..\database\tutordb.php' for inclusion (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/tutorsh1/public_html/pages/ad/cadlogin.php on line 3
+[25-Nov-2018 18:43:29 UTC] PHP Warning:  include(..\database\tutordb.php): failed to open stream: No such file or directory in /home4/tutorsh1/public_html/pages/ad/cadlogin.php on line 3
+[25-Nov-2018 18:43:29 UTC] PHP Warning:  include(..\database\tutordb.php): failed to open stream: No such file or directory in /home4/tutorsh1/public_html/pages/ad/cadlogin.php on line 3
+[25-Nov-2018 18:43:29 UTC] PHP Warning:  include(): Failed opening '..\database\tutordb.php' for inclusion (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/tutorsh1/public_html/pages/ad/cadlogin.php on line 3
+[25-Nov-2018 18:43:58 UTC] PHP Warning:  include(..\database\tutordb.php): failed to open stream: No such file or directory in /home4/tutorsh1/public_html/pages/ad/cadlogin.php on line 3
+[25-Nov-2018 18:43:58 UTC] PHP Warning:  include(..\database\tutordb.php): failed to open stream: No such file or directory in /home4/tutorsh1/public_html/pages/ad/cadlogin.php on line 3
+[25-Nov-2018 18:43:58 UTC] PHP Warning:  include(): Failed opening '..\database\tutordb.php' for inclusion (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/tutorsh1/public_html/pages/ad/cadlogin.php on line 3
+[25-Nov-2018 19:05:00 UTC] PHP Warning:  include(..\database\tutordb.php): failed to open stream: No such file or directory in /home4/tutorsh1/public_html/pages/ad/cadlogin.php on line 3
+[25-Nov-2018 19:05:00 UTC] PHP Warning:  include(..\database\tutordb.php): failed to open stream: No such file or directory in /home4/tutorsh1/public_html/pages/ad/cadlogin.php on line 3
+[25-Nov-2018 19:05:00 UTC] PHP Warning:  include(): Failed opening '..\database\tutordb.php' for inclusion (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/tutorsh1/public_html/pages/ad/cadlogin.php on line 3
+[25-Nov-2018 19:06:31 UTC] PHP Warning:  include(..\database\tutordb.php): failed to open stream: No such file or directory in /home4/tutorsh1/public_html/pages/ad/cadlogin.php on line 3
+[25-Nov-2018 19:06:31 UTC] PHP Warning:  include(..\database\tutordb.php): failed to open stream: No such file or directory in /home4/tutorsh1/public_html/pages/ad/cadlogin.php on line 3
+[25-Nov-2018 19:06:31 UTC] PHP Warning:  include(): Failed opening '..\database\tutordb.php' for inclusion (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/tutorsh1/public_html/pages/ad/cadlogin.php on line 3
+[25-Nov-2018 19:18:49 UTC] PHP Warning:  include(..\database\tutordb.php): failed to open stream: No such file or directory in /home4/tutorsh1/public_html/pages/ad/cadlogin.php on line 3
+[25-Nov-2018 19:18:49 UTC] PHP Warning:  include(..\database\tutordb.php): failed to open stream: No such file or directory in /home4/tutorsh1/public_html/pages/ad/cadlogin.php on line 3
+[25-Nov-2018 19:18:49 UTC] PHP Warning:  include(): Failed opening '..\database\tutordb.php' for inclusion (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/tutorsh1/public_html/pages/ad/cadlogin.php on line 3
+[03-Jan-2019 10:30:58 UTC] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in /home4/tutorsh1/public_html/pages/ad/page-ad.php on line 73
+[03-Jan-2019 10:31:07 UTC] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in /home4/tutorsh1/public_html/pages/ad/page-ad.php on line 73
+[03-Jan-2019 10:31:12 UTC] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in /home4/tutorsh1/public_html/pages/ad/page-ad.php on line 73
+[05-Jan-2019 12:24:31 UTC] PHP Parse error:  syntax error, unexpected '{', expecting ',' or ')' in /home4/tutorsh1/public_html/pages/ad/page-ad.php on line 38

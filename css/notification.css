@@ -1,0 +1,669 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor:default;
+}
+
+@-ms-viewport{
+  width: device-width;
+}
+
+html,
+body {
+    background-color: #F4F7FA;
+    color: black;
+    font-family:"Raleway", 'Arial', sans-serif;
+    font-size: 18px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    will-change: background;
+   
+}
+
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+/* ----------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------- */
+
+
+.row {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 40px 0;
+    overflow: hidden;
+    margin: 2% auto;
+    
+    
+}
+/*----------------------------main-design-------------------------------*/
+
+
+.res-box-1-of-6 {
+    width: 15.33%;
+}
+
+.res-box-5-of-6 {
+  	width: 83.06%;
+}
+.filter-box-1-of-4 {
+	width: 23.8%; 
+}
+.res-box-1-of-4 {
+	width: 23.8%; 
+}
+.container .res-box-1-of-4:last-child {
+	width: 28%; 
+}
+
+.res-box-1-of-2 {
+	width: 49.2%; 
+}
+.res-box-1-of-3 {
+	width: 32.26%; 
+}
+.container a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*-------------------------------filter-------------------------------*/
+
+.filter{
+    width: 65%;
+    height: 100vh;
+    background-color: transparent;;
+    opacity: 0.9;
+    margin:0;
+    color: #434343;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.fixed{
+    position: fixed;
+    width: 15%;
+    height: 100vh;
+    background: #F2F2F2;
+    opacity: 0.9;
+    color: #434343;
+   
+}
+
+.filter .container {
+    width: 100%;
+    margin: auto 2%;
+    text-align: left;
+    font-size: 80%;
+    
+}
+.filter .container .filter-title{
+    text-align: left;
+    padding: 5px 10px;
+    font-family: monospace;
+    font-size: 120%;
+    font-weight: 100;
+    
+}
+
+.filter .container .box{
+    font-family: sans-serif;
+    font-size: 90%;
+    width: 95%;
+    background-color: transparent;
+    padding: 8px 12px 8px 15px;
+    text-align: left;
+    margin: 4px auto;
+    cursor: pointer;
+    border: none;
+    color: #828486;
+    display: flex;
+    border-radius: 3px;
+}
+.filter .container .box:active {
+    color: darkcyan;
+    font-weight: 700;
+}
+.filter .container .box:hover{
+    color: darkcyan;
+    background-color: #d1eaea;
+}
+.filter .container a{
+    cursor: pointer;
+}
+.filter .container a:focus,
+.filter .container a:active
+{
+    color: darkcyan;
+}
+.filter .container .box .count{
+    font-size: 100%;
+    padding: 0 5px;
+    font-family: monospace;
+    text-align: center;
+    color: darkcyan;
+}
+.res-filter{
+    margin: -10% 0 5%;
+    display: none;
+    position: relative;
+    width: 100%;
+    color: #656565;
+    background-color: #F2F2F2;
+    text-transform: capitalize;
+    
+}
+.res-filter .container{
+    background-color: #c8c8c8;
+    width: 100%;
+    margin: 0% auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 80%;
+    
+}
+
+.res-filter .container .filter-box-1-of-4 input{
+    margin: 1% auto;
+    background-color: transparent;
+    border: none;
+    text-transform: capitalize;
+    height: 40px;
+    width: 40px;
+
+}
+.res-filter .container .filter-box-1-of-4 input[name=new]{
+    background-image: url(icons/mail.png);
+    background-size: contain;
+   
+}
+.res-filter .container .filter-box-1-of-4 input[name=waiting]{
+    background-image: url(icons/clock.png);
+    background-size: contain;
+    
+   
+
+}
+.res-filter .container .filter-box-1-of-4 input[name=accepted]{
+    background-image: url(icons/approve-circular-button.png);
+    background-size: contain;
+   
+}
+.res-filter .container .filter-box-1-of-4 input[name=decline]{
+    background-image: url(icons/error.png);
+    background-size: contain;
+   
+}
+/*-------------------notification-design-----------------------------*/
+
+
+.notification-box-alpha{
+    display: block;
+    position: relative;
+    margin: 0 auto 10%;
+    width: 100%;
+    padding:2%;
+    min-height: 180px;
+    max-height: 240px;
+    background-color: white;
+    -webkit-box-shadow: 0 6px 10px rgba(85, 85, 85, 0.6);  
+            box-shadow: 0 6px 10px rgba(85, 85, 85, 0.6);
+}
+.notification-box-bravo{
+    position: relative;
+    display: block;
+    margin: 0 auto 10%;
+    width: 100%;
+    padding:1% 2%;
+    min-height: 20%;
+    max-height: 40%;
+    background-color: white;
+    -webkit-box-shadow: 0 6px 10px rgba(85, 85, 85, 0.6);  
+            box-shadow: 0 6px 10px rgba(85, 85, 85, 0.6);
+    }
+.notification-box-charlie{
+    position: relative;
+    display: block;
+    margin: 5% auto 10%;
+    width: 100%;
+    padding:3% 2%;
+    min-height: 20%;
+    max-height: 40%;
+    background-color:white;
+    -webkit-box-shadow: 0 6px 10px rgba(85, 85, 85, 0.6);
+            box-shadow: 0 6px 10px rgba(85, 85, 85, 0.6);
+    
+}
+.notification-box-delta{
+    position: relative;
+    display: block;
+    margin: 0 auto 5%;
+    width: 100%;
+   padding: 2%;
+    background-color: white;  
+    -webkit-box-shadow: 0 6px 10px rgba(85, 85, 85, 0.6);  
+            box-shadow: 0 6px 10px rgba(85, 85, 85, 0.6);
+}
+.time{
+    font-size: 60%;
+    color :#afb1b4;
+    letter-spacing: 0.5px;
+}
+.table{
+    margin-top: 10%;
+    letter-spacing: 2px;
+    border:none;
+    text-align: left;
+    width: 100%;
+    font-size: 70%;
+    color: white;
+    margin-top: 8%;
+    color :#828486;
+    word-break: normal;
+}
+.table td, .table th {
+    width: 20%;
+    padding: 8px 0;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.proposed-amount{
+    display: block;
+    color: #828486;
+    margin: 30% auto;
+    font-size:200%;
+    font-weight: 100;
+    text-align: left;
+}
+.proposed-amount:after{
+    content: " Rs";
+    margin: 20% auto;
+    font-size:40%;
+    font-weight: 100;
+}
+.agreed-amount{
+    display: block;
+    margin: 30% auto;
+    font-size:250%;
+    font-weight: 100;
+    color :#828486;
+}
+.agreed-amount:after{
+    content: " Rs";
+    margin: 20% auto;
+    font-size:40%;
+    font-weight: 100;
+}
+
+.bargain-amount{
+    display: block;
+    margin: 6% auto;
+    font-size:150%;
+    font-weight: 100;
+    color :#828486;
+}
+
+.bargain-amount:after{
+    content: " Rs";
+    margin: 20% auto;
+    font-size:40%;
+    font-weight: 100;
+}
+.bargin-title{font-size: 60%; text-align: left;color: #AAAAAA;text-transform: capitalize; letter-spacing: 1px;}
+.proposed-amount{margin: 0 auto; text-align: center;}
+
+.container .input-box{margin: 0% 0 0% 15%;}
+.container input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.container input[type=tel]{
+    display: block;
+    width: 98%;
+    font-size: 250%;
+    font-weight: 100;
+    color: #AAAAAA;
+    text-align: center;
+    border-bottom: 1px solid #AAAAAA;
+    outline: none;
+}
+.container input[type=tel]::-webkit-input-placeholder{
+    color: #828486;
+    font-size: 30%;
+}
+.container input[type=submit]{
+    display: block;
+    opacity: 1;
+    border: 1px solid #828486;
+    font-size: 60%;
+    padding: 9px;
+    width: 90%;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: #828486;
+    margin: 25px auto;
+}
+.container input[type=submit]:hover{
+    background-color: #828486;
+    color:white
+}
+
+
+.container input[name=pay],
+.container input[name=proceed],
+.container input[name=agree]{
+    width: 60%;
+    margin: 0;
+}
+
+.note{
+    display: block;
+    margin: 15% 0;
+    width: 100%;
+    font-size: 80%;
+    color: #828486;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 150%;
+}
+.container .col {margin: 0;}
+
+.container .title{
+    display: block;
+    margin: 0;
+    width: 90%;
+    padding: 15px 35px;
+    background-color: #fefefe;  
+    opacity: 0.5;
+    font-weight: 700;
+    letter-spacing:1px;
+    border-bottom: 1px solid #e7e8e8;
+    margin-top: 10px;
+    font-size: 90%;
+    
+}
+/*---------------------------------------checkbox-------------------------------------------------*/
+.check-container{
+    padding: 2% 0;
+    margin: 5% 0;
+}
+#ck-button {
+    position: relative;
+    display: block;
+    margin:1px;
+    background-color:#AAAAAA;
+    border-radius:18px;
+    overflow:auto;
+    float:left;
+    text-transform: uppercase;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    cursor: pointer;
+    border: 1px solid #AAAAAA;
+    letter-spacing: 1px;
+    font-size: 50%;
+    color: white;
+    
+}
+
+#ck-button label {float:left;}
+
+#ck-button label span {text-align:center;padding:6px;display:block;cursor: pointer;}
+
+#ck-button label input { display: none;}
+
+
+/*---------------------------------------all notification------------------------------------------*/
+.noti-box{
+     display: block;
+    margin: 0;
+    width: 90%;
+    padding: 0;
+    background-color: #fefefe;  
+    opacity: 0.7;
+    border-bottom: 1px solid #e7e8e8;
+    height: 70px;
+    position: relative;
+}
+
+
+.noti-box .icon-notification{
+   width: 40px;
+   border-radius: 20px;
+   margin: 10px 20px;
+}
+.noti-text{
+    font-size: 80%;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    letter-spacing: 0.1;
+    word-spacing: 1px;
+    margin: 5px 10px 5px 20px;
+    position: absolute; 
+  left: 70px; 
+  top: 10px; 
+  width: 80%; 
+  height: 40px; 
+  display: table; 
+}
+.noti-text p{
+  display: table-cell; 
+  vertical-align: middle; 
+}
+.noti-text strong {
+    cursor: pointer;
+}
+.noti-date{
+    display: block;
+    font-family: sans-serif;
+    font-size: 70%;
+    text-align: right;
+    padding: 8px 0;
+    cursor: pointer;
+    color: #d2d2d2;
+    position: absolute;
+    right: 12px;
+    bottom: 0;
+    
+}
+.noti-date ion-icon{
+    font-size: 140%;
+    margin-bottom: -0.5%;
+    margin-right: 1%;
+   
+}
+
+
+.divider-full {
+      width: 80%;
+    height: 1px;
+    margin: 2% 3% 12%;
+    display:block;
+    border:none;
+    color:white;
+    background: #dfedee;
+    background-image: linear-gradient(to right, #c8d5d6 45%, #dfedee 95%);
+}
+
+
+.noti-text a {
+    font-size: 90%;
+    color: darkgreen;
+    text-decoration: none;
+    line-height: 2;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.buttons input[type=button] {
+      font-size: 90%;
+    color: darkgreen;
+    text-decoration: none;
+    line-height: 2;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.inputfield input[type=text] {
+    border-bottom: 0.5px solid lightgray;
+    border-radius: 3px;
+    width: 150px;
+    margin: auto 10px 0 0;
+    text-align: center;
+    padding: 2px;
+    font-size: 90%;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: darkcyan;
+}
+.inputfield input[type=text]::-webkit-input-placeholder{
+    text-align: left;
+    font-size: 95%;
+    font-weight: 100;
+    letter-spacing: normal;
+}
+.inputfield input[type=text]:focus {
+background-color: aliceblue;
+}
+
+.inputfield input[type=date] {
+    border-bottom: 0.5px solid lightgray;
+    border-radius: 3px;
+    width: 160px;
+    margin: auto 10px 0 0;
+    text-align: right;
+    padding: 2px;
+    font-size: 90%;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: darkcyan;
+}
+.inputfield input[type=date]:focus {
+    background-color: aliceblue;
+}
+.actions {
+  position: absolute; 
+  left: 70px; 
+  top: 52px; 
+  width: 50%; 
+  height: 25px; 
+  display: table; 
+    margin: 0 10px 0 22px;
+}
+
+.buttons {
+    font-size: 85%;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    letter-spacing: 0.1;
+    word-spacing: 1px;
+    display: block
+}
+.inputfield {
+      width: auto; 
+      height: 25px; 
+    font-size: 85%;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1;
+    word-spacing: 1px;
+    display: none
+}
+.inputfield input[type=button] {
+    font-size: 85%;
+    color: darkgreen;
+    text-decoration: none;
+    line-height: 2;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/*---------------------------------------queries--------------------------------------------------*/
+
+@media only screen and (max-width: 1200px) {
+   
+     body{overflow-x: hidden;font-size: 18px;}
+    .row{ max-width: 100%;margin: 0 auto;}
+    .container input[type=submit]{font-size: 50%;}
+}
+
+@media only screen and (max-width: 1150px) {
+     .note{font-size: 70%; }
+     .container input[type=submit]{padding: 9px 6px;}
+     .bargain-amount{font-size:120%;}
+     .table{margin: 10% 5% 0;letter-spacing: 0;font-size: 70%;}
+}
+@media only screen and (max-width: 1010px) {
+     .container input[type=submit]{padding: 9px 2px;}
+}
+@media only screen and (max-width: 920px) {
+   
+     body{font-size: 16px;}
+    .main-nav { display: none; }
+    .mobile-nav-icon {display: inline-block;}
+    .main-nav {float: left;margin-top: 30px;margin-left: 25px;}
+    .main-nav li {display: block;}
+    .main-nav li a:link,
+    .main-nav li a:visited {display: block;border: 0;padding: 10px 0;font-size: 100%;}
+    .sticky .main-nav { margin-top: 10px; }
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited { padding: 10px 0; }
+    ion-icon[name=menu]{display:block;}   
+    .filter{display: none;}
+    .res-filter{display: block;}
+    .res-box-1-of-6 {width: 100%;}
+    .res-box-5-of-6 {width: 100%;}
+    .span-2-of-12{width: 100%;}
+    .span-3-of-12{width: 0;}
+    .side-bar{display: none;}
+    .span-7-of-12{width: 100%;}
+    .notification-box-alpha{width: 90%;}
+    .note{margin: 12% 0;}
+    
+   
+    
+}
+
+
+@media only screen and (max-width: 640px){
+    .notification-box-alpha{display:block;margin:5% 1%; width:95%;min-height:320px;max-height:380px; }
+    .container .res-box-1-of-4:nth-child(1){width:50%;}
+    .container .res-box-1-of-4:nth-child(2){width:50%;}
+    .container .res-box-1-of-4:nth-child(3){width:100%;}
+    .container .res-box-1-of-4:nth-child(4){width:100%;}
+    .table{margin: 10% 5% 0;letter-spacing: 0;font-size: 70%;text-align: center;}
+    .lol .span-2-of-2{width: 49%;}
+    .lol .span-2-of-2:nth-child(4){width: 100%;}
+    .note{margin: 5% 0 0;}
+    .container input[type=submit]{font-size: 70%; width: 60%;padding: 6px;}
+    .container input[name=pay],.container input[name=proceed],.container input[name=agree]{width: 30%; margin: 5% auto;}
+    .bargin-title{text-align: center;margin: 10% 0 0;}
+    .bargain-amount{text-align: center; margin: 5% auto; font-size:160%;}
+
+    
+}
+
+@media only screen and (max-width: 480px){
+    .notification-box-alpha{margin:5% auto; }
+}
+

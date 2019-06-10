@@ -1,0 +1,87 @@
+[20-Jan-2019 09:42:54 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (From): Tutors House in /home4/tutorsh1/public_html/pages/mail/PHPMailer/src/PHPMailer.php:1175
+Stack trace:
+#0 /home4/tutorsh1/public_html/pages/mail/mail.php(29): PHPMailer\PHPMailer\PHPMailer->setFrom('Tutors House')
+#1 {main}
+  thrown in /home4/tutorsh1/public_html/pages/mail/PHPMailer/src/PHPMailer.php on line 1175
+[20-Jan-2019 09:43:17 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (From): Tutors House in /home4/tutorsh1/public_html/pages/mail/PHPMailer/src/PHPMailer.php:1175
+Stack trace:
+#0 /home4/tutorsh1/public_html/pages/mail/mail.php(29): PHPMailer\PHPMailer\PHPMailer->setFrom('Tutors House')
+#1 {main}
+  thrown in /home4/tutorsh1/public_html/pages/mail/PHPMailer/src/PHPMailer.php on line 1175
+[08-Mar-2019 13:22:33 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[08-Mar-2019 13:24:12 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[14-Mar-2019 06:59:05 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[14-Mar-2019 07:01:13 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[14-Mar-2019 07:02:52 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[14-Mar-2019 09:41:03 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[14-Mar-2019 09:41:03 UTC] PHP Notice:  Undefined variable: fid in /home4/tutorsh1/public_html/pages/mail/activatelink.php on line 33
+[14-Mar-2019 09:48:58 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[14-Mar-2019 09:48:58 UTC] PHP Notice:  Undefined variable: fid in /home4/tutorsh1/public_html/pages/mail/activatelink.php on line 33
+[14-Mar-2019 09:51:16 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[14-Mar-2019 09:51:20 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[20-Mar-2019 02:44:50 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[20-Mar-2019 20:09:24 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[21-Mar-2019 15:09:24 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[21-Mar-2019 15:10:23 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[21-Mar-2019 15:53:39 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[21-Mar-2019 18:14:48 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[21-Mar-2019 18:34:13 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[21-Mar-2019 18:35:51 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[21-Mar-2019 19:07:30 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[21-Mar-2019 19:08:52 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[21-Mar-2019 19:09:59 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[21-Mar-2019 19:12:32 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[27-Mar-2019 11:31:38 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[27-Mar-2019 11:32:53 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[27-Mar-2019 11:34:28 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[06-Apr-2019 03:50:11 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[06-Apr-2019 03:52:02 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[06-Apr-2019 03:52:59 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[06-Apr-2019 03:54:49 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[06-Apr-2019 03:55:58 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[06-Apr-2019 04:00:08 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[06-Apr-2019 04:01:37 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[07-Apr-2019 11:32:04 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 19:45:51 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 19:47:36 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 19:49:37 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 19:51:27 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 19:51:34 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 19:52:05 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 19:52:15 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 19:52:43 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 19:52:54 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 19:55:38 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 19:55:50 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 19:55:54 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 19:56:21 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 19:57:44 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 19:57:51 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 19:57:56 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 19:58:02 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 19:58:06 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 19:58:12 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 19:58:23 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 19:58:29 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 19:58:42 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 19:58:49 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 19:59:50 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 20:00:06 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 20:00:19 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 20:00:30 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 20:00:51 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 20:00:57 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 20:01:07 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 20:02:37 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 20:02:46 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 20:03:01 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 20:03:10 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 20:03:17 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 20:03:24 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 20:03:43 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 20:04:08 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 20:04:21 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 20:04:50 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 20:05:04 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[13-Apr-2019 20:05:17 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11
+[16-Apr-2019 16:00:16 UTC] PHP Notice:  Undefined variable: dbConnected in /home4/tutorsh1/public_html/pages/database/tutordb.php on line 11

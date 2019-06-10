@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor:default;
+}
+
+html,
+body {
+    background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(img/form-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+     color: black;
+    font-family:"Raleway", 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    will-change: background;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+.main-nav {
+     opacity: 0.8;
+    position:fixed;
+    width: 100%;
+    background-color: white;
+    list-style:none;
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-size: 85%;
+     box-shadow: 0px 5px 5px rgba(77, 77, 77, 0.76);
+    padding-right: 2%;
+    
+    
+    }
+
+.main-nav li {
+    
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: 1.5%;
+    margin-bottom: 1%;
+    float: right;
+    
+    
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    
+    padding: 8px 0;
+    color:black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    transition: 0.5s;
+    
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    color: #019875;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.main-nav li:last-child{
+    float: left;
+}
+
+
+.logo {
+    height: 40px;
+    width: auto;
+    float: left;
+    margin-top: -20%;
+}
+
+.logo-black { 
+    display: none;
+    height: 40px;
+    width: auto;
+    float: left;
+    margin-top: -10%;
+}
+
+
+/*----------------------section-form--------------------*/
+.form{
+    width: 60%;
+     border-radius: 3px;
+     padding: 3%;
+     background-color:whitesmoke;
+     margin: 10% auto;
+    box-shadow: 0 15px 20px 10px rgba(77, 77, 77, 0.76);
+    
+    
+}
+
+input{
+    background-color: whitesmoke;
+    margin: 5% 2%; 
+    text-align: left;
+    font-size: 70%;
+    
+}
+
+select{
+   background-color: whitesmoke;
+    font-size: 70%; 
+}
+
+select,
+input[type=text],
+input[type=number],
+input[type=tel],
+input[type=password],
+input[type=email]
+
+
+{
+    border: none;
+    border-bottom: 1px solid #019875;
+    padding: 2%;
+    width: 100%;
+    margin: 2% 0;
+    font-size: 70%;
+}
+input[type=date]{
+     border: none;
+    border-bottom: 1px solid #019875;
+    padding: 1%;
+    width: 100%;
+    font-size: 70%;
+    margin: 2% 0;
+}
+
+input[type=file]{
+    
+    padding: 20px 20px 5px 0;
+    font-size: 70%;
+}
+
+.form input[type=submit]{
+    font-size: 80%;
+    margin-top:1.2%; 
+    float: right;
+    border: none;
+     color: white;
+    
+   
+    padding: 8px 30px 8px 30px ;
+    background-color:rgba(49,58,115);
+    transition: 0.4s;
+    box-shadow: -5px 5px 50px  -10px #555;
+}
+
+.form input[type=submit]:hover{
+    color: white;
+    background-color: #019875;
+    transition:0.4s;
+   box-shadow: none;
+    
+}
+input[name=firstname],
+input[name=lastname]
+
+{
+    padding: 3% 0;
+    font-size: 70%;
+}
+
+input[name=CNIC]{
+    width: 50%;
+    font-size: 70%;
+}
+
+input[name=passingyear]{
+    width: 48%;
+    font-size: 70%;
+}
+
+
+footer{
+    margin-top: 5%;
+   color: white;
+    padding: 5% 1% 2% 1%;
+    background-color: #151515;
+    font-size: 90%;
+    font-weight: 100;
+    letter-spacing: 3px;
+    text-align: center;
+    
+    
+}
+footer p{
+    color: #ffffffff;
+    font-size: 80%;
+    text-align: center;
+}
+.footer-title{
+    color: #ffffffff;
+    font-size: 110%;
+    font-weight: 600;
+}
+
+.icons-footer{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 500px;
+    margin: auto;
+    padding-left: 140px;
+    
+    }
+.email{
+    margin: auto;
+    padding-top: 8%;
+    letter-spacing: 1.4vw;
+    text-align: center;
+    text-transform:uppercase;
+    color: rgba(255, 255, 255, 0.49);
+    font-size: 100%;
+    font-weight: 600;
+}
+
+.copyright{
+    font-family: "Mukta Malar";
+    color: white;
+    letter-spacing: 5px;
+    font-size: 70%;
+    font-weight: 100;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.created{
+    font-family: "Mukta Malar";
+    color: white;
+    letter-spacing: 5px;
+    font-size: 65%;
+    font-weight: 300;
+    padding-top: 20px;
+    text-align: center;
+}
+
+footer ion-icon{
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+    
+}
+footer ion-icon:hover{
+   animation-name: icon-up;
+    animation-direction: alternate;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes icon-up{
+    0%{transform: translateY(0px);}
+    100%{transform: translateY(10px);}
+}
+
+footer input{
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #ffffffff;
+    opacity: 0.5;
+    padding: 5px;
+    width: 100%;
+}
+
+footer input[name=message]
+{
+    height: 200px;
+    width: 100%;
+   padding-bottom:20%; 
+
+    
+}
+
+footer input[type=submit]{
+    border-radius: 0;
+    text-align: center;
+    color: white;
+   margin: auto;
+    font-size: 90%;
+    width: 80%;
+    background-color: #019875;
+    opacity: 1;
+    border: none;
+    padding: 10px;
+    box-shadow: none;
+}
+select[name=intersub],
+select[name=qualification],
+select[name=location],
+select[name=currentstatus],
+select[name=gender]
+{
+    margin: 1% 2% 1% 0;
+    font-size: 70%;
+}
+label{
+    font-size: 90%;
+}
+
+footer input[type=text],
+footer input[type=email]
+
+
+{
+    border: none;
+    border-bottom: 1px solid white;
+    opacity: 0.5;
+    padding: 2%;
+    width: 100%;
+}
+
+
+
+p{
+    margin-left: 8%;
+    color: white;
+    font-size: 60%;
+    letter-spacing:3px;
+    line-height: 145%;
+    padding: 1%;
+    text-align: justify;
+}
+.form p:last-child{
+    margin-top: -2%;
+}
+.title{
+    color: white;
+    opacity: 0.8;
+    font-size: 110%;
+    text-align: center;
+}
+
+input[type=checkbox]{
+   
+float: right;
+    height: 15px;
+    width: 15px;
+}
+
+
+
+
+
+
+

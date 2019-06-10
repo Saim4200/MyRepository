@@ -1,0 +1,73 @@
+<html>
+<head>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../css/grid.css">
+    <link rel="stylesheet" type="text/css" href="../../css/navi.css">
+    <link rel="stylesheet" type="text/css" href="../../css/resnavi.css">
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../../css/testlayout.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=PT+Serif|Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+    </header>
+    <div class="container">
+    <table class="table" id="tbllq">
+    <thead>
+        <th colspan="3" id="title">
+           Mathematics
+        </th>
+        <th>
+            
+        </th>
+    </thead>
+    <tbody>
+        
+        <tr id="introduction">
+            <td colspan="4">
+                <table>
+                    <tr>
+                    <td colspan="4" style="font-family: 'Roboto'; font-size: 110%; height: 80px"><p>This is a Mathematics test of Basic Level (Level-1). </p></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Questions:</strong></td>
+                        <td>20 in total<span> (equal weightage)</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Duration:</strong></td>
+                        <td>20 minutes <span> (one minute for each question)</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Best Completion time:</strong></td>
+                        <td>10 minutes </td>
+                    </tr>
+                     <tr style="height: 60px;">
+                        <td colspan="3" style="height: 100px; text-align: left; vertical-align: middle">
+                            <input type="button" value="Start Test" id="start-test" class="inputButtonSmall" onclick="loadq('next',this);">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+        
+</div>
+    
+<div id="overlay" class="ui-widget-overlay" style="z-index: 10; display: block; width: 100%; height: 100%; display: none"></div>
+<div id="popup" style="position: fixed; top: 140px; padding: 20px; left: 50%; margin-left: -220px; z-index: 1000; display: none">
+    <div style="width: 440px; position: relative; z-index: 1" class="ui-dialog">
+        <div class="ui-dialog-titlebar"> <span class="ui-dialog-title">Time Out</span><a href="#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span id="closePopup" class="closePopup ui-icon ui-icon-closethick">close</span></a> </div>
+        <div class="ui-dialog-content">
+            <p>Sorry! Time's up for this question.</p>
+            
+            <p class="dialog-btn" id="dialogbtn">Next Question</p>
+        </div>
+    </div>
+</div> 
+    </body>
+</html>

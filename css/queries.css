@@ -1,0 +1,118 @@
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+@media only screen and (max-width: 1200px) {
+    
+    .row {padding: 0 2%;}
+    
+    body{font-size: 18px;}
+}
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+    
+    section {padding: 80px 0;}
+    
+    .btn{width: 350px;}
+    
+    .steps .watermark{margin-left: -60px;letter-spacing: 3px;font-size: 350%;}
+    
+    blockquote {font-size: 250%;}
+
+}
+
+@media only screen and (max-width: 920px) {
+    .btn{width: 300px;}
+    .button{margin-left: 90vw;}
+    .main-nav { display: none; }
+    ion-icon[name=menu]{display: inline-block;}   
+    .hero-title{font-size: 180%;}
+    header{height:100vh;max-height:800px;}
+    .welcome-text{margin-top: 8%;}
+    
+    
+}
+
+
+@media only screen and (max-width: 800px) {
+    .btn-box1{margin-left: 0%;}
+    .btn-box2{margin-left: 0%;}
+    .btn{width: 280px;}
+    .btn-text{font-size: 80%;}
+    .btn:hover .btn-arrow{margin-right: 0vw;}
+    .btn-arrow{background-color: #019875;margin-right: 0vw;width: 60px;}
+    .btn:before{border-bottom: 2px solid #019875;border-left: 2px solid #019875;width: 100%;height: 100%;}
+    .btn:after{border-top: 2px solid #019875;border-right: 2px solid #019875;width: 100%;height: 100%;}
+    .how .watermark{letter-spacing: 2px;word-spacing: 10px;width: 100%;}
+    .wth .watermark{margin-top: 10px;letter-spacing: 5px;word-spacing: 10px;width: 100%;}
+    .steps .watermark{margin-top: -30px;margin-left: -40px;}
+    .box-left{margin-top: 5%;width: 100%;float: left;}
+    .box-right{margin-top: 5%;width: 100%;float: right;}
+    .hero-title{font-size: 160%; max-width:80%;}
+}
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+     body { font-size: 16px; }
+     section { padding: 30px 0; }
+    .button{margin-left: 90vw;}
+    .row { padding: 0 4%; }
+    .box{width: 100%;}
+    .box1{width: 100%;padding: 5% 1% 1% 1%;}
+    .box2{padding: 1%;width: 100%;}
+    .btn-box1{margin-left: 0%;}
+    .btn-box2{margin-left: 0%;}
+    .register .col{width: 100%;margin: 5% 0 4% 5%;}
+    .register .watermark{width:100%; margin-left: -10%;font-size: 250%;}
+    .register .btn-box1{margin-left: 20%;}
+    .register .btn-box2{margin-left: 20%;}
+    footer .col { width: 100%;margin: 0 0 4% 0;}
+    .welcome-text{margin-top: 18%;}
+    }
+
+@media only screen and (max-width: 670px) {
+    .wth .watermark{font-size: 650%}
+}
+@media only screen and (max-width: 600px) {
+    blockquote {font-size: 160%;}
+    .wth .watermark{font-size: 600%}
+   header .col { width: 100%;margin: 0 0 4% 0;}
+    .btn-box1{margin-left: 25%;}
+    .btn-box2{margin-left: 25%;}
+    .line{
+    
+    margin-top: -80px;
+    position: absolute;
+    margin-left: 5%;
+    border-left: 1px solid #ffff;
+    height: 200px;
+}
+.welcome-text{margin-top: 25%;}
+}
+@media only screen and (max-width: 550px) {
+    .wth .watermark{font-size: 400%}
+    .btn-box1{margin-left: 0;}
+    .btn-box2{margin-left: 0;}
+    .register .btn-box1{margin-left: 15%;}
+    .register .btn-box2{margin-left: 15%;}
+    .line{margin-top: -80px;position: absolute;margin-left: 5%;border-left: 1px solid #ffff;height: 200px;}
+    
+}
+@media only screen and (max-width: 480px) {
+    .scroll{display: none;}
+    .steps .watermark{font-size: 300%;margin-left: -20px;}
+    .icon-nav{display: none;}
+    .sticky{box-shadow: none;border: none; }
+    .register .btn-box1{margin-left: 0%;}
+    .register .btn-box2{margin-left: 0%;}
+    .btn-box{margin-left:10%;}
+    ion-icon[name=menu]{display: block;}
+    .register .col .span-1-of-2{max-width:90%;}
+    .register .watermark1{display:none;}
+    .register .watermark2{display:none;}
+    .wth .watermark{font-size: 750%; color:#555;}
+     blockquote {font-size: 140%;}
+    
+}
+
+@media only screen and (max-width: 390px) {
+    .steps .watermark{font-size: 250%;}
+    .wth .watermark{font-size: 600%; color:#555;}
+    
+}
