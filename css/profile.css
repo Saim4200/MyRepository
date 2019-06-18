@@ -247,6 +247,7 @@ input[name=picsubmit]{
 .container-picture:hover .pic-box{
     opacity: 1;
 }
+
 .container-cnic-picture{
     position: relative;
     background-color: transparent;
@@ -271,7 +272,6 @@ input[name=picsubmit]{
 }
 #resultCnicImage{
     background-color: transparent;
-    height: 320px;
 }
 #resultDegreeImage{
     background-color: transparent;

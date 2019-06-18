@@ -1,5 +1,5 @@
 
-.ui-widget-overlay {
+#popup .dialog-mask {
     opacity: .8;
     position: fixed;
     left: 0;
@@ -11,7 +11,7 @@
     height: 100%;
 }
 
-.ui-widget-overlay {
+#popup .ui-widget-overlay {
     opacity: .7;
     position: fixed;
     left: 0;
@@ -24,7 +24,7 @@
     z-index: 500
 }
 
-.ui-dialog, .oPopup {
+#popup .error-dialog {
     -webkit-box-shadow: 0 0 0 7px rgba(0, 0, 0, .13);
     -moz-box-shadow: 0 0 0 7px rgba(0, 0, 0, .13);
     box-shadow: 0 0 0 7px rgba(0, 0, 0, .13);
@@ -45,7 +45,7 @@
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, .13);
 }
 
-.ui-dialog-titlebar {
+#popup  .error-dialog-titlebar {
     -webkit-border-radius: 10px 10px 0 0;
     -moz-border-radius: 10px 10px 0 0;
     -ms-border-radius: 10px 10px 0 0;
@@ -61,7 +61,7 @@
     text-align: center;
 }
 
-.ui-dialog-titlebar-close {
+#popup .error-dialog-titlebar-close {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -70,30 +70,26 @@
     float: right
 }
 
-.ui-button .ui-button-text {
+#popup .error-button .error-button-text {
     display: block;
     line-height: normal
 }
 
-.ui-button-text-only .ui-button-text {
+#popup .error-button-text-only .error-button-text {
     padding: .4em 1em
 }
 
-.ui-button-icon-only .ui-button-text, .ui-button-icons-only .ui-button-text {
+#popup .ui-button-icon-only .ui-button-text, .ui-button-icons-only .ui-button-text {
     display: none
 }
 
-.ui-dialog-content {
+#popup .error-dialog-content {
     position: relative;
     padding: 0 20px;
-    text-align: center;
-    font-size: 16px;
-    color: indianred;
-    letter-spacing: 0.5px
-    
+    text-align: center;    
 }
 
-.dialogbtn {
+#popup .dialogbtn {
     width: 150px; 
     height: 30px;
     margin: 25px auto 15px; 
@@ -108,7 +104,7 @@
     border-radius: 3px
 }
 
-.dialog-btn {
+#popup .dialog-btn {
     margin: 20px auto;
     width: 150px;
     font-family: 'Roboto', sans-serif;
@@ -116,31 +112,32 @@
     font-size: 90%;
     border: 1px solid pink;
     border-radius: 3px;
-    padding: 2px;
+    padding: 3px;
     cursor: pointer
 }
-.dialog-btn:hover {
+#popup .dialog-btn:hover {
     background-color: indianred;
     color: white;
     border-radius: 4px;
 }
-.titlebar1 {
-    font-size: 22px;
-    font-weight: 600;
-    letter-spacing: 1px;
+#popup .titlebar1 {
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: normal;
     background-color: rgba(234, 202, 213, 0.5);
-    padding: 15px 25px 13px;
+    padding: 10px 25px 10px;
     color: #ca5f5f;
-    font-family: 'Roboto', sans-serif;
+    font-family: monospace;
     text-align: left;
 }
 
-.content1 {
+#popup .content1 {
     padding: 20px 20px 0;
     text-align: center;
-    font-size: 15px;
-    color: indianred;
-    letter-spacing: 0.5px
+    font-size: 16px;
+      font-family: 'Roboto', sans-serif;
+  color: indianred;
+    letter-spacing: normal
 }
 .dialog-btn-success {
     margin: 20px auto;
@@ -178,4 +175,27 @@
     font-size: 15px;
     color: rgba(60, 118, 61, 0.8);
     letter-spacing: normal
+}
+
+#dialog-message {
+    padding-bottom: 10px
+}
+
+.loading-div {
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    z-index: 200;
+    display: none;
+    width: 60px;
+    height: 60px;
+    background-color: whitesmoke;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 #ddd;
+    opacity: 0.9
+    
 }

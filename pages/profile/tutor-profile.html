@@ -1,0 +1,423 @@
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="../../js/jquery-3.3.1.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/grid.css">
+    <link rel="stylesheet" type="text/css" href="../../css/resnavi.css">
+    <link rel="stylesheet" type="text/css" href="../../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../../css/navi.css">
+    <link rel="stylesheet" type="text/css" href="../../css/tutor-profile.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif|Roboto|Open+Sans" rel="stylesheet">
+</head>
+
+<!------ Include the above in your HEAD tag ---------->
+
+<!--
+User Profile Sidebar by @keenthemes
+A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
+Licensed under MIT
+-->
+
+<body>
+    <div class="container">
+        <div class="row profile">
+            <div class="col-md-3">
+                <div class="profile-sidebar">
+                    <!-- SIDEBAR USERPIC -->
+                    <div class="profile-userpic">
+                        <img src="../../css/img/tutor.png" class="img-responsive" alt="">
+                    </div>
+                    <!-- END SIDEBAR USERPIC -->
+                    <!-- SIDEBAR USER TITLE -->
+                    <div class="profile-usertitle">
+                        <div class="profile-usertitle-name">
+                            Marcus Doe
+                        </div>
+                        <div class="profile-usertitle-ratings">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="score">4.5</span>
+                        </div>
+                    </div>
+                    <!-- END SIDEBAR USER TITLE -->
+                    <!-- SIDEBAR BUTTONS -->
+                    <div class="profile-userbuttons">
+                        <button type="button" class="btn btn-success send_req">Send Tuition Request</button>
+                    </div>
+                    <!-- END SIDEBAR BUTTONS -->
+                    <!-- SIDEBAR MENU -->
+                    <div class="profile-usermenu">
+                        <ul class="nav">
+                            <li class="tablinks">
+                                <button onclick="openContent(event, 'overview')">
+                                    <i class="glyphicon glyphicon-home"></i>
+                                    Overview </button>
+                            </li>
+                            <li class="tablinks">
+                                <button onclick="openContent(event, 'preferences')">
+                                    <i class="glyphicon glyphicon-list-alt"></i>
+                                    Preferences </button>
+                            </li>
+                            <li class="tablinks">
+                                <button onclick="openContent(event, 'documents')">
+                                    <i class="glyphicon glyphicon-duplicate"></i>
+                                    Documents </button>
+                            </li>
+                            <li class="tablinks">
+                                <button onclick="openContent(event, 'tests')">
+                                    <i class="glyphicon glyphicon-check"></i>
+                                    Tests </button>
+                            </li>
+                            <li class="tablinks">
+                                <button onclick="openContent(event, 'ratings')">
+                                    <i class="glyphicon glyphicon-star"></i>
+                                    Ratings </button>
+                            </li>
+                            <li class="tablinks">
+                                <button onclick="openContent(event, 'account')">
+                                    <i class="glyphicon glyphicon-user"></i>
+                                    Account Settings </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- END MENU -->
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="profile-content">
+                    <div class="tabcontent overview" id="overview">
+                        <h3 class="heading"><i class="glyphicon glyphicon-user icon"></i> ABOUT</h3>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="row mgbt-xs-0">
+                                    <label class="col-xs-5 control-labe l">Full Name:</label>
+                                    <div class="col-xs-7 controls">Shah Ahmed Noorani</div>
+                                    <!-- col-sm-10 -->
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="row mgbt-xs-0">
+                                    <label class="col-xs-5 control-label">Email:</label>
+                                    <div class="col-xs-7 controls">mariah@Vendroid.com</div>
+                                    <!-- col-sm-10 -->
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="row mgbt-xs-0">
+                                    <label class="col-xs-5 control-label">CNIC:</label>
+                                    <div class="col-xs-7 controls">42201-1548548-7</div>
+                                    <!-- col-sm-10 -->
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="row mgbt-xs-0">
+                                    <label class="col-xs-5 control-label">Date of birth:</label>
+                                    <div class="col-xs-7 controls">Jan 22, 1984</div>
+                                    <!-- col-sm-10 -->
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="row mgbt-xs-0">
+                                    <label class="col-xs-5 control-label">Address:</label>
+                                    <div class="col-xs-7 controls">H. No. 128, 2nd Floor, PIB Colony</div>
+                                    <!-- col-sm-10 -->
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="row mgbt-xs-0">
+                                    <label class="col-xs-5 control-label">Area:</label>
+                                    <div class="col-xs-7 controls">Gulshan Town</div>
+                                    <!-- col-sm-10 -->
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="row mgbt-xs-0">
+                                    <label class="col-xs-5 control-label">Phone:</label>
+                                    <div class="col-xs-7 controls">+92-234-5678</div>
+                                    <!-- col-sm-10 -->
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="divider">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h3 class="heading"><i class="fa fa-trophy" style="font-size: 32px; margin-right: 10px"></i> EDUCATION</h3>
+                                <div class="content-list content-menu">
+                                    <ul class="list-wrapper">
+                                        <li class="mgbt-xs-10">
+                                            <span class="menu-text"> Bachelor's degree</span>
+                                            <span class="menu-description">Computer Science at Karachi University</span>
+                                            <span class="menu-date">Passed in 2008 </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row -->
+                        <hr class="divider">
+                        <div class="row">
+                            <!-- col-sm-7 -->
+                            <div class="col-sm-6">
+                                <h3 class="heading"><i class="fa fa-flask icon"></i> SKILL</h3>
+                                <div class="skills">
+                                    <div class="skill-list">
+                                        <div class="skill-name "> Mathematics </div>
+                                        <div class="progress  progress-sm">
+                                            <div style="width: 90%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="90" role="progressbar" class="progress-bar progress-bar-success "> <span class="sr-only">90%</span> </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-list">
+                                        <div class="skill-name"> Chemistry </div>
+                                        <div class="progress  progress-sm">
+                                            <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" role="progressbar" class="progress-bar progress-bar-danger "> <span class="sr-only">20%</span> </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-list">
+                                        <div class="skill-name"> Physics </div>
+                                        <div class="progress  progress-sm">
+                                            <div style="width: 50%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" role="progressbar" class="progress-bar progress-bar-warning "> <span class="sr-only">50% Complete</span> </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-list">
+                                        <div class="skill-name"> English </div>
+                                        <div class="progress  progress-sm">
+                                            <div style="width: 60%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" role="progressbar" class="progress-bar progress-bar-info "> <span class="sr-only">60% Complete</span> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- col-sm-7 -->
+                        </div>
+                        <!-- row -->
+                    </div>
+
+                    <div class="tabcontent account" id="account">
+                        <h3 class="heading"><i class="fas fa-user-shield icon"></i> User Credentials</h3>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <div class="row mgbt-xs-5">
+                                    <label class="col-xs-3 control-label">User Name:</label>
+                                    <div class="col-xs-7 controls">Shah Ahmed Noorani</div>
+                                    <!-- col-sm-10 -->
+                                </div>
+                            </div>
+
+                            <div class="col-sm-10">
+                                <div class="row mgbt-xs-5">
+                                    <label class="col-xs-3 control-label">Email:</label>
+                                    <div class="col-xs-7 controls">mariah@Vendroid.com</div>
+                                    <!-- col-sm-10 -->
+                                </div>
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="row mgbt-xs-5">
+                                    <label class="col-xs-3 control-label">Status:</label>
+                                    <div class="col-xs-5"><span class="acc-active">Active</span></div>
+                                    <!-- col-sm-10 -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h3 class="heading"><i class="fa fa-lock icon"></i> Password</h3>
+                                <div class="row mgbt-xs-5">
+                                    <a href="">Change Password</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabcontent preferences" id="preferences">
+                        <h3 class="heading"><i class="fas fa-book-reader icon"></i> Subjects</h3>
+                        <div class="row">
+                            <div class="subjects">
+                                <div class="subject">Mathematics</div>
+                                <div class="subject">Physics</div>
+                                <div class="subject">Chemistry</div>
+                                <div class="subject">English</div>
+                            </div>
+                        </div>
+                        <hr class="divider">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h3 class="heading"><i class="fas fa-chalkboard-teacher icon"></i> Tutoring place</h3>
+                                <div class="content-list content-menu">
+                                    <ul class="list-wrapper">
+                                        <li class="mgbt-xs-10">
+                                            <span class="menu-text"> Preferred Place of Tuition</span>
+                                            <span class="menu-description">I want to teach at my home.</span>
+                                            <span class="edit-tplace">Change </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="divider">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h3 class="heading"><i class="fas fa-map icon"></i> Target Areas</h3>
+                                <div class="content-list content-menu">
+                                    <ul class="list-wrapper">
+                                        <li class="mgbt-xs-10"> Gulshan Town </li>
+                                        <li class="mgbt-xs-10"> Gulshan Town </li>
+                                        <li class="mgbt-xs-10"> Gulshan Town </li>
+                                        <li class="mgbt-xs-10"> Gulshan Town </li>
+                                        <li class="mgbt-xs-10"> Gulshan Town </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row -->
+                    </div>
+
+                    <div class="tabcontent" id="documents">
+                        <h3 class="heading"><i class="fas fa-copy icon"></i> User Documents</h3>
+                        <div class="row">
+                            <div class="sub-heading">CNIC Picture (Front)</div>
+                            <div class="container-cnic-picture">
+                                <div id="resultCnicImage">
+                                    <img src='../../css/img/id_card.png' class='cnic-picture-box' style="opacity: 0.1">
+                                </div>
+                                <div class="cnic-pic-change" style="<?php if($approve['active']==1) echo 'display: none'; else echo ''; ?>">
+                                    <div class="col span-1-of-2 ">
+                                        <form action="" method="post" enctype="multipart/form-data" id="cnicpicform">
+                                            <input type="file" name="cnicpicsubmit" id="file-1" class="inputfile inputfile-2" />
+                                            <label for="file-1"><i class="far fa-file-image" style="font-size: 16px; padding-right: 5px"></i>  <span>Select an image ...</span></label>
+                                        </form>
+                                    </div>
+                                    <div class="col span-1-of-2 "><button id="upload-file-1" name='cnic-pic-submit'><i class="fas fa-upload" style="font-size: 16px; padding-right: 5px"></i>  Upload</button></div>
+                                </div>
+                            </div>
+                            <div class="sub-heading">Degree / Certificate</div>
+                            <div class="container-cnic-picture">
+                                <div id="resultCnicImage">
+                                    <img src='../../css/img/certificate.png' class='cnic-picture-box' style="opacity: 0.3">
+                                </div>
+                                <div class="cnic-pic-change" style="<?php if($approve['active']==1) echo 'display: none'; else echo ''; ?>">
+                                    <div class="col span-1-of-2 ">
+                                        <form action="" method="post" enctype="multipart/form-data" id="degreepicform">
+                                            <input type="file" name="degreepicsubmit" id="file-2" class="inputfile inputfile-2" />
+                                            <label for="file-2"><i class="far fa-file-image" style="font-size: 16px; padding-right: 5px"></i>  <span>Select an image ...</span></label>
+                                        </form>
+                                    </div>
+                                    <div class="col span-1-of-2 "><button id="upload-file-2" name='cnic-pic-submit'><i class="fas fa-upload" style="font-size: 16px; padding-right: 5px"></i>  Upload</button></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tabcontent ratings" id="ratings">
+                        <h3 class="heading"><i class="fas fa-star-half-alt icon"></i> Ratings</h3>
+                        <div class="row">
+                            <div class="rating-score">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star <?php if($num_stars>=4) echo 'checked'; ?>"></span>
+                                <span class="fa fa-star <?php if($num_stars>=5) echo 'checked'; ?>"></span>
+                                <span class="description">4.5 average based on 8 reviews.</span>
+                            </div>
+
+                            <hr style="border:1px solid #f1f1f1; width: 80%; margin-top: 0">
+
+                            <div class="rating-bars">
+                                <div class="col-sm-12 mg-10">
+                                    <div class="col-xs-2">5 star</div>
+                                    <div class="col-xs-9">
+                                        <div class="bar-container">
+                                            <div class="bar-5" style="width: <?php echo barlength($rating[4], $count); ?>%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1">5</div>
+                                </div>
+                                <div class="col-sm-12 mg-10">
+                                    <div class="col-xs-2">5 star</div>
+                                    <div class="col-xs-9">
+                                        <div class="bar-container">
+                                            <div class="bar-4" style="width: <?php echo barlength($rating[4], $count); ?>%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1">5</div>
+                                </div>
+
+                                <div class="col-sm-12 mg-10">
+                                    <div class="col-xs-2">5 star</div>
+                                    <div class="col-xs-9">
+                                        <div class="bar-container">
+                                            <div class="bar-3" style="width: <?php echo barlength($rating[4], $count); ?>%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1">5</div>
+                                </div>
+                                <div class="col-sm-12 mg-10">
+                                    <div class="col-xs-2">5 star</div>
+                                    <div class="col-xs-9">
+                                        <div class="bar-container">
+                                            <div class="bar-2" style="width: 50%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1">5</div>
+                                </div>
+                                <div class="col-sm-12 mg-10">
+                                    <div class="col-xs-2">5 star</div>
+                                    <div class="col-xs-9">
+                                        <div class="bar-container">
+                                            <div class="bar-1" style="width: 40%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1">5</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabcontent tests" id="tests">
+                        <h3 class="heading"><i class="fas fa-paste icon"></i> Tests</h3>
+                        <div class="row">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <script>
+        function openContent(evt, contentId) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the link that opened the tab
+            $('#' + contentId).fadeIn(800);
+            evt.currentTarget.parentElement.className += " active";
+        }
+
+    </script>
+</body>

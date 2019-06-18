@@ -1,35 +1,12 @@
-<?php
-error_reporting(E_ALL);
-
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\Exception;
-
-require 'PHPMailer/src/Exception.php';
-require 'PHPMailer/src/PHPMailer.php';
-require 'PHPMailer/src/SMTP.php';
-
-
-$mail = new PHPMailer(true);
-try{
-$mail->isSMTP();
-$mail->SMTPAuth = true; 
-$mail->SMTPSecure='tls';
-$mail->Host='smtp.gmail.com';
-$mail->Port = 587;
-$mail->isHTML(true);
-$mail->Username='help.tutorshouse@gmail.com';
-$mail->Password='masi4201';
-$mail->SetFrom('help.tutorshouse@gmail.com');
-$mail->Subject = 'REGISTRATION CONFIRMATION - You are successfully registered with Tutors House';
-$mail->Body    = '<div style=" font-family:  sans-serif; margin: 20px;">
+<div style=" font-family:  sans-serif; margin: 20px;">
 <div style="border: 1px solid #c9c9c9; padding: 30px; ">
 <h1 style="text-align: center">WELCOME TO TUTORS HOUSE</h1>
     <br><br>
     
-Dear <span style="text-transform: uppercase">'.$fullname.'</span>,<br><br>
+Dear <span style="text-transform: uppercase">Saim Ahmed</span>,<br><br>
                 Thank you for registering with us. We have received your registration. Thank you!
                 <br><br>
-                <h2>What\'s Next</h2>
+                <h2>What's Next</h2>
     <ul style="line-height: 2">
     <li>Please note that your account is NOT ACTIVATED yet and is under review.</li>
     <li>In order to get your account approved and activated, following documents are required to be uploaded, or submitted via email.</li>
@@ -85,6 +62,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
     <a href="mailto:mail@tutors-house.com"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
 width="20" height="20" viewBox="0 0 172 172"
 style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#95a5a6"><path d="M143.33333,28.66667h-114.66667c-7.91917,0 -14.33333,6.41417 -14.33333,14.33333v86c0,7.91917 6.41417,14.33333 14.33333,14.33333h114.66667c7.91917,0 14.33333,-6.41417 14.33333,-14.33333v-86c0,-7.91917 -6.41417,-14.33333 -14.33333,-14.33333zM140.47383,59.11783l-50.6755,31.67667c-2.322,1.45483 -5.27467,1.45483 -7.59667,0l-50.6755,-31.67667c-1.77733,-1.11083 -2.8595,-3.06017 -2.8595,-5.15283v0c0,-4.773 5.25317,-7.68267 9.29517,-5.15283l48.03817,30.02117l48.03817,-30.02117c4.042,-2.52983 9.29517,0.37983 9.29517,5.15283v0c0,2.09267 -1.08217,4.042 -2.8595,5.15283z"></path></g></g></svg></a>
+
 </td>
 </tr>
 </tbody>
@@ -93,14 +71,4 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
 </tr>
 </tbody>
 </table>
-</div>';
-    
-$mail->addAddress($email);
-
-
-$mail->Send();
-
-} catch (Exception $e) {
-    echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
-}
-?>
+</div>

@@ -8,23 +8,24 @@
     <!-- Font-->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans&display=swap" />
     <link rel="stylesheet" type="text/css" href="../../css/fonts/iconic/css/material-design-iconic-font.min.css">
-    <!-- datepicker -->
+
+    <link rel="stylesheet" href="../../css/dialog.css" />
     <link rel="stylesheet" type="text/css" href="../../css/jquery-ui.min.css">
+ 
     <!-- Main Style Css -->
     <link rel="stylesheet" href="../../css/tform.css" />
     <link rel="stylesheet" type="text/css" href="../../css/autocomplete.css">
 
     <link rel="stylesheet" href="../../css/tail.select-default.css">
     
-    
-        <script src="../../js/jquery-2.2.4.min.js"></script>
+    <script src="../../js/jquery-2.2.4.min.js"></script>
 </head>
 
 <body>
     <script type="text/javascript" src="../../js/tail.select.js"></script>
 
     <div class="page-content">
-        <div class="wizard-v4-content">
+        <div class="wizard-v4-content" id="wizard">
             <div class="wizard-form">
                 <div class="wizard-header">
                     <h3 class="heading">Become A Tutor</h3>
@@ -43,14 +44,14 @@
                                 <div class="form-row">
                                     <div class="form-holder">
                                         <label class="form-row-inner">
-                                            <input type="text" class="form-control" id="full-name" name="full-name" required>
+                                            <input type="text" class="form-control" id="fullname" name="fullname" required>
                                             <span class="label">Full Name</span>
                                             <span class="border"></span>
                                         </label>
                                     </div>
                                     <div class="form-holder">
                                         <label class="form-row-inner">
-                                            <input type="text" class="form-control" id="phone" name="phone" required>
+                                            <input type="text" class="form-control" id="pnum" name="pnum" required>
                                             <span class="label">Phone Number</span>
                                             <span class="border"></span>
                                         </label>
@@ -72,6 +73,16 @@
                                         </label>
                                     </div>
                                 </div>
+                                <div class="form-row">
+                                    <div class="form-holder form-holder-3">
+                                        <select name="tarea" id="tarea">
+                                            <option value="0" disabled selected> -  select your area - </option>
+                                            <option value="1">Gulshan</option>
+                                            <option value="2"></option>
+                                        </select>
+                                    </div>
+                                </div>
+
                                 <div class="form-row form-row-date">
                                     <div class="form-holder form-holder-2">
                                         <label for="date" class="special-label">Date of Birth:</label>
@@ -90,7 +101,7 @@
                                             <option value="Apr">Apr</option>
                                             <option value="May">May</option>
                                         </select>
-                                        <select name="date" id="date">
+                                        <select name="day" id="day">
                                             <option value="Day" disabled selected>- day -</option>
                                             <option value="16">16</option>
                                             <option value="17">17</option>
@@ -101,9 +112,9 @@
                                 </div>
                                 <div class="form-row form-row-gender">
                                     <div class="form-holder form-holder-2">
-                                        <label for="gender" class="special-label">Gender:</label>
+                                        <label for="date" class="special-label">Gender:</label>
                                         <select name="gender" id="gender">
-                                            <option value="0" disabled selected> - select - </option>
+                                            <option value="0" disabled selected>- select -</option>
                                             <option value="1">Male</option>
                                             <option value="2">Female</option>
                                         </select>
@@ -114,7 +125,7 @@
                         <!-- SECTION 2 -->
                         <h2>
                             <span class="step-icon"><i class="zmdi zmdi-book"></i></span>
-                            <span class="step-text">Academics</span>
+                            <span class="step-text" style="margin-left: -8px">Academics</span>
                         </h2>
                         <section>
                             <div class="inner">
@@ -147,14 +158,16 @@
                                         </label>
                                     </div>
                                 </div>
-
                                 <div class="form-row">
                                     <div class="form-holder form-holder-2">
-                                        <label class="form-row-inner">
-                                            <input type="text" class="form-control" id="major" name="major" required>
-                                            <span class="label">Major Subjects</span>
-                                            <span class="border"></span>
-                                        </label>
+                                        <select name="passingyear" id="passingyear">
+                                            <option value="Year" disabled selected>Passing Year</option>
+                                            <option value="2017">2017</option>
+                                            <option value="2016">2016</option>
+                                            <option value="2015">2015</option>
+                                            <option value="2014">2014</option>
+                                            <option value="2013">2013</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
@@ -163,7 +176,7 @@
                         <!-- SECTION 3 -->
                         <h2>
                             <span class="step-icon"><i class="zmdi zmdi-receipt"></i></span>
-                            <span class="step-text">Preferences</span>
+                            <span class="step-text" style="margin-left: -10px">Preferences</span>
                         </h2>
                         <section>
                             <div class="inner">
@@ -172,19 +185,21 @@
                                     <div class="options">
                                         <div class="inline-label">Preferred Tutoring Place</div>
                                         <div class="option">
-                                            <input type="radio" id="choice1" name="radio-group" value="2">
+                                            <input type="radio" id="choice1" name="tplace" value="2">
                                             <label for="choice1" id="lb-choice1">At My Home</label>
                                         </div>
                                         <div class="option">
-                                            <input type="radio" id="choice2" name="radio-group" value="1">
+                                            <input type="radio" id="choice2" name="tplace" value="1">
                                             <label for="choice2" id="lb-choice2">At Nearby Location</label>
                                         </div>
                                         <div class="option">
-                                            <input type="radio" id="choice3" name="radio-group" value="3">
+                                            <input type="radio" id="choice3" name="tplace" value="3">
                                             <label for="choice3" id="lb-choice3">Online Tutoring</label>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="error" id="tplace-error" style="display: block"></div>
+
                                 <div class="form-row">
                                 <div class="inline-label-2" style="margin-top: 20px; padding-left: 8px">What subjects are you interested in?</div>
                                 <div style="width: 100%; margin-top: 20px; padding-left: 10px">
@@ -202,6 +217,8 @@
                                     </select>
                                  </div>
                                 </div>
+                                    <div class="error" id="subjects-error" style="display: block"></div>
+                                
                                 <div class="form-row">
                                 <div class="inline-label" style="margin-top: 20px; padding-left: 8px">Which areas do you want to target?</div>
                                 <div style="width: 100%; margin-top: 20px; padding-left: 10px">
@@ -212,7 +229,9 @@
                                         </optgroup>
                                     </select>
                                  </div>
-                                </div>
+                               </div>
+                                <div class="error" id="areas-error" style="display: block"></div>
+                                
                             </div>
                         </section>
                         <!-- SECTION 4 -->
@@ -249,8 +268,9 @@
                                     </div>
                                 </div>
                                 <div class="form-row" style="margin-top: 25px; padding-left: 10px">
-                                    <input type="checkbox" name="agree" id="agree" class="form-control" required>
+                                    <input type="checkbox" name="agree" id="agree" value="1" class="form-control">
                                     <span class="label-checkbox">I accept and abide by the <a href="#">terms and conditions</a> of Tutors House.</span>
+                                    <div class="div-error" id="agreeTermsError"></div>
                                 </div>
                             </div>
                         </section>
@@ -259,15 +279,57 @@
                 </form>
             </div>
         </div>
+        
+        <div class="success" id="success">
+            <div class="success-message">
+            <img src="../../css/img/success-icon.png">
+                <h1>Congratulations!</h1>
+            <p class="content"> Your account is created successfully.</p>
+            <p class="content2">You will shortly recieve an email for the confirmation of your registration.</p>
+            </div>
+            <div class="next-to-do">
+            <h3>What's Next</h3>
+            <p class="content3"> In order to get your account approved and activated, following documents are required to be uploaded, or submitted via email.</p>
+            <p class="content3"><span> 1.  Picture of your CNIC Card (Front only) <br> </span> <span>2. Picture of your latest degree/certificate/marksheet etc.</span> </p>
+            <p class="content3"><span><a href="">Upload Now</a> </span>|<span><a href="">Learn More</a></span> </p>
+                
+            </div>
+        </div>
+
     </div>
 
+    <div id="overlay" class="dialog-mask" style="z-index: 10; display: none; width: 100%; height: 100%;"></div>
+
+    <div id="popup" style="position: fixed; top: 140px  ; padding: 20px; left: 50%; margin-left: -220px; z-index: 200; display: none">
+    <div style="width: 440px; position: relative; z-index: 1" class="error-dialog">
+        <div class="error-dialog-titlebar titlebar1"> <span class="error-dialog-title" id="dialog-title" >Error</span></div>
+        <div class="error-dialog-content content1">
+            <p id="dialog-message">An unknown error occured. Try again in a few minutes.</p>
+            <p class="dialog-btn" id="dialogbtn">OK</p>
+        </div>
+    </div>
+</div>
+<div id="popup-success" style="position: fixed; top: 140px; padding: 20px; left: 50%; margin-left: -220px; z-index: 300; display: none">
+    <div style="width: 440px; position: relative; z-index: 1" class="ui-dialog success-box">
+        <div class="ui-dialog-titlebar titlebar2"> <span class="ui-dialog-title" id="dialog-title-success" ></span></div>
+        <div class="ui-dialog-content content2">
+            <p id="dialog-message-success"></p>
+            <p class="dialog-btn-success" id="dialogbtnSuccess">OK</p>
+        </div>
+    </div>
+</div>
+<div id="overlay-loading" class="ui-widget-overlay" style="z-index: 100; display: none; width: 100%; height: 100%; background-color: whitesmoke;  opacity: .9;"></div>
+<div class="loading-div"><?php include '../../css/icons/loading-spinner.html'; ?></div>
+
     <script src="../../js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../../js/jquery.validate.min.js" type="text/javascript"></script>
     <script src="../../js/jquery.steps.js"></script>
     <script src="../../js/jquery-ui.min.js"></script>
     <script src="../../js/tform.js"></script>
     <script src="autocomplete.js"></script>
-    
+   
 <script>
+
 document.addEventListener("DOMContentLoaded", function(){
 
 tail.select(".select-subjects", {
@@ -289,7 +351,48 @@ tail.select(".select-areas", {
 }); 
     
 autocomplete(document.getElementById("institute"), institutes);
+
+    $("#agree").change(function(){
+        $("#agreeTermsError").text("");
+    });
+    
 });
 
+var loc = '';
+
+function showSuccessDialog(heading, content, location){
+        hideLoading();
+        document.getElementById("overlay").style.display = "block";
+        document.getElementById('popup-success').style.display = "block";
+        document.getElementById('dialogbtnSuccess').style.display = "block";
+        document.getElementById("dialog-title-success").innerHTML = heading;
+        document.getElementById("dialog-message-success").innerHTML = content;
+        loc = location;
+    }
+    function hideSuccessDialog(){
+        document.getElementById("overlay").style.display = "none";
+        document.getElementById('popup-success').style.display = "none";
+    }
+    function showLoading(){
+        $("#overlay").show();
+        $(".loading-div").show();
+    }
+    function hideLoading(){
+        $(".loading-div").hide();
+        $("#overlay").hide();
+    }
+function showDialog(heading, content, location ){
+    hideLoading();
+    document.getElementById("overlay").style.display = "block";
+    document.getElementById('popup').style.display = "block";
+    document.getElementById('dialogbtn').style.display = "block";
+    document.getElementById("dialog-title").innerHTML = heading;
+    document.getElementById("dialog-message").innerHTML = content;
+    loc = location;
+}
+function hideDialog(){
+    document.getElementById("overlay").style.display = "none";
+    document.getElementById('popup').style.display = "none";
+}
     </script>
 </body></html>

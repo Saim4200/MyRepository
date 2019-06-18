@@ -930,7 +930,7 @@ function openContent(evt, contentId) {
   document.getElementById(contentId).style.display = "block";
   evt.currentTarget.className += " active";
 }
-</script>
+</script> 
 
 <script>
     var password = document.getElementById("pass-update");

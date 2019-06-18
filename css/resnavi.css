@@ -63,6 +63,7 @@
 }
 .overlay .res-box-5-of-6{
     width: 83.06%;
+    margin: auto;
 }
 ion-icon[name=menu]{
     font-size: 250%;

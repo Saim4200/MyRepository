@@ -6,7 +6,7 @@
                                 <button class="dropbtn">Register</button>
                                 <div class="dropdown-content">
                                     <a href="pages/registration/sform.php">Find a Tutor</a>
-                                    <a href="pages/form/form.php?setform=1">Become a Tutor</a>
+                                    <a href="pages/registration/tform.php">Become a Tutor</a>
                                 </div>
                             </div>
                         </li>
